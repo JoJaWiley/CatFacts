@@ -92,9 +92,34 @@ body {
   font-size: 30px;
   text-decoration: underline;
   color: #00001a;
+  padding-bottom: 40px;
 }
 
 .stack {
     display: flex;
     flex-direction: column;
+    
 }
+
+.stack2 {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    
+}
+
+.stack2-item {
+    padding:40px 100px;
+    color:#00001a;
+    font-family:'Nova Square', cursive;
+}
+
+.stack2-container {
+    background-color:#848585;
+    display:flex;
+    flex-direction:column;
+    
+    
+}
+
+    
