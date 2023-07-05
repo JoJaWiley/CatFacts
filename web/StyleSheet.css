@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+
+ 
+li, .navlink {
+    font-family: 'Nova Square', cursive;
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: none;
+}
+ 
+nav
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: #b30047;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+ 
+.logo
+{
+    cursor: pointer;
+}
+ 
+.nav__links {
+    list-style: none;
+}
+ 
+.nav__links li {
+ 
+    display: inline-block;
+    padding: 0px 35px;
+}
+ 
+.nav__links li .navlink {
+    transition: all 0.3s ease 0s;
+    color: white;
+ 
+}
+ 
+.nav__links li .navlink:hover {
+    color: #ff0066;
+}
+ 
+.navlink
+{
+    padding: 7px 25px;
+    background-color: #00001a;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.rest {
+    background-color: #d1b3ff;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 10px;
+}
+.grid-item {
+  color: #00001a;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.grid-item-header {
+  font-family: 'Nova Square', cursive;
+  font-size: 30px;
+}
+
+.new-game {
+    height: 50%;
+    width: auto;
+}
+
+.first-time {
+  font-family: 'Nova Square', cursive;
+  font-size: 30px;
+  text-decoration: underline;
+  color: #00001a;
+}
+
+.stack {
+    display: flex;
+    flex-direction: column;
+}
