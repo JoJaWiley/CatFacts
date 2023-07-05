@@ -28,6 +28,9 @@ body {
 .logo
 {
     cursor: pointer;
+    height:40px;
+    width:50px;
+    
 }
  
 .nav__links {
@@ -109,7 +112,7 @@ body {
 }
 
 .stack2-item {
-    padding:40px 100px;
+    padding:5px 100px;
     color:#00001a;
     font-family:'Nova Square', cursive;
 }
@@ -117,9 +120,29 @@ body {
 .stack2-container {
     background-color:#848585;
     display:flex;
-    flex-direction:column;
-    
-    
+    flex-direction:column;   
+}
+
+.event {
+    list-style:none;
+}
+
+.top-games {
+    list-style:none;
+}
+
+.top-teams {
+    list-style:none;
+}
+.stack2-writing {
+    padding-top:0;
+    font-family:'Nova Square',cursive;
+    font-size:17px;
+}
+
+.trending-posts {
+    font-family:'Nova Square',cursive;
+    font-size:17px;
 }
 
     
