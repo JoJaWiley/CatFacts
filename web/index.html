@@ -9,18 +9,80 @@
     <link rel="stylesheet" href="StyleSheet.css">
 </head>
 <body>
+    
+        <div class="button-container">
+  <button id="loginButton" onclick="document.getElementById('loginForm').style.display='block'" style="width:auto;">Login</button>
+  <div id="loginForm" class="modal">
+    <form class="modal-content animate" action="login.jsp" method="post">
+      <div class="container">
+        <label for="username"><b>Username</b></label>
+        <input id="username" type="text" placeholder="Enter Username" name="username" required>
+
+        <label for="password"><b>Password</b></label>
+        <input id="password" type="password" placeholder="Enter Password" name="password" required>
+
+        <button id="loginSubmitButton" type="submit">Login</button>
+      </div>
+      <div class="container">
+        <button type="button" onclick="document.getElementById('loginForm').style.display='none'" class="cancelbtn">Cancel</button>
+        <span class="password"><a href="#">Forget password?</a></span>
+      </div>
+    </form>
+  </div>
+    
+
+  <button id="signUpButton" onclick="document.getElementById('signUpForm').style.display='block'" style="width:auto;">Sign Up</button>
+  <div id="signUpForm" class="modal">
+    <form class="modal-content animate" action="/validate.js" method="post">
+      <div class="container">
+        <label for="username"><b>New Username</b></label>
+        <input type="text" placeholder="Enter your username" name="username" required>
+
+        <label for="password"><b>New Password</b></label>
+        <input type="password" pattern="(?=.*\d)(?=.*[a-z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder="Enter your password" name="password" required>
+        <button id="signupSubmitButton" type="submit">Sign Up</button>
+      </div>
+      <div class="container">
+        <button type="button" onclick="document.getElementById('signUpForm').style.display='none'" class="cancelbtn">Cancel</button>
+      </div>
+    </form>
+  </div>
+  </div>
+
+<script>
+  // Get the modal elements
+  var loginModal = document.getElementById('loginForm');
+  var signUpModal = document.getElementById('signUpForm');
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == loginModal) {
+      loginModal.style.display = "none";
+    }
+    if (event.target == signUpModal) {
+      signUpModal.style.display = "none";
+    }
+  }
+</script>
+    
+         
+         
+         
+         
+         
+         
      
     <header>
  
         <nav>
                 <img class="logo" src="catfactslogo.png" alt="logo">
             <ul class="nav__links">
-                <li><a class="navlink" href="#">Boards</a></li>
-                <li><a class="navlink" href="#">Games Database</a></li>
-                <li><a class="navlink" href="#">News</a></li>
-                <li><a class="navlink" href="#">Teams</a></li>
-                <li><a class="navlink" href="#">Guides</a></li>
-                <li><a class="navlink" href="#">Search</a></li>
+                <li id="button"><a class="navlink" href="#">Boards</a></li>
+                <li id="button"><a class="navlink" href="#">Games Database</a></li>
+                <li id="button"><a class="navlink" href="#">News</a></li>
+                <li id="button"><a class="navlink" href="#">Teams</a></li>
+                <li id="button"><a class="navlink" href="#">Guides</a></li>
+                <li id="button"><a class="navlink" href="#">Search</a></li>
             </ul>
         </nav>
  
