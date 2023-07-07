@@ -1,9 +1,4 @@
-create database catfacts;
-
-use catfacts;
-
-DROP TABLE IF EXISTS Games;
-
+use catfact;
 CREATE TABLE Games (
     GameID INT PRIMARY KEY,
     Title VARCHAR(50),
@@ -14,29 +9,24 @@ CREATE TABLE Games (
     Genre VARCHAR(50)
 );
 
-DROP TABLE IF EXISTS User;
-
 CREATE TABLE User (
-    UserID INT PRIMARY KEY,
+    UserID INT PRIMARY KEY auto_increment,
     UserName VARCHAR(50),
     Email VARCHAR(100),
     Password VARCHAR(100)
 );
 
-DROP TABLE IF EXISTS Guides;
-
 CREATE TABLE Guides (
-    GameID INT PRIMARY KEY,
+    GameID INT,
     InfoID INT,
     StratID INT,
     UserID INT,
-    GuideCatID INT
+    GuideCatID INT,
+    GuideID INT PRIMARY KEY AUTO_INCREMENT
 );
 
-DROP TABLE IF EXISTS Post;
-
 CREATE TABLE Post (
-    PostID INT PRIMARY KEY,
+    PostID INT PRIMARY KEY AUTO_INCREMENT,
     ThreadID INT,
     UserID INT,
     Title VARCHAR(255),
@@ -44,15 +34,25 @@ CREATE TABLE Post (
     Content TEXT
 );
 
-DROP TABLE IF EXISTS Profile;
-
 CREATE TABLE Profile (
-    UserID INT PRIMARY KEY,
+    UserID INT,
     Bio VARCHAR(255),
-    ProfilePic VARCHAR(255)
+    ProfilePic VARCHAR(255),
+    ProfileID INT PRIMARY KEY AUTO_INCREMENT
+    
 );
 
+CREATE TABLE team (
+  teamID INT PRIMARY KEY AUTO_INCREMENT,
+  TeamName VARCHAR(255),
+  UserID INT,
+  requirements TEXT,
+  slots INT
+);
 
+INSERT INTO team (TeamName, UserID, requirements, slots)
+VALUES ('Team A', 1, 'Requirement 1', 5);
+SELECT * FROM team;
 
 INSERT INTO Games (GameID, Title, Price, Date, Score, Studio, Genre)
 VALUES
@@ -83,12 +83,79 @@ VALUES
     (25, 'Gravity Rush 2', 19.99, '2017-01-18', 80, 'SIE Japan Studio', 'Action-Adventure');
 	SELECT * FROM Games;
   
-  DROP TABLE IF EXISTS friends;
-  
   CREATE TABLE friends (
+  
+  FriendsID INT PRIMARY kEY AUTO_INCREMENT,
   UserID1 INT,
   UserID2 INT
 );
+
+CREATE TABLE Question (
+  questionID INT PRIMARY KEY AUTO_INCREMENT,
+  title VARCHAR(255),
+  userID INT,
+  content TEXT,
+  questionCatID INT
+);
+
+CREATE TABLE answers (
+  answerID INT PRIMARY KEY AUTO_INCREMENT,
+  content TEXT,
+  userID INT,
+  questionID INT
+);
+
+CREATE TABLE questionCat (
+  questionCatID INT PRIMARY KEY AUTO_INCREMENT,
+  title VARCHAR(255)
+);
+
+CREATE TABLE newscats (
+  newscatID INT PRIMARY KEY AUTO_INCREMENT,
+  title VARCHAR(255),
+  content TEXT
+);
+
+CREATE TABLE guidecategories (
+  guideCategoryID INT PRIMARY KEY AUTO_INCREMENT,
+  title VARCHAR(255)
+);
+
+CREATE TABLE strategies (
+  StratID INT PRIMARY KEY AUTO_INCREMENT,
+  StratContent TEXT
+);
+
+CREATE TABLE info (
+  InfoID INT PRIMARY KEY AUTO_INCREMENT,
+  InfoContent TEXT
+);
+
+CREATE TABLE favGames (
+  FavGamesID INT PRIMARY KEY AUTO_INCREMENT,
+  UserID INT,
+  GameID INT,
+  FOREIGN KEY (UserID) REFERENCES User(UserID),
+  FOREIGN KEY (GameID) REFERENCES Games(GameID)
+);
+
+
+
+
+
+
+INSERT INTO newscats (title, content)
+VALUES
+  ( 'Category 1', 'Content 1'),
+  ('Category 2', 'Content 2'),
+  ('Category 3', 'Content 3'),
+  ('Category 4', 'Content 4'),
+  ('Category 5', 'Content 5'),
+  ('Category 6', 'Content 6'),
+  ('Category 7', 'Content 7'),
+  ('Category 8', 'Content 8'),
+  ('Category 9', 'Content 9'),
+  ('Category 10', 'Content 10');
 
 INSERT INTO User (UserID, UserName, Email, Password)
 VALUES (1, 'JohnDoe', 'johndoe@example.com', 'mypassword');
@@ -124,6 +191,26 @@ INSERT INTO friends (UserID1, UserID2)
 VALUES (1, 2);
 SELECT * FROM friends;
 
+INSERT INTO Question (title, userID, content, questionCatID)
+VALUES ('Example Question', 1, 'This is the content of the question.', 2);
+SELECT * FROM Question;
 
+INSERT INTO answers (answerID, content, userID, questionID)
+VALUES (1, 'This is an example answer.', 1, 1);
+SELECT * FROM answers;
 
+INSERT INTO guidecategories (title)
+VALUES ('Category 1'), ('Category 2'), ('Category 3');
+SELECT * FROM guidecategories;
+
+INSERT INTO strategies (StratContent)
+VALUES ('Strategy 1'), ('Strategy 2'), ('Strategy 3');
+SELECT * FROM strategies;
+
+INSERT INTO info (InfoContent)
+VALUES ('Information 1'), ('Information 2'), ('Information 3');
+SELECT * FROM info;
+
+INSERT INTO favGames (UserID, GameID) VALUES (1, 2);
+SELECT * FROM favGames;
 
