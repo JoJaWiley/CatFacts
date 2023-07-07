@@ -283,3 +283,9 @@ span.psw {
      width: 100%;
   }
 }
+
+.logged-in-status {
+    font-family: 'Nova Square', cursive;
+    color: white;
+    padding-right: 50px;
+}

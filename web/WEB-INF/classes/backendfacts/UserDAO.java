@@ -108,6 +108,7 @@ public class UserDAO {
     return false;
     }
     
+    
     public boolean updateUser(User user) {
     Connection connection = ConnectionFactory.getConnection();
         try {
