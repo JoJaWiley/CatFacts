@@ -1,5 +1,6 @@
+<%@page import="java.util.Objects"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page import="java.sql.*"%>
+<%@page import="java.sql.*, backendfacts.*"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -10,35 +11,21 @@
         
         <%
             
-            String url = "jdbc:mysql://localhost:3306/catfact";
-            String dbusername = "root";
-            String dbpassword = "admin";
-            
             String username = request.getParameter("username");
             String password = request.getParameter("password");
             
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection con = DriverManager.getConnection(url, dbusername, dbpassword);
+            UserDAO ud = new UserDAO();
+            User user = ud.getUserByUsernameAndPassword(username, password);
             
-            PreparedStatement pstmt = con.prepareStatement("SELECT * FROM user WHERE UserName=? AND password=?");
-            pstmt.setString(1, username);
-            pstmt.setString(2, password);
-            
-
-            ResultSet rs = pstmt.executeQuery();
-            
-            if (rs.next()) {
-            
-            response.sendRedirect("index.html");
-            
+            if (Objects.isNull(user)) {
+                out.println("invalid login");
+                response.sendRedirect("index.html");
             } else {
-            out.println("invalid username and/or password");
-            response.sendRedirect("index.html");
+            
+            request.getSession().setAttribute("myuser", user);
+            response.sendRedirect("index.jsp");
             }
             
-
-            con.close();
-
         %>
         
         
