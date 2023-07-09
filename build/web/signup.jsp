@@ -1,6 +1,8 @@
 <%@page import="java.util.Objects"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="java.io.*"%>
 <%@page import="java.sql.*, backendfacts.*"%>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -10,20 +12,27 @@
     <body>
         
         <%
+            try {
             
-            String username = request.getParameter("username");
-            String password = request.getParameter("password");
-           
+            String username = request.getParameter("createUsername");
+            String email = request.getParameter("createEmail");
+            String password = request.getParameter("createPassword");
+            
+            User user = new User(username, email, password);
             UserDAO ud = new UserDAO();
-            User user = ud.getUserByUsernameAndPassword(username, password);
-           
+            ud.insertUser(user);
+            
             if (Objects.isNull(user)) {
                 out.println("invalid login");
                 response.sendRedirect("index.jsp");
             } else {
+            response.sendRedirect("index.jsp");
+            }
             
-                request.getSession().setAttribute("myuser", user);
-                response.sendRedirect("index.jsp");
+            
+            
+            } catch (Exception e) {
+                e.printStackTrace();
             }
 
         %>

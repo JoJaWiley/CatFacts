@@ -8,8 +8,7 @@ li, .navlink {
     text-decoration: none;
 }
  
-nav
-{
+nav {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,8 +24,7 @@ body {
     padding: 0;
 }
  
-.logo
-{
+.logo {
     cursor: pointer;
 }
  
@@ -50,8 +48,7 @@ body {
     color: #ff0066;
 }
  
-.navlink
-{
+.navlink {
     padding: 7px 25px;
     background-color: #00001a;
     border: none;
@@ -71,7 +68,6 @@ body {
 }
 .grid-item {
   color: #00001a;
-  border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 10px;
   font-size: 30px;
   text-align: center;
@@ -92,11 +88,53 @@ body {
   font-size: 30px;
   text-decoration: underline;
   color: #00001a;
+  padding-bottom: 40px
 }
 
 .stack {
     display: flex;
     flex-direction: column;
+}
+
+.stack2-item {
+    padding:5px 100px;
+    color:#00001a;
+    font-family:'Nova Square', cursive;
+}
+
+.stack2-container {
+    background-color:#848585;
+    display:flex;
+    flex-direction:column;   
+}
+
+.event {
+    list-style:none;
+}
+
+.top-games {
+    list-style:none;
+}
+
+.top-teams {
+    list-style:none;
+}
+.stack2-writing {
+    padding-top:0;
+    font-family:'Nova Square',cursive;
+    font-size:17px;
+}
+
+.trending-posts {
+    font-family:'Nova Square',cursive;
+    font-size:17px;
+}
+
+.stack2-writing {
+    padding: 0;
+    font-family:'Nova Square', cursive;
+    color:#00001a;
+    font-size: 17px;
 }
 
 .button-container {
@@ -234,4 +272,10 @@ span.psw {
   .cancelbtn {
      width: 100%;
   }
+}
+
+.logged-in-status {
+    font-family: 'Nova Square', cursive;
+    color: white;
+    padding-right: 50px;
 }
