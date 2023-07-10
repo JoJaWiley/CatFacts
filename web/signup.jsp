@@ -10,7 +10,7 @@
         <title>Account Login</title>
     </head>
     <body>
-        
+
         <%
             try {
             
@@ -34,9 +34,8 @@
             } catch (Exception e) {
                 e.printStackTrace();
             }
-
         %>
-        
-        
+
+
     </body>
 </html>

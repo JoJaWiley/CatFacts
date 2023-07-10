@@ -29,7 +29,7 @@
             
         
     %>
-    
+    <!--Login and signup button and their modal forms-->
         <div class="button-container">
             <div class="logged-in-status">
                 <%out.println(loggedIn);%>
@@ -56,10 +56,14 @@
 
   <button id="signUpButton" onclick="document.getElementById('signUpForm').style.display='block'" style="width:auto;">Sign Up</button>
   <div id="signUpForm" class="modal">
-    <form class="modal-content animate" action="/validate.js" method="post">
+    <form class="modal-content animate" action="signup.jsp" method="post">
       <div class="container">
         <label for="username"><b>New Username</b></label>
         <input type="text" placeholder="Enter your username" name="username" required>
+        <input type="text" placeholder="Enter your username" name="createUsername" required>
+
+        <label for="email"><b>Email Address</b></label>
+        <input type="text" placeholder="Enter your email" name="createEmail" required>
 
         <label for="password"><b>New Password</b></label>
         <input type="password" pattern="(?=.*\d)(?=.*[a-z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder="Enter your password" name="password" required>
@@ -72,6 +76,7 @@
   </div>
   </div>
 
+<!--javascript to open login and signup form in a separate window-->            
 <script>
   // Get the modal elements
   var loginModal = document.getElementById('loginForm');
@@ -94,7 +99,7 @@
          
          
          
-     
+     <!--navbar header-->
     <header>
  
         <nav>
@@ -114,13 +119,13 @@
     GameDAO gd = new GameDAO();
     Game game = gd.getRandomGame();
     %>
-    
+    <!-- Establish the elements of the home page-->
     <div class="rest">
         <div class="grid-container">
             <div class="grid-item">
-                <div class="stack">
+                <div class="stack center-pic">
                     <h2 class="grid-item-header"><%out.println(game.getTitle());%></h2>
-                    <img class="new-game" src="game_images/<%=game.getGameID()%>.jpg" width="200" alt="new game">
+                    <img class="new-game" src="game_images/<%=game.getGameID()%>.jpg" width="400" alt="new game">
                 </div>
             </div>
             <div class="grid-item">
