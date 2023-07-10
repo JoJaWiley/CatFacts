@@ -1,4 +1,6 @@
 use catfact;
+
+DROP TABLE IF EXISTS Games;
 CREATE TABLE Games (
     GameID INT PRIMARY KEY,
     Title VARCHAR(50),
@@ -9,6 +11,7 @@ CREATE TABLE Games (
     Genre VARCHAR(50)
 );
 
+DROP TABLE IF EXISTS User;
 CREATE TABLE User (
     UserID INT PRIMARY KEY auto_increment,
     UserName VARCHAR(50),
@@ -16,15 +19,17 @@ CREATE TABLE User (
     Password VARCHAR(100)
 );
 
+DROP TABLE IF EXISTS Guides;
 CREATE TABLE Guides (
+	GuideID INT PRIMARY KEY AUTO_INCREMENT,
     GameID INT,
     InfoID INT,
     StratID INT,
     UserID INT,
-    GuideCatID INT,
-    GuideID INT PRIMARY KEY AUTO_INCREMENT
+    GuideCatID INT
 );
 
+DROP TABLE IF EXISTS Post;
 CREATE TABLE Post (
     PostID INT PRIMARY KEY AUTO_INCREMENT,
     ThreadID INT,
@@ -34,14 +39,32 @@ CREATE TABLE Post (
     Content TEXT
 );
 
-CREATE TABLE Profile (
-    UserID INT,
-    Bio VARCHAR(255),
-    ProfilePic VARCHAR(255),
-    ProfileID INT PRIMARY KEY AUTO_INCREMENT
-    
+DROP TABLE IF EXISTS Thread;
+
+CREATE TABLE Thread (
+ThreadID INT PRIMARY KEY AUTO_INCREMENT,
+CategoryID INT,
+Title varchar(50),
+Created datetime
 );
 
+DROP TABLE ThreadCat;
+
+CREATE TABLE ThreadCat (
+ThreadCatID INT PRIMARY KEY AUTO_INCREMENT,
+Title varchar(50)
+);
+
+DROP TABLE IF EXISTS profile;
+
+CREATE TABLE Profile (
+    ProfileID INT PRIMARY KEY AUTO_INCREMENT,
+    UserID INT UNIQUE,
+    Bio VARCHAR(255),
+    ProfilePic varchar(255)
+);
+
+DROP TABLE IF EXISTS team;
 CREATE TABLE team (
   teamID INT PRIMARY KEY AUTO_INCREMENT,
   TeamName VARCHAR(255),
@@ -83,6 +106,7 @@ VALUES
     (25, 'Gravity Rush 2', 19.99, '2017-01-18', 80, 'SIE Japan Studio', 'Action-Adventure');
 	SELECT * FROM Games;
   
+  DROP TABLE IF EXISTS friends;
   CREATE TABLE friends (
   
   FriendsID INT PRIMARY kEY AUTO_INCREMENT,
@@ -90,6 +114,7 @@ VALUES
   UserID2 INT
 );
 
+DROP TABLE IF EXISTS Question;
 CREATE TABLE Question (
   questionID INT PRIMARY KEY AUTO_INCREMENT,
   title VARCHAR(255),
@@ -98,6 +123,7 @@ CREATE TABLE Question (
   questionCatID INT
 );
 
+DROP TABLE IF EXISTS answers;
 CREATE TABLE answers (
   answerID INT PRIMARY KEY AUTO_INCREMENT,
   content TEXT,
@@ -105,32 +131,38 @@ CREATE TABLE answers (
   questionID INT
 );
 
+DROP TABLE IF EXISTS questioncat;
 CREATE TABLE questionCat (
   questionCatID INT PRIMARY KEY AUTO_INCREMENT,
   title VARCHAR(255)
 );
 
+DROP TABLE IF EXISTS newscats;
 CREATE TABLE newscats (
   newscatID INT PRIMARY KEY AUTO_INCREMENT,
   title VARCHAR(255),
   content TEXT
 );
 
+DROP TABLE IF EXISTS guidecategories;
 CREATE TABLE guidecategories (
   guideCategoryID INT PRIMARY KEY AUTO_INCREMENT,
   title VARCHAR(255)
 );
 
+DROP TABLE IF EXISTS strategies;
 CREATE TABLE strategies (
   StratID INT PRIMARY KEY AUTO_INCREMENT,
   StratContent TEXT
 );
 
+DROP TABLE IF EXISTS info;
 CREATE TABLE info (
   InfoID INT PRIMARY KEY AUTO_INCREMENT,
   InfoContent TEXT
 );
 
+DROP TABLE IF EXISTS favgames;
 CREATE TABLE favGames (
   FavGamesID INT PRIMARY KEY AUTO_INCREMENT,
   UserID INT,
