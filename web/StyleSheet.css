@@ -8,6 +8,9 @@ li, .navlink {
     text-decoration: none;
 }
  
+.text-stuff {
+    font-family: 'Nova Square', cursive;
+}
 nav
 {
     display: flex;
@@ -18,6 +21,14 @@ nav
     height: 50px;
     margin: 0;
     padding: 0;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.text-align-left {
+    text-align:right;
 }
 
 body {
@@ -71,7 +82,6 @@ body {
   display: grid;
   grid-template-columns: 50% 50%;
   padding: 10px;
- 
 }
 .grid-item {
   color: #00001a;
@@ -86,8 +96,7 @@ body {
 }
 
 .new-game {
-    height: 50%;
-    width: auto;
+    width: 200px;
 }
 
 .first-time {
@@ -103,6 +112,8 @@ body {
     flex-direction: column;
     
 }
+
+
 
 .stack2 {
     display: flex;
@@ -145,18 +156,161 @@ body {
     font-size:17px;
 }
 
-.row {
-    display: flex;
-    flex-direction:row;
-    height:40px;
-    width:50px;
-    
+.stack2-writing {
+    padding: 0;
+    font-family:'Nova Square', cursive;
+    color:#00001a;
+    font-size: 17px;
 }
 
-
-.gamepic {
-    width:200px;
-    height: 250px;
-    object-fit: cover;
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+  background-color: #00001a;
+  color: white;
 }
 
+.button-container div {
+  margin-left: 10px;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  background-color:#00001a;
+  color: white;
+}
+
+/* Set a style for home page buttons */
+#loginButton, #signUpButton {
+  background-color: #b30047;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Nova Square', cursive;
+}
+
+/* Set style for form buttons */
+#loginSubmitButton, #signUpSubmitButton {
+  background-color: #b30047;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-family: 'Nova Square', cursive;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #b30047;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: auto; /* enable a scroll if necessary */
+  background-color: #d1b3ff; /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+  
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #d1b3ff;
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+  width: 35%;
+  color: white;
+  
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+.logged-in-status {
+    font-family: 'Nova Square', cursive;
+    color: white;
+    padding-right: 980px;
+}
+
+.logged-in-status a {
+    color: white;
+}
+
+.profile-pic {
+    width: 200px;
+}
+
+.center-pic {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: inline-block;
+}
