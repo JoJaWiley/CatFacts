@@ -28,7 +28,7 @@ nav
 }
 
 .text-align-left {
-    text-align:right;
+    text-align: left;
 }
 
 body {
@@ -96,7 +96,7 @@ body {
 }
 
 .new-game {
-    width: 200px;
+    width: 400px;
 }
 
 .first-time {
