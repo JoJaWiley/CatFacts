@@ -124,21 +124,23 @@
         <div class="grid-container">
             <div class="grid-item">
                 <div class="stack center-pic">
-                    <h2 class="grid-item-header"><%out.println(game.getTitle());%></h2>
-                    <img class="new-game" src="game_images/<%=game.getGameID()%>.jpg" width="400" alt="new game">
+                        <div class="card">
+                        <h2 class="grid-item-header"><%out.println(game.getTitle());%></h2>
+                        <img class="new-game" src="game_images/<%=game.getGameID()%>.jpg" width="400" alt="new game">
+                    </div>
                 </div>
             </div>
             <div class="grid-item">
                 <div class="stack2">
-                    <a class="first-time" href="#">First Time Here</a>
-                    <div class="stack2-container">
-                        <a class ="stack2-item" href="#">CatFacts Q & A</a>
-                        <p class="stack2-writing">Ask or answer about the game you play</p>
-                        <a class="stack2-item" href="#">Message Boards</a> 
-                        <p class="stack2-writing">A board for every game, interest, and community</p>
-                        <a class="stack2-item" href="#">Game Database</a>
-                        <p class="stack2-writing">Browse our database</p>
-                    </div>
+                        <a class="first-time" href="#">First Time Here</a>
+                        <div class="stack2-container">
+                            <a class ="stack2-item" href="#">CatFacts Q & A</a>
+                            <p class="stack2-writing">Ask or answer about the game you play</p>
+                            <a class="stack2-item" href="#">Message Boards</a> 
+                            <p class="stack2-writing">A board for every game, interest, and community</p>
+                            <a class="stack2-item" href="#">Game Database</a>
+                            <p class="stack2-writing">Browse our database</p>
+                        </div>
                 </div>
             </div>
             <div class="grid-item">

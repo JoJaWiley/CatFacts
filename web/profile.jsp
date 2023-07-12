@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
     <link rel="stylesheet" href="StyleSheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <%@page import="java.sql.*, backendfacts.*, java.util.Objects"%>
@@ -97,7 +98,7 @@
 
     <div class="rest">
         <div class="grid-container">
-            <div class="grid-item stack">
+            <div class="grid-item stack center-pic">
                 
                 <%
                 Profile myprofile = (Profile)request.getSession().getAttribute("myprofile");
@@ -106,33 +107,37 @@
                 
                     <h1 class="grid-item-header"><%out.println(myuser.getUserName() + "'s");%> Profile</h1>
                     <img class="profile-pic" src="uploadFiles/<%=myprofile.getUserID()%>.jpg"  width="200"/>
-                    <form action="UploadServlet" method = "post" enctype = "multipart/form-data">
-                        <label for="file">Change Profile Pic:</label>
-                        <input type = "file" name = "photo" size = "50" /><br><br>
-                        <input type = "submit" value = "Upload File" />
-                    </form>
+                    <div>
+                        <form action="UploadServlet" method = "post" enctype = "multipart/form-data">
+                            <label class="custom-file-upload text-stuff" for="file-upload">Upload Photo
+                            <input id="file-upload" type ="file" name = "photo" size="50" onchange="this.form.submit()"/>
+                            
+                            <i class="fa fa-camera"></i>
+                            </label>
+                        </form>
+                    </div>
             </div>
-            <div class="grid-item stack">
+            <div class="grid-item stack text-stuff">
                 <%out.println(myuser.getEmail());%>
                 <a href="#">Change Password</a>
                 <h2> Bio </h2>
                 <p><%out.println(myprofile.getBio());%></p>
-                <button id="bioButton" onclick="document.getElementById('bioForm').style.display='block'" style="width:auto;">Edit Bio</button>
+                <button id="bioButton" class="bio-btn text-stuff" onclick="document.getElementById('bioForm').style.display='block'">Edit Bio</button>
                 <div id="bioForm" class="modal">
-                    <form class="modal-content animate" action="editbio.jsp" method="post">
+                    <form class="modal-content1 animate" action="editbio.jsp" method="post">
                         <div class="container">
                             <textarea id="bio" name="bio" rows="4" cols="50"><%out.println(myprofile.getBio());%></textarea>
 
                             <button id="bioSubmitButton" type="submit">Submit</button>
                         </div>
                         <div class="container">
-                            <button type="button" onclick="document.getElementById('loginForm').style.display='none'" class="cancelbtn">Cancel</button>
+                            <button type="button" onclick="document.getElementById('bioForm').style.display='none'" class="cancelbtn">Cancel</button>
                         </div>
                     </form>
                 </div>
                     <script>
                         // Get the modal elements
-                        var loginModal = document.getElementById('bioForm');
+                        var bioModal = document.getElementById('bioForm');
 
                         // When the user clicks anywhere outside of the modal, close it
                         window.onclick = function(event) {
