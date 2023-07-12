@@ -16,8 +16,8 @@ public class GuideDAO {
     
     guide.setGuideID( rs.getInt("guideID") );
     guide.setGameID( rs.getInt("gameID"));
-    guide.setInfoID( rs.getInt("infoID"));
-    guide.setStratID(rs.getInt("stratID"));
+    guide.setInfo( rs.getString("infoID"));
+    guide.setStrat(rs.getString("stratID"));
     guide.setUserID(rs.getInt("userID"));
     guide.setGuideCatID(rs.getInt("guideCatID"));
 
