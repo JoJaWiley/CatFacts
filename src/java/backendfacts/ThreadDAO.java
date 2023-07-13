@@ -18,7 +18,7 @@ public class ThreadDAO {
     }
     
     //query for the thread matching a given threadID. 
-    public Thread getThread(int threadID) {
+    public Thread getThread(int threadID) throws ClassNotFoundException {
     Connection connection = ConnectionFactory.getConnection();
         try {
             Statement stmt = connection.createStatement();
@@ -37,7 +37,7 @@ public class ThreadDAO {
     return null;
     }
     
-    public ArrayList<Thread> getAllThreads() {
+    public ArrayList<Thread> getAllThreads() throws ClassNotFoundException {
     Connection connection = ConnectionFactory.getConnection();
         try {
             //query thread table for all records
@@ -64,8 +64,35 @@ public class ThreadDAO {
     return null;
     }
     
+    public ArrayList<Thread> getAllThreadsByCat(int threadCatID) throws ClassNotFoundException {
+    Connection connection = ConnectionFactory.getConnection();
+        try {
+            //query thread table for all records
+            Statement stmt = connection.createStatement();
+            ResultSet rs = stmt.executeQuery("SELECT * FROM thread WHERE threadcatid=" + threadCatID + "ORDER BY threadid;");
+            
+            //create an arraylist to store all thread records
+            ArrayList<Thread> threads = new ArrayList<>();
+            
+            //pull each thread record into a thread object, and add that object to the arraylist
+            while(rs.next())
+            {
+                Thread thread = extractThreadFromResultSet(rs);
+                threads.add(thread);
+            }
+            connection.close();
+            //return the arraylist of all thread objects
+            return threads;
+            
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+        }
+
+    return null;
+    }
+    
     //returns 4 threads by latest post, ordered from most recent - I think?
-    public ArrayList<Thread> getLatestThreads() {
+    public ArrayList<Thread> getLatestThreads() throws ClassNotFoundException {
         Connection connection = ConnectionFactory.getConnection();
         try {
           
@@ -90,7 +117,7 @@ public class ThreadDAO {
         return null;
     }
     
-    public boolean insertThread(Thread thread) {
+    public boolean insertThread(Thread thread) throws ClassNotFoundException {
     Connection connection = ConnectionFactory.getConnection();
         try {
             //prepare and execute statement to insert thread record with attributes matching those of given thread object
@@ -111,7 +138,7 @@ public class ThreadDAO {
     return false;
     }
     
-    public boolean updateThread(Thread thread) {
+    public boolean updateThread(Thread thread) throws ClassNotFoundException {
     Connection connection = ConnectionFactory.getConnection();
         try {
             //prepare and execute statement to update thread record that matches the given thread object's ID, giving thread record 
@@ -134,7 +161,7 @@ public class ThreadDAO {
     return false;
     }
     
-    public boolean deletePost(int threadID) {
+    public boolean deletePost(int threadID) throws ClassNotFoundException {
     Connection connection = ConnectionFactory.getConnection();
     try {
         //create and execute an SQL query to delete the user record matching a given threadID
