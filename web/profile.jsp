@@ -16,11 +16,14 @@
         User myuser = (User)request.getSession().getAttribute("myuser");
         request.getSession().setAttribute("myuser", myuser);
         String loggedIn;
+        String mylink;
         
         if (Objects.isNull(myuser))
             loggedIn = "You are not logged in.";
-        else 
-            loggedIn = "Welcome, <a href='profile.jsp'>" + myuser.getUserName() + "</a>";
+        else {
+            mylink = "profile.jsp?userID=" + myuser.getUserID();
+            loggedIn = "Welcome, <a href='" + mylink + "'>" + myuser.getUserName() + "</a>";
+        }
     %>
     
         <div class="button-container">
@@ -104,12 +107,19 @@
                 
                 <%
                 ProfileDAO pd = new ProfileDAO();
-                Profile profile = (Profile)request.getSession().getAttribute("myprofile");
-                request.getSession().setAttribute("myprofile", myprofile);
+                Profile profile = pd.getProfileByUserID(profileID);
+                int myUserID = myuser.getUserID();
+                UserDAO ud = new UserDAO();
+                User thisUser = ud.getUser(profileID);
+                
                 %>
                 
-                    <h1 class="grid-item-header"><%out.println(myuser.getUserName() + "'s");%> Profile</h1>
-                    <img class="profile-pic" src="uploadFiles/<%=myprofile.getUserID()%>.jpg"  width="200"/>
+                    <h1 class="grid-item-header"><%out.println(thisUser.getUserName() + "'s");%> Profile</h1>
+                    <img class="profile-pic" src="uploadFiles/<%=profile.getUserID()%>.jpg"  width="200"/>
+                    <% 
+                if (myUserID == profileID)
+                {
+                %>
                     <div>
                         <form action="UploadServlet" method = "post" enctype = "multipart/form-data">
                             <label class="custom-file-upload text-stuff" for="file-upload">Upload Photo
@@ -119,17 +129,25 @@
                             </label>
                         </form>
                     </div>
+                    <%
+                        }
+                    %>
             </div>
             <div class="grid-item stack text-stuff">
-                <%out.println(myuser.getEmail());%>
+                <%out.println(thisUser.getEmail());%>
                 <a href="#">Change Password</a>
                 <h2> Bio </h2>
-                <p><%out.println(myprofile.getBio());%></p>
+                <p><%out.println(profile.getBio());%></p>
+                
+                <% 
+                if (myUserID == profileID)
+                {
+                %>
                 <button id="bioButton" class="bio-btn text-stuff" onclick="document.getElementById('bioForm').style.display='block'">Edit Bio</button>
                 <div id="bioForm" class="modal">
                     <form class="modal-content1 animate" action="editbio.jsp" method="post">
                         <div class="container">
-                            <textarea id="bio" name="bio" rows="4" cols="50"><%out.println(myprofile.getBio());%></textarea>
+                            <textarea id="bio" name="bio" rows="4" cols="50"><%out.println(profile.getBio());%></textarea>
 
                             <button id="bioSubmitButton" type="submit">Submit</button>
                         </div>
@@ -149,6 +167,9 @@
                           }
                         }
                     </script>
+                    <%
+                        }
+                    %>
             </div>
         </div>
     </div>
