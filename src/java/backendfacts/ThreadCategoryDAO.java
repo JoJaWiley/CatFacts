@@ -8,7 +8,7 @@ public class ThreadCategoryDAO {
     private ThreadCategory extractThreadCatFromResultSet(ResultSet rs) throws SQLException {
     ThreadCategory tc = new ThreadCategory();
 
-    tc.setThreadCatID( rs.getInt("ThreadCatID") );
+    tc.setThreadCatID( rs.getInt("threadcatID") );
     tc.setTitle(rs.getString("title"));
     
 
