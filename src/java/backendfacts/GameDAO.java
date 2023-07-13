@@ -20,7 +20,7 @@ public class GameDAO {
     }
     
     //query for the game matching a given gameID. 
-    public Game getGame(int gameID) {
+    public Game getGame(int gameID) throws ClassNotFoundException {
     Connection connection = ConnectionFactory.getConnection();
         try {
             Statement stmt = connection.createStatement();
@@ -39,7 +39,7 @@ public class GameDAO {
     return null;
     }
     
-    public ArrayList<Game> getAllGames() {
+    public ArrayList<Game> getAllGames() throws ClassNotFoundException {
     Connection connection = ConnectionFactory.getConnection();
         try {
             //query user table for all records
@@ -66,16 +66,16 @@ public class GameDAO {
     return null;
     }
     
-    public Game getRandomGame() {
+    public Game getRandomGame() throws ClassNotFoundException {
     
-    int random = (int)Math.floor(Math.random()*24 + 1);
+    int random = (int)Math.floor(Math.random()*24);
     
     ArrayList<Game> games = getAllGames();
     
     return games.get(random);
 }
     
-    public boolean insertGame(Game game) {
+    public boolean insertGame(Game game) throws ClassNotFoundException {
     Connection connection = ConnectionFactory.getConnection();
         try {
             //prepare and execute statement to insert user record with attributes matching those of given user object

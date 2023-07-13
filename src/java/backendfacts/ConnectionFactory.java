@@ -1,7 +1,6 @@
 
 package backendfacts;
 
-import com.mysql.jdbc.Driver;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -14,11 +13,13 @@ public class ConnectionFactory {
     /**
       Get a connection to database
       @return Connection object
+     * @throws java.lang.ClassNotFoundException
+      * 
      */
-    public static Connection getConnection()
+    public static Connection getConnection() throws ClassNotFoundException
     {
       try {
-          DriverManager.registerDriver(new Driver());
+          Class.forName("com.mysql.cj.jdbc.Driver");
           return DriverManager.getConnection(URL, USER, PASS);
       } catch (SQLException ex) {
           throw new RuntimeException("Error connecting to the database", ex);

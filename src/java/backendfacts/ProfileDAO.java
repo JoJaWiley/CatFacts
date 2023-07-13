@@ -19,7 +19,7 @@ public class ProfileDAO {
     }
     
     //query for the profile record matching a given profileID. return that profile if it exists. return null if not.
-    public Profile getProfile(int profileID) {
+    public Profile getProfile(int profileID) throws ClassNotFoundException {
         Connection connection = ConnectionFactory.getConnection();
         
         try {
@@ -37,7 +37,7 @@ public class ProfileDAO {
     return null;
     } //end getProfile()
     
-    public Profile getProfileByUserID(int userID) {
+    public Profile getProfileByUserID(int userID) throws ClassNotFoundException {
         Connection connection = ConnectionFactory.getConnection();
         
         try {
@@ -55,7 +55,7 @@ public class ProfileDAO {
     return null;
     } //end getProfileByUserID()
     
-    public ArrayList<Profile> getAllProfiles() {
+    public ArrayList<Profile> getAllProfiles() throws ClassNotFoundException {
     Connection connection = ConnectionFactory.getConnection();
         try {
             Statement stmt = connection.createStatement();
@@ -77,8 +77,8 @@ public class ProfileDAO {
         
     return null;
     }
-    
-    public boolean insertProfile(User user) {
+
+    public boolean insertProfile(User user) throws ClassNotFoundException {
     Connection connection = ConnectionFactory.getConnection();
         try {
             PreparedStatement ps = connection.prepareStatement("INSERT INTO profile VALUES (NULL, ?, ?, 'defaultprofilepic.jpg')");
@@ -96,8 +96,9 @@ public class ProfileDAO {
 
     return false;
     } //end insert profile
+   
     
-    public boolean updateProfile(Profile profile) {
+    public boolean updateProfile(Profile profile) throws ClassNotFoundException {
     Connection connection = ConnectionFactory.getConnection();
         try {
             PreparedStatement ps = connection.prepareStatement("UPDATE profile SET bio=? WHERE profileid=?");
@@ -116,7 +117,7 @@ public class ProfileDAO {
     return false;
     }
     
-    public boolean deleteProfile(int profileID) {
+    public boolean deleteProfile(int profileID) throws ClassNotFoundException {
     Connection connection = ConnectionFactory.getConnection();
     try {
         Statement stmt = connection.createStatement();
@@ -134,14 +135,14 @@ public class ProfileDAO {
 }
     
     
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ClassNotFoundException {
         // TODO code application logic here
         ProfileDAO pd = new ProfileDAO();
         
         Profile myprofile = pd.getProfileByUserID(1);
         
         if (Objects.isNull(myprofile))
-            System.out.println("FUCK");
+            System.out.println("AGH");
     }
     
 } //end ProfileDAO

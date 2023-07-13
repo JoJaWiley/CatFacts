@@ -18,7 +18,7 @@ public class UserDAO {
     }
 
     //query for the user matching a given uderID. 
-    public User getUser(int userID) {
+    public User getUser(int userID) throws ClassNotFoundException {
     Connection connection = ConnectionFactory.getConnection();
         try {
             Statement stmt = connection.createStatement();
@@ -37,7 +37,7 @@ public class UserDAO {
     return null;
     }
     
-    public User getUserByUsernameAndPassword(String user, String pass) {
+    public User getUserByUsernameAndPassword(String user, String pass) throws ClassNotFoundException {
     Connection connection = ConnectionFactory.getConnection();
         try {
             //query for a user record matching the given username and password
@@ -60,7 +60,7 @@ public class UserDAO {
     return null;
     }
     
-    public ArrayList<User> getAllUsers() {
+    public ArrayList<User> getAllUsers() throws ClassNotFoundException {
     Connection connection = ConnectionFactory.getConnection();
         try {
             //query user table for all records
@@ -87,14 +87,14 @@ public class UserDAO {
     return null;
     }
     
-    public boolean insertUser(User user) {
+    public boolean insertUser(User user) throws ClassNotFoundException {
     Connection connection = ConnectionFactory.getConnection();
         try {
             //prepare and execute statement to insert user record with attributes matching those of given user object
             PreparedStatement ps = connection.prepareStatement("INSERT INTO user VALUES (NULL, ?, ?, ?)");
             ps.setString(1, user.getUserName());
-            ps.setString(2, user.getPassword());
-            ps.setString(3, user.getEmail());
+            ps.setString(2, user.getEmail());
+            ps.setString(3, user.getPassword());
             int i = ps.executeUpdate();
 
           if(i == 1) {
@@ -109,7 +109,7 @@ public class UserDAO {
     }
     
     
-    public boolean updateUser(User user) {
+    public boolean updateUser(User user) throws ClassNotFoundException {
     Connection connection = ConnectionFactory.getConnection();
         try {
             //prepare and execute statement to update user record that matches the given user object's ID, giving user record 
@@ -132,7 +132,7 @@ public class UserDAO {
     return false;
     }
     
-    public boolean deleteUser(int userID) {
+    public boolean deleteUser(int userID) throws ClassNotFoundException {
     Connection connection = ConnectionFactory.getConnection();
     try {
         //create and execute an SQL query to delete the user record matching a given userID

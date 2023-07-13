@@ -6,6 +6,8 @@ import java.io.IOException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.MultipartConfig;
 import javax.servlet.annotation.WebServlet;
@@ -57,7 +59,11 @@ public class UploadServlet extends HttpServlet {
         }
         response.sendRedirect("profile.jsp");
         
-        updateProfilePic(myuser);
+        try {
+            updateProfilePic(myuser);
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(UploadServlet.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
     /**
      * Extracts file name from user object
@@ -67,7 +73,7 @@ public class UploadServlet extends HttpServlet {
         return fileName;
     }
     
-    private boolean updateProfilePic(User user) {
+    private boolean updateProfilePic(User user) throws ClassNotFoundException {
         Connection connection = ConnectionFactory.getConnection();
         try {
             //prepare and execute statement to update user record that matches the given user object's ID, giving user record 

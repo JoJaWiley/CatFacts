@@ -18,7 +18,7 @@ public class PostDAO {
     }
 
     //query for the post matching a given postID. 
-    public Post getPost(int postID) {
+    public Post getPost(int postID) throws ClassNotFoundException {
     Connection connection = ConnectionFactory.getConnection();
         try {
             Statement stmt = connection.createStatement();
@@ -38,7 +38,7 @@ public class PostDAO {
     }
     
   
-    public ArrayList<Post> getAllPosts() {
+    public ArrayList<Post> getAllPosts() throws ClassNotFoundException {
     Connection connection = ConnectionFactory.getConnection();
         try {
             //query post table for all records
@@ -54,7 +54,7 @@ public class PostDAO {
                 Post post = extractPostFromResultSet(rs);
                 posts.add(post);
             }
-            
+            connection.close();
             //return the arraylist of all post objects
             return posts;
 
@@ -65,12 +65,12 @@ public class PostDAO {
     return null;
     }
     
-    public ArrayList<Post> getAllPostsByThread(Thread thread) {
+    public ArrayList<Post> getAllPostsByThread(int threadID) throws ClassNotFoundException {
     Connection connection = ConnectionFactory.getConnection();
         try {
             //query post table for all records
             Statement stmt = connection.createStatement();
-            ResultSet rs = stmt.executeQuery("SELECT * FROM post WHERE threadID =" + thread.getThreadID() + ";");
+            ResultSet rs = stmt.executeQuery("SELECT * FROM post WHERE threadID =" + threadID + " ORDER BY postid;");
             
             //create an arraylist to store all post records
             ArrayList<Post> posts = new ArrayList<>();
@@ -83,29 +83,22 @@ public class PostDAO {
             }
             
             //return the arraylist of all post objects
+            connection.close();
             return posts;
-
+            
+            
         } catch (SQLException ex) {
             ex.printStackTrace();
-        }
+        } 
 
     return null;
     }
     
-    public Post getLatestPostByThread(Thread thread) {
+    public Post getFirstPostByThread(int threadID) throws ClassNotFoundException {
         Connection connection = ConnectionFactory.getConnection();
         try {
-            /*SELECT p.* 
-FROM authors AS a
-  JOIN posts AS p
-    ON p.id =
-       ( SELECT pi.id
-         FROM posts AS pi
-         WHERE pi.author_id = a.author_id
-         ORDER BY pi.date DESC
-         LIMIT 1
-       ) ;*/
-            String sql = "Select p.* FROM thread as t JOIN posts as p on p.postid = (SELECT pi.postid FROM posts as pi WHERE pi.threadid = t.threadid ORDER BY pi.DATE DESC LIMIT 1);";
+            
+            String sql = "Select * from post where threadid=" + threadID + " ORDER BY postid LIMIT 1;";
             Statement stmt = connection.createStatement();
             ResultSet rs = stmt.executeQuery(sql);
             
@@ -113,13 +106,35 @@ FROM authors AS a
             {
                 return extractPostFromResultSet(rs);
             }
+            
+            connection.close();
         } catch (SQLException ex) {
             ex.printStackTrace();
         }
         return null;
     }
     
-    public boolean insertPost(Post post) {
+    public Post getLatestPostByThread(int threadID) throws ClassNotFoundException {
+        Connection connection = ConnectionFactory.getConnection();
+        try {
+            
+            String sql = "Select * from post where threadid=" + threadID + " ORDER BY postid DESC LIMIT 1;";
+            Statement stmt = connection.createStatement();
+            ResultSet rs = stmt.executeQuery(sql);
+            
+            if (rs.next())
+            {
+                return extractPostFromResultSet(rs);
+            }
+            
+            connection.close();
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+        }
+        return null;
+    }
+    
+    public boolean insertPost(Post post) throws ClassNotFoundException {
     Connection connection = ConnectionFactory.getConnection();
         try {
             //prepare and execute statement to insert post record with attributes matching those of given post object
@@ -134,7 +149,7 @@ FROM authors AS a
           if(i == 1) {
             return true;
           }
-
+          connection.close();
         } catch (SQLException ex) {
             ex.printStackTrace();
         }
@@ -143,7 +158,7 @@ FROM authors AS a
     }
     
     
-    public boolean updatePost(Post post) {
+    public boolean updatePost(Post post) throws ClassNotFoundException {
     Connection connection = ConnectionFactory.getConnection();
         try {
             //prepare and execute statement to update post record that matches the given post object's ID, giving post record 
@@ -160,7 +175,7 @@ FROM authors AS a
           if(i == 1) {
         return true;
           }
-
+          connection.close();
         } catch (SQLException ex) {
             ex.printStackTrace();
         }
@@ -168,7 +183,7 @@ FROM authors AS a
     return false;
     }
     
-    public boolean deletePost(int postID) {
+    public boolean deletePost(int postID) throws ClassNotFoundException {
     Connection connection = ConnectionFactory.getConnection();
     try {
         //create and execute an SQL query to delete the user record matching a given postID
@@ -185,4 +200,10 @@ FROM authors AS a
 
     return false;
 }
+    public static void main(String[] args) throws ClassNotFoundException {
+        PostDAO pd = new PostDAO();
+        ArrayList<Post> posts = pd.getAllPosts();
+        for(Post post : posts)
+            System.out.println(post.getContent());
+    }
 }
