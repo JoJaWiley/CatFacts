@@ -69,7 +69,7 @@ public class ThreadDAO {
         try {
             //query thread table for all records
             Statement stmt = connection.createStatement();
-            ResultSet rs = stmt.executeQuery("SELECT * FROM thread WHERE threadcatid=" + threadCatID + "ORDER BY threadid;");
+            ResultSet rs = stmt.executeQuery("SELECT * FROM thread WHERE categoryid=" + threadCatID + " ORDER BY threadid;");
             
             //create an arraylist to store all thread records
             ArrayList<Thread> threads = new ArrayList<>();
