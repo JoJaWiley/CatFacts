@@ -13,11 +13,13 @@
     <%  User myuser = (User)request.getSession().getAttribute("myuser");
         request.getSession().setAttribute("myuser", myuser);
         String loggedIn;
+        String mylink;
 
         if (Objects.isNull(myuser))
             loggedIn = "You are not logged in.";
         else {
-            loggedIn = "Welcome, <a href='profile.jsp'>" + myuser.getUserName() + "</a>";
+            mylink = "profile.jsp?userID=" + myuser.getUserID();
+            loggedIn = "Welcome, <a href='" + mylink + "'>" + myuser.getUserName() + "</a>";
             ProfileDAO pd = new ProfileDAO();
             Profile myprofile = pd.getProfileByUserID(myuser.getUserID());
             if (Objects.isNull(myprofile)) {
@@ -59,14 +61,14 @@
     <form class="modal-content animate" action="signup.jsp" method="post">
       <div class="container">
         <label for="username"><b>New Username</b></label>
-        <input type="text" placeholder="Enter your username" name="username" required>
+       <!-- <input type="text" placeholder="Enter your username" name="username" required> -->
         <input type="text" placeholder="Enter your username" name="createUsername" required>
 
         <label for="email"><b>Email Address</b></label>
         <input type="text" placeholder="Enter your email" name="createEmail" required>
 
         <label for="password"><b>New Password</b></label>
-        <input type="password" pattern="(?=.*\d)(?=.*[a-z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder="Enter your password" name="password" required>
+        <input type="password" pattern="(?=.*\d)(?=.*[a-z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder="Enter your password" name="createPassword" required>
         <button id="signupSubmitButton" type="submit">Sign Up</button>
       </div>
       <div class="container">
