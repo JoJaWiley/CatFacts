@@ -22,6 +22,8 @@
             UserDAO ud = new UserDAO();
             ud.insertUser(user);
             
+            request.getSession().setAttribute("myuser", user);
+            
             if (Objects.isNull(user)) {
                 out.println("invalid login");
                 response.sendRedirect("index.jsp");
