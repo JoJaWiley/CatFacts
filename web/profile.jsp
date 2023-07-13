@@ -11,10 +11,12 @@
 </head>
 <body>
     <%@page import="java.sql.*, backendfacts.*, java.util.Objects"%>
-    <%  User myuser = (User)request.getSession().getAttribute("myuser");
+        
+    <%  int profileID = Integer.parseInt(request.getParameter("userID"));
+        User myuser = (User)request.getSession().getAttribute("myuser");
         request.getSession().setAttribute("myuser", myuser);
         String loggedIn;
-
+        
         if (Objects.isNull(myuser))
             loggedIn = "You are not logged in.";
         else 
@@ -101,7 +103,8 @@
             <div class="grid-item stack center-pic">
                 
                 <%
-                Profile myprofile = (Profile)request.getSession().getAttribute("myprofile");
+                ProfileDAO pd = new ProfileDAO();
+                Profile profile = (Profile)request.getSession().getAttribute("myprofile");
                 request.getSession().setAttribute("myprofile", myprofile);
                 %>
                 
