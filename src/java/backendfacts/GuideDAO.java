@@ -14,10 +14,13 @@ public class GuideDAO {
     private int userID;
     private int guideCatID;*/
     
-    guide.setGuideID( rs.getInt("guideID") );
-    guide.setGameID( rs.getInt("gameID"));
-    guide.setInfo( rs.getString("infoID"));
-    guide.setStrat(rs.getString("stratID"));
+    guide.setGuideID(rs.getInt("guideID"));
+    guide.setGuideTitle(rs.getString("guideTitle"));
+    guide.setGuideInfo(rs.getString("guideInfo"));
+    guide.setGuidePage(rs.getString("guidePage"));
+    guide.setGameID(rs.getInt("gameID"));
+    guide.setInfoID(rs.getInt("infoID"));
+    guide.setStratID(rs.getInt("stratID"));
     guide.setUserID(rs.getInt("userID"));
     guide.setGuideCatID(rs.getInt("guideCatID"));
 
@@ -25,7 +28,7 @@ public class GuideDAO {
     }
     
     //query for the guide matching a given guideID. 
-    public Guide getGuide(int guideID) throws ClassNotFoundException {
+    public Guide getGuide(int guideID) {
     Connection connection = ConnectionFactory.getConnection();
         try {
             Statement stmt = connection.createStatement();
@@ -44,12 +47,12 @@ public class GuideDAO {
     return null;
     }
     
-    public ArrayList<Guide> getAllGuides() throws ClassNotFoundException {
+    public ArrayList<Guide> getAllGuides() {
     Connection connection = ConnectionFactory.getConnection();
         try {
             //query guide table for all records
             Statement stmt = connection.createStatement();
-            ResultSet rs = stmt.executeQuery("SELECT * FROM games;");
+            ResultSet rs = stmt.executeQuery("SELECT * FROM guides;");
             
             //create an arraylist to store all guide records
             ArrayList<Guide> guides = new ArrayList<>();

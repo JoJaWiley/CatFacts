@@ -2,11 +2,18 @@ package backendfacts;
 
 public class Guide {
     private int guideID;
+    private String guideTitle;
+    private String guideInfo;
+    private String guidePage;
     private int gameID;
-    private String info;
-    private String strat;
+    private int infoID;
+    private int stratID;
     private int userID;
     private int guideCatID;
+    
+    public Guide(){
+        
+    }
     
 
     // Getters
@@ -14,12 +21,12 @@ public class Guide {
         return gameID;
     }
 
-    public String getInfo() {
-        return info;
+    public int getInfoID() {
+        return infoID;
     }
 
-    public String getStrat() {
-        return strat;
+    public int getStratID() {
+        return stratID;
     }
 
     public int getUserID() {
@@ -33,18 +40,30 @@ public class Guide {
     public int getGuideID() {
         return guideID;
     }
+    
+    public String getGuideTitle(){
+        return guideTitle;
+    }
+    
+    public String getGuideInfo(){
+        return guideInfo;
+    }
+    
+    public String getGuidePage(){
+        return guidePage;
+    }
 
     // Setters
     public void setGameID(int gameID) {
         this.gameID = gameID;
     }
 
-    public void setInfo(String info) {
-        this.info = info;
+    public void setInfoID(int infoID) {
+        this.infoID = infoID;
     }
 
-    public void setStrat(String strat) {
-        this.strat = strat;
+    public void setStratID(int stratID) {
+        this.stratID = stratID;
     }
 
     public void setUserID(int userID) {
@@ -57,5 +76,17 @@ public class Guide {
 
     public void setGuideID(int guideID) {
         this.guideID = guideID;
+    }
+    
+    public void setGuideTitle(String guideTitle) {
+        this.guideTitle = guideTitle;
+    }
+    
+    public void setGuideInfo(String guideInfo) {
+        this.guideInfo = guideInfo;
+    }
+    
+    public void setGuidePage(String guidePage) {
+        this.guidePage = guidePage;
     }
 }
