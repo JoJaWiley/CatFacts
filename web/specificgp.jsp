@@ -5,6 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="java.sql.*, backendfacts.*, java.util.Objects"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -14,6 +15,16 @@
            
     </head>
     <body>
+        
+        <% 
+            GameDAO gd = new GameDAO();
+            int gameID = Integer.parseInt(request.getParameter("gameID"));
+            Game game = gd.getGame(gameID);
+            
+            VideosDAO vd = new VideosDAO();
+            int videoID=1;
+            Videos video = vd.getVideo(gameID);
+            %>
        <header>
   
         <nav>
@@ -35,19 +46,20 @@
             <div class="grid-item">
                 <div class="stack">
                     
-                    <img class="item1"><iframe width="560" height="315" src="https://www.youtube.com/embed/D1kTu2hacaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <%out.println(video.getVideoLink());%>
                 </div>
             </div>
             <div class="grid-item">
                 <div class="stack2">
                     
                     <div class="stack2-container">
-                        <a class="title">Game Title: Shadow Of The Tomb Raider</a>
-                        <a class ="stack2-item">Release Date: 01-20-2022</a>
-                        <a class="stack2-item"> Studio:Eidos Montréal</a>
-                        <a class="stack2-item">Gender: Genre</a> 
-                        <a class="stack2-item">Price: $59.99</a>
-                        <a class="stack2-item">Score: 99</a>
+                        
+                        <a class="title" href="#"><%=game.getTitle()%></a>
+                        <a class ="stack2-item">Release Date: <%out.println(game.getDate());%></a>
+                        <a class="stack2-item"> Studio:<%out.println(game.getStudio());%></a>
+                        <a class="stack2-item">Gender: <%out.println(game.getGenre());%></a> 
+                        <a class="stack2-item">Price: $<%out.println(game.getPrice());%></a>
+                        <a class="stack2-item">Score: <%out.println(game.getScore());%> </a>
                     </div>
                 </div>
             </div>

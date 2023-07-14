@@ -5,6 +5,11 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="java.sql.*, backendfacts.*, java.util.*"%>
+
+        
+        
+                
 <!DOCTYPE html>
 <html>
     <head>
@@ -28,14 +33,20 @@
             </ul>
         </nav>
 </header>
-        <div class="grid-container">
+        <%
+GameDAO gd = new GameDAO();
+ArrayList<Game> games = gd.getAllGames();
+for (Game game : games)
+    {
+        %>
+        <a href ="specificgp.jsp?gameID=<%=game.getGameID()%>"><div class="grid-container">
             <div class="grid-item">
-            <div class="grid-container">
-                <div class="grid-item">
-                <img class="gamepic" src="download.gif" alt="game gif"/> 
+                <div class="grid-container">
+                <div class="grid-image">
+	<img class="game-cover" src="game_images/<%=game.getGameID()%>.jpg" width="200">
                 </div>
                 <div class="grid-item">
-                <p>Tomb Raider</p>
+                <p><%out.println(game.getTitle());%></p>
                 </div>
             </div>
             </div>
@@ -44,109 +55,19 @@
                 <div class="grid-container">
                     <div class="grid-item">
                 Release Date<br>
-                10-06-2020
+                <%out.println(game.getDate());%> 
                     </div>
                     <div class="grid-item">
                         Score<br>
-                        99
+                        <%out.println(game.getScore());%>  
                     </div>
                 </div>
             </div>
-               
+            </div></a>
+               <%
+                   }
+               %>
             
-             
-          <div class="grid-item">
-              <div class="grid-container">
-                  <div class="grid-item">
-                      <img class="gamepic" src="potter.jpg" alt="game image"/>
-                  </div>
-                  <div class="grid-item">
-                   <p>Potter Game</p>   
-                  </div>    
-              </div>
-          </div>
-        
-            <div class="grid-item">   
-                <div class="grid-container">
-                    <div class="grid-item">
-                        Release Date<br>
-                        08-01-219
-                    </div>
-                        <div class="grid-item">
-                            Score<br>
-                            99
-                        </div>
-                   </div>
-            </div>
             
-        <div class="grid-item">
-            <div class="grid-container">
-                <div class="grid-item">
-                <img class="gamepic" src="jbare.jpg" alt="game image"/>
-            </div>
-                <div class="grid-item">
-                    <p>Multiple Games</p>
-                 </div>
-            </div>
-        </div>
-        
-            <div class="grid-item"> 
-                <div class="grid-container">
-                    <div class="grid-item">
-                        Release Date<br>
-                        03-09-2017
-                    </div>
-                        <div class="grid-item">
-                            Score<br>
-                            99
-                    </div>
-                </div>
-            </div>
-            
-            <div class="grid-item">
-            <div class="grid-container">
-                <div class="grid-item">
-                    <img class="gamepic" src="catwoman.jpg" alt="game image"/>
-                </div>
-            <div class="grid-item">
-                <p>CatWoman Game</p>
-                </div>
-              </div>
-           </div>
-        
-            <div class="grid-item">  
-                <div class="grid-container">
-                    <div class="grid-item">
-                        Release Date<br>
-                        06-9-2023
-                        </div>
-                        <div class="grid-item">
-                            Score<br>
-                            99
-                    </div>
-                </div>
-            </div>
-            
-            <div class="grid-item">
-                <div class="grid-container">
-                    <div class="grid-item">
-                        <img class="gamepic" src="kidgame.jpg" alt="game image"/>
-                </div>
-                    <div class="grid-item">
-                        <p> Kid Game</p>
-                    </div>
-            </div>
-        </div>
-        <div class="grid-item">
-            <div class="grid-container">
-                <div class="grid-item">
-                    Release Date<br>
-                    12-12-2023
-                </div>
-                <div class="grid-item">
-                    Score<br>
-                    99
-                </div>
-            </div>
     </body>
 </html>
