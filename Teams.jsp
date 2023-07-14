@@ -1,4 +1,6 @@
+<%@page import="java.util.ArrayList"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="java.sql.*, backendfacts.*, java.util.Objects"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -43,6 +45,16 @@ table tr:hover {
 }
 </style>
     </head>
+    <%
+        ThreadCategoryDAO tcd = new ThreadCategoryDAO();
+        ThreadDAO thd = new ThreadDAO();
+        ArrayList<backendfacts.Thread> threads = thd.getAllThreadsByCat(3);
+        PostDAO pd = new PostDAO();
+        TeamDAO td = new TeamDAO();  
+    ArrayList<Team> teams = td.getAllTeam();
+    for (Team team: teams)
+    {
+    %>
     <body>
         <h1><center>Explanation about teams</center></h1>
         
@@ -53,36 +65,23 @@ table tr:hover {
     <th>Sign-up</th>
   </tr>
   <tr>
-    <th>Team Name</th>
-    <td>0</td>
-    <td>apply</td>
-  </tr>
-  <tr>
-    <th>Team Name</th>
-    <td>0</td>
-    <td>apply</td>
-  </tr>
-   <tr>
-    <th>Team Name</th>
-    <td>0</td>
-    <td>apply</td>
-  </tr>
-  <tr>
-    <th>Team Name</th>
-    <td>0</td>
-    <td>apply</td>
-  </tr>
-  <tr>
-    <th>Team Name</th>
+      <th><%=team.getTeamName()%></th>
     <td>0</td>
     <td>apply</td>
   </tr>
 </table>
+       <% }%>
        
         <div></div>
         <button>View More</button>
         <div class="table-container">
             <table>
+                <% for (backendfacts.Thread thread: threads)
+                {
+                ArrayList<Post> posts = pd.getAllPostsByThread(thread.getThreadID());
+                
+                %>
+                
   <tr>
     <th>Topic</th>
     <td>Created By</td>
@@ -90,24 +89,12 @@ table tr:hover {
     <td>Date of Last Post</td>
   </tr>
   <tr>
-    <th>blah blah blah</th>
-    <td>Who cares?</td>
-    <td>0</td>
+      <th><%=thread.getTitle()%></th>
+    <td></td>
+    <td></td>
     <td>yyyy-mm-dd</td>
   </tr>
-  <tr>
-    <th>Blah blah blah</th>
-    <td>Who Cares?</td>
-    <td>0</td>
-    <td>yyyy-mm-dd</td>
-  </tr>
-   <tr>
-    <th>blah blah blah</th>
-    <td>Who Cares?</td>
-    <td>0</td>
-    <td>yyyy-mm-dd</td>
-    
-  </tr>
+ 
 </table>
         </table>
     </div>
