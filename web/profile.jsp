@@ -90,12 +90,10 @@
         <nav>
                 <img class="logo" src="catfactslogo.png" alt="logo">
             <ul class="nav__links">
-                <li id="button"><a class="navlink" href="#">Boards</a></li>
-                <li id="button"><a class="navlink" href="#">Games Database</a></li>
-                <li id="button"><a class="navlink" href="#">News</a></li>
-                <li id="button"><a class="navlink" href="#">Teams</a></li>
-                <li id="button"><a class="navlink" href="Guides.jsp">Guides</a></li>
-                <li id="button"><a class="navlink" href="#">Search</a></li>
+                <li id="button"><a class="navlink" href="boards.jsp">Boards</a></li>
+                <li id="button"><a class="navlink" href="games.jsp">Games Database</a></li>
+                <li id="button"><a class="navlink" href="teams.jsp">Teams</a></li>
+                <li id="button"><a class="navlink" href="guidehome.jsp">Guides</a></li>
             </ul>
         </nav>
  
@@ -108,7 +106,14 @@
                 <%
                 ProfileDAO pd = new ProfileDAO();
                 Profile profile = pd.getProfileByUserID(profileID);
-                int myUserID = myuser.getUserID();
+                int myUserID;
+                if (!Objects.isNull(myuser))
+                {
+                myUserID = myuser.getUserID();
+                }
+                else {
+                myUserID = 0;
+                }
                 UserDAO ud = new UserDAO();
                 User thisUser = ud.getUser(profileID);
                 
@@ -135,7 +140,6 @@
             </div>
             <div class="grid-item stack text-stuff">
                 <%out.println(thisUser.getEmail());%>
-                <a href="#">Change Password</a>
                 <h2> Bio </h2>
                 <p><%out.println(profile.getBio());%></p>
                 
