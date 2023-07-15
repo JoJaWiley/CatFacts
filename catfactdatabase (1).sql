@@ -22,11 +22,20 @@ CREATE TABLE User (
 DROP TABLE IF EXISTS Guides;
 CREATE TABLE Guides (
 	GuideID INT PRIMARY KEY AUTO_INCREMENT,
+    GuideTitle varchar(200),
+    GuideInfo varchar(500),
+    guidePage varchar(200),
     GameID INT,
     InfoID INT,
     StratID INT,
     UserID INT,
     GuideCatID INT
+);
+
+DROP TABLE IF EXISTS guidecategories;
+CREATE TABLE guidecategories (
+  guideCategoryID INT PRIMARY KEY AUTO_INCREMENT,
+  guideCategoryTitle VARCHAR(255)
 );
 
 DROP TABLE IF EXISTS Post;
@@ -48,7 +57,7 @@ Title varchar(50),
 Created datetime
 );
 
-DROP TABLE ThreadCat;
+DROP TABLE IF EXISTS ThreadCat;
 
 CREATE TABLE ThreadCat (
 ThreadCatID INT PRIMARY KEY AUTO_INCREMENT,
@@ -72,6 +81,47 @@ CREATE TABLE team (
   requirements TEXT,
   slots INT
 );
+
+DROP TABLE IF EXISTS teamuser;
+CREATE TABLE teamuser (
+teamuserID INT PRIMARY KEY AUTO_INCREMENT,
+teamID INT UNIQUE,
+UserID INT UNIQUE 
+);
+
+DROP TABLE IF EXISTS videos;
+
+CREATE TABLE Videos (
+videoID INT PRIMARY KEY auto_increment,
+videoLink Varchar(350),
+GameID INTEGER
+);
+INSERT INTO Videos VALUES (NULL, '<iframe width="560" height="315" src="https://www.youtube.com/embed/X0VubwgS2Y4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>', 1),
+(NULL, '<iframe width="560" height="315" src="https://www.youtube.com/embed/PCtLUS_eBjs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>', 2),
+(NULL, '<iframe width="560" height="315" src="https://www.youtube.com/embed/3R2uvJqWeVg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>', 3),
+(NULL, '<iframe width="560" height="315" src="https://www.youtube.com/embed/VkvdpZmIGtw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>', 4),
+(NULL, '<iframe width="560" height="315" src="https://www.youtube.com/embed/O2pzSYE7FWY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>', 5),
+(NULL, '<iframe width="560" height="315" src="https://www.youtube.com/embed/5kcdRBHM7kM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>', 6),
+(NULL, '<iframe width="560" height="315" src="https://www.youtube.com/embed/_3YNL0OWio0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>', 7),
+(NULL, '<iframe width="560" height="315" src="https://www.youtube.com/embed/uBYORdr_TY8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>', 8),
+(NULL, '<iframe width="560" height="315" src="https://www.youtube.com/embed/hh5HV4iic1Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>', 9),
+(NULL, '<iframe width="560" height="315" src="https://www.youtube.com/embed/u4-FCsiF5x4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>', 10),
+(NULL, '<iframe width="560" height="315" src="https://www.youtube.com/embed/HkD8BCCYsS0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>', 11),
+(NULL, '<iframe width="560" height="315" src="https://www.youtube.com/embed/b_iU_gnn28U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>', 12),
+(NULL, '<iframe width="560" height="315" src="https://www.youtube.com/embed/0cpQC5jVMDg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>', 13),
+(NULL, '<iframe width="560" height="315" src="https://www.youtube.com/embed/Kg56yNG5xZk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>', 14),
+(NULL, '<iframe width="560" height="315" src="https://www.youtube.com/embed/G97lx7orMN8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>', 15),
+(NULL, '<iframe width="560" height="315" src="https://www.youtube.com/embed/u3wS-Q2KBpk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>', 16),
+(NULL, '<iframe width="560" height="315" src="https://www.youtube.com/embed/Ro6r15wzp2o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>', 17),
+(NULL, '<iframe width="560" height="315" src="https://www.youtube.com/embed/sSUx54kmUD8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>', 18),
+(NULL, '<iframe width="560" height="315" src="https://www.youtube.com/embed/4HRAUKE29GQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>', 19),
+(NULL, '<iframe width="560" height="315" src="https://www.youtube.com/embed/c0i88t0Kacs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>', 20),
+(NULL, '<iframe width="560" height="315" src="https://www.youtube.com/embed/rP3UngLFou4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>', 21),
+(NULL, '<iframe width="560" height="315" src="https://www.youtube.com/embed/v9CP2GXo3Ew" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>', 22),
+(NULL, '<iframe width="560" height="315" src="https://www.youtube.com/embed/r5yAjgP2vnM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>', 23),
+(NULL, '<iframe width="560" height="315" src="https://www.youtube.com/embed/NdFgFABSkhQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>', 24),
+(NULL, '<iframe width="560" height="315" src="https://www.youtube.com/embed/NPOqdxjH4NA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>', 25);
+
 
 INSERT INTO team (TeamName, UserID, requirements, slots)
 VALUES ('Team A', 1, 'Requirement 1', 5);
@@ -105,6 +155,26 @@ VALUES
     (24, 'Dragon Quest XI: Echoes of an Elusive Age', 39.99, '2018-09-04', 82, 'Square Enix', 'RPG'),
     (25, 'Gravity Rush 2', 19.99, '2017-01-18', 80, 'SIE Japan Studio', 'Action-Adventure');
 	SELECT * FROM Games;
+    
+    INSERT INTO Guides (GuideTitle, GuideInfo, guidePage, GameID, InfoID, StratID, UserID, GuideCatID)
+VALUES
+("The Last of Us Part II", "Complete walkthrough of the game. Beginner's Guide for exploration, combat, environmental puzzles.", "thelastofusguide.jsp", 1, 123, 456, 789, 101),    
+("God of War", "Complete walkthrough of the game. Beginner's Guide for exploration, combat, environmental puzzles.", "godofwarguide.jsp", 2, 234, 567, 890, 202),
+("Marvel's Spiderman", "Complete walkthrough of the game. Beginner's Guide for exploration, combat, environmental puzzles.", "spidermanguide.jsp", 3, 345, 678, 901, 303);
+SELECT * FROM Guides;
+
+INSERT INTO guidecategories (guideCategoryTitle)
+VALUES ('Basics'), ('Walkthrough'), ('Characters & Background');
+SELECT * FROM guidecategories;
+
+INSERT INTO ThreadCat (Title)
+VALUES
+("Game Boards"),
+("Community Boards"),
+("Team Boards"),
+("Social Boards"),
+("Technical Boards"),
+("Other");
   
   DROP TABLE IF EXISTS friends;
   CREATE TABLE friends (
@@ -171,78 +241,11 @@ CREATE TABLE favGames (
   FOREIGN KEY (GameID) REFERENCES Games(GameID)
 );
 
-
-
-
-
-
-INSERT INTO newscats (title, content)
-VALUES
-  ( 'Category 1', 'Content 1'),
-  ('Category 2', 'Content 2'),
-  ('Category 3', 'Content 3'),
-  ('Category 4', 'Content 4'),
-  ('Category 5', 'Content 5'),
-  ('Category 6', 'Content 6'),
-  ('Category 7', 'Content 7'),
-  ('Category 8', 'Content 8'),
-  ('Category 9', 'Content 9'),
-  ('Category 10', 'Content 10');
-
 INSERT INTO User (UserID, UserName, Email, Password)
 VALUES (1, 'JohnDoe', 'johndoe@example.com', 'mypassword');
 SELECT * FROM User;
 
-INSERT INTO Guides (GameID, InfoID, StratID, UserID, GuideCatID)
-VALUES
-(1, 123, 456, 789, 101),    
-(2, 234, 567, 890, 202),
-(3, 345, 678, 901, 303);
-SELECT * FROM Guides;
-    
-INSERT INTO Post (PostID, ThreadID, UserID, Title, Created, Content)
-VALUES
-(1, 1, 1, 'First post', '2023-07-05 09:00:00', 'This is the content of the first post.'),
-(2, 1, 2, 'Second post', '2023-07-05 10:30:00', 'This is the content of the second post.'),
-(3, 2, 3, 'Hello world', '2023-07-05 13:45:00', 'Hello, everyone! This is my first post.');
-SELECT * FROM Post;
-
-INSERT INTO Profile (UserID, Bio, ProfilePic)
-VALUES (1, 'Lorem ipsum', 'pic1.jpg');
-SELECT * FROM Profile;
-
-INSERT INTO friends (UserID1, UserID2)
-VALUES (1, 2);
-SELECT * FROM Friends;
-
 SET sql_safe_updates = 0;
 
-DELETE FROM friends;
 
-INSERT INTO friends (UserID1, UserID2)
-VALUES (1, 2);
-SELECT * FROM friends;
-
-INSERT INTO Question (title, userID, content, questionCatID)
-VALUES ('Example Question', 1, 'This is the content of the question.', 2);
-SELECT * FROM Question;
-
-INSERT INTO answers (answerID, content, userID, questionID)
-VALUES (1, 'This is an example answer.', 1, 1);
-SELECT * FROM answers;
-
-INSERT INTO guidecategories (title)
-VALUES ('Category 1'), ('Category 2'), ('Category 3');
-SELECT * FROM guidecategories;
-
-INSERT INTO strategies (StratContent)
-VALUES ('Strategy 1'), ('Strategy 2'), ('Strategy 3');
-SELECT * FROM strategies;
-
-INSERT INTO info (InfoContent)
-VALUES ('Information 1'), ('Information 2'), ('Information 3');
-SELECT * FROM info;
-
-INSERT INTO favGames (UserID, GameID) VALUES (1, 2);
-SELECT * FROM favGames;
 
