@@ -1,9 +1,3 @@
-<%-- 
-    Document   : specificgamepagee
-    Created on : Jul 6, 2023, 9:57:34 PM
-    Author     : ftoyi
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="java.sql.*, backendfacts.*, java.util.Objects"%>
 <!DOCTYPE html>
@@ -28,14 +22,12 @@
        <header>
   
         <nav>
-                <img class="logo" src="catfactslogo.png" alt="logo">
+                <a href="index.jsp"><img class="logo" src="catfactslogo.png" alt="logo"></a>
             <ul class="nav__links">
-                <li><a class="navlink" href="#">Boards</a></li>
-                <li><a class="navlink" href="#">Games Database</a></li>
-                <li><a class="navlink" href="#">News</a></li>
-                <li><a class="navlink" href="#">Teams</a></li>
-                <li><a class="navlink" href="#">Guides</a></li>
-                <li><a class="navlink" href="#">Search</a></li>
+                <li id="button"><a class="navlink" href="boards.jsp">Boards</a></li>
+                <li id="button"><a class="navlink" href="games.jsp">Games Database</a></li>
+                <li id="button"><a class="navlink" href="teams.jsp">Teams</a></li>
+                <li id="button"><a class="navlink" href="guidehome.jsp">Guides</a></li>
             </ul>
         </nav>
  
@@ -57,7 +49,7 @@
                         <a class="title" href="#"><%=game.getTitle()%></a>
                         <a class ="stack2-item">Release Date: <%out.println(game.getDate());%></a>
                         <a class="stack2-item"> Studio:<%out.println(game.getStudio());%></a>
-                        <a class="stack2-item">Gender: <%out.println(game.getGenre());%></a> 
+                        <a class="stack2-item">Genre: <%out.println(game.getGenre());%></a> 
                         <a class="stack2-item">Price: $<%out.println(game.getPrice());%></a>
                         <a class="stack2-item">Score: <%out.println(game.getScore());%> </a>
                     </div>

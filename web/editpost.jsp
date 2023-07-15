@@ -1,14 +1,33 @@
-<html lang="en">
-<head>
+<%@page import="java.sql.*, backendfacts.*, java.util.*"%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <%
+        //get the postID from the URL query
+        int postID = Integer.parseInt(request.getParameter("postID"));
+        //construct post object from PostDAO and get threadID
+        PostDAO pd = new PostDAO();
+        Post post = pd.getPost(postID);
+        String content = post.getContent();
+        
+        int threadID = post.getThreadID();
+        //construct thread object from ThreadDAO
+        ThreadDAO td = new ThreadDAO();
+        backendfacts.Thread thread = td.getThread(threadID);
+        
+        String title = thread.getTitle();
+        
+        request.getSession().setAttribute("threadID", threadID);
+        
+    %>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Edit your post in <%=title%></title>
+        <link rel="stylesheet" href="StyleSheet.css">
+    </head>
     
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="StyleSheet.css">
-</head>
-<body>
-    <%@page import="java.sql.*, backendfacts.*, java.util.*"%>
+    <body>
+    <%@page import="java.sql.*, backendfacts.*, java.util.Objects"%>
     <%  User myuser = (User)request.getSession().getAttribute("myuser");
         request.getSession().setAttribute("myuser", myuser);
         String loggedIn;
@@ -19,11 +38,11 @@
         else {
             mylink = "profile.jsp?userID=" + myuser.getUserID();
             loggedIn = "Welcome, <a href='" + mylink + "'>" + myuser.getUserName() + "</a>";
-            ProfileDAO pd = new ProfileDAO();
-            Profile myprofile = pd.getProfileByUserID(myuser.getUserID());
+            ProfileDAO prodao = new ProfileDAO();
+            Profile myprofile = prodao.getProfileByUserID(myuser.getUserID());
             if (Objects.isNull(myprofile)) {
-                pd.insertProfile(myuser);
-                myprofile = pd.getProfileByUserID(myuser.getUserID());
+                prodao.insertProfile(myuser);
+                myprofile = prodao.getProfileByUserID(myuser.getUserID());
             }
             request.getSession().setAttribute("myprofile", myprofile);
         }
@@ -93,36 +112,10 @@
     }
   }
 </script>
-  
-     <!--navbar header-->
-    <header>
- 
-        <nav>
-                <img class="logo" src="catfactslogo.png" alt="logo">
-            <ul class="nav__links">
-                <li id="button"><a class="navlink" href="boards.jsp">Boards</a></li>
-                <li id="button"><a class="navlink" href="games.jsp">Games Database</a></li>
-                <li id="button"><a class="navlink" href="teams.jsp">Teams</a></li>
-                <li id="button"><a class="navlink" href="guidehome.jsp">Guides</a></li>
-            </ul>
-        </nav>
- 
-    </header>
-
-    <div class="btc-container">
-      <div class="boardtitle-container">
-        <h1 class="board-title">Board Title</h1>
-        <a href="sboard.jsp?threadCatID=1"><button>Game Boards</button></a>
-        <br>
-        <a href="sboard.jsp?threadCatID=2"><button>Community Boards</button></a>
-        <br>
-        <a href="sboard.jsp?threadCatID=3"><button>Team Boards</button></a>
-        <br>
-        <a href="sboard.jsp?threadCatID=4"><button>Social Boards</button></a>
-            <br>
-        <a href="sboard.jsp?threadCatID=5"><button>Tech Boards</button></a>
-      </div>
-    </div>
-
-</body>
+        <h1>Edit your post in <%=title%></h1>
+        <form method="post" action="AddEditServlet?postID=<%=postID%>">
+            <textarea name="editText" rows="8" cols="40" wrap="virtual"><%=content%></textarea>
+            <p><input type="submit" name="submit" value="Add Post"></p>
+        </form>
+    </body>
 </html>

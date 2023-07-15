@@ -1,14 +1,53 @@
-<html lang="en">
+<%@page import="java.sql.*, backendfacts.*, java.util.*"%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+
+<%
+        //get the threadCatID from the URL query
+        int threadCatID = Integer.parseInt(request.getParameter("threadCatID"));
+        
+        ThreadCategoryDAO tcd = new ThreadCategoryDAO();
+        ThreadCategory tcat = tcd.getThreadCat(threadCatID);
+        String title = tcat.getTitle();
+        
+    %>
 <head>
-    
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="StyleSheet.css">
-</head>
-<body>
-    <%@page import="java.sql.*, backendfacts.*, java.util.*"%>
+        <link rel="stylesheet" href="StyleSheet.css">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Post your thread in <%=title%></title>
+        <style>
+            .ta-container {
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                padding: 0;
+            }
+
+            .text-area {
+                resize: none;
+                width: 75%;
+                height: 200px;
+                padding: 0;
+            }
+
+            .add-post {
+                padding: 7px 25px;
+                background-color: #00001a;
+                border: none;
+                border-radius: 30px;
+                cursor: pointer;
+                color: white;
+                transform: translate(400px, 0);
+            }
+            
+            .title-area {
+                width: 75% !important;
+                background-color: white !important;
+                color: black !important;
+                
+            }
+        </style>
+    </head>
+    <body>
     <%  User myuser = (User)request.getSession().getAttribute("myuser");
         request.getSession().setAttribute("myuser", myuser);
         String loggedIn;
@@ -103,26 +142,20 @@
                 <li id="button"><a class="navlink" href="boards.jsp">Boards</a></li>
                 <li id="button"><a class="navlink" href="games.jsp">Games Database</a></li>
                 <li id="button"><a class="navlink" href="teams.jsp">Teams</a></li>
-                <li id="button"><a class="navlink" href="guidehome.jsp">Guides</a></li>
+                <li id="button"><a class="navlink" href="Guides.jsp">Guides</a></li>
             </ul>
         </nav>
  
     </header>
-
-    <div class="btc-container">
-      <div class="boardtitle-container">
-        <h1 class="board-title">Board Title</h1>
-        <a href="sboard.jsp?threadCatID=1"><button>Game Boards</button></a>
-        <br>
-        <a href="sboard.jsp?threadCatID=2"><button>Community Boards</button></a>
-        <br>
-        <a href="sboard.jsp?threadCatID=3"><button>Team Boards</button></a>
-        <br>
-        <a href="sboard.jsp?threadCatID=4"><button>Social Boards</button></a>
-            <br>
-        <a href="sboard.jsp?threadCatID=5"><button>Tech Boards</button></a>
-      </div>
-    </div>
-
-</body>
+        <div class="ta-container">
+            <h5 class="text-stuff blue-font">Post your thread in <%=title%></h5>
+            <form method="post" action="addthreadstart.jsp">
+                <label for="threadTitle" class="text-stuff blue-font">Title:</label><br>
+                <input class="title-area" type="text" name="threadTitle" size="40" maxlength="250"><br>
+                <label for="postText" class="text-stuff blue-font">Post</label><br>
+                <textarea class="text-area" name="postText" rows="8" cols="40" wrap="virtual"></textarea>
+                <p class="text-stuff blue-font"><input class="add-post" type="submit" name="submit" value="Add Post"></p>
+            </form>
+        </div>
+    </body>
 </html>
