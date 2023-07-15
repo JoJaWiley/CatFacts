@@ -127,8 +127,10 @@
         </nav>
  
     </header>
-        <%
+        <%  
+            //!! page is accessed with this query parameter. get it to specify the thread category
             int threadCatID = Integer.parseInt(request.getParameter("threadCatID"));
+            
             UserDAO ud = new UserDAO();
             PostDAO pd = new PostDAO();
             ThreadDAO td = new ThreadDAO();
