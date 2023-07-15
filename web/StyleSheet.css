@@ -83,6 +83,7 @@ body {
   display: grid;
   grid-template-columns: 50% 50%;
   padding: 10px;
+  grid-gap:10px;
 }
 .grid-item {
   color: #00001a;
@@ -90,6 +91,8 @@ body {
   font-size: 30px;
   text-align: center;
   padding-bottom: 40px;
+  justify-content: center;
+  align-content: center;
 }
 
 .grid-item-header {
@@ -106,34 +109,59 @@ body {
   font-size: 30px;
   text-decoration: underline;
   color: #00001a;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 
 .stack {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    border: 1px solid #ccc;
     
 }
 
+/*Added home-gamepic div wrapper for the image to set constraints(Adolfo)*/
+.home-gamepic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 5px 15px rgba(0, 0, 0, 0.1);
+    height: 350px;
+    width: 600px;
+    overflow: hidden;
 
+}
+
+/*This is the image being adjusted so it's uniform inside the div wrapper (Adolfo)*/
+.home-cover {
+    float: left;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
 
 .stack2 {
-    display: flex;
+    /*display: flex;
     flex-direction: column;
-    align-items:center;
-    
+    align-items:center;*/
+    margin-top: 25px;
 }
 
 .stack2-item {
-    padding:5px 100px;
+    padding:5px 75px;
     color:#00001a;
     font-family:'Nova Square', cursive;
 }
 
 .stack2-container {
-    background-color:#848585;
+    align-content: center;
+    justify-content: center;
+    background-color: #b3bbff;
     display:flex;
-    flex-direction:column;   
+    flex-direction:column;
+    padding-top: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 5px 15px rgba(0, 0, 0, 0.1); 
 }
 
 .event {
@@ -147,10 +175,16 @@ body {
 .top-teams {
     list-style:none;
 }
-.stack2-writing {
-    padding-top:0;
-    font-family:'Nova Square',cursive;
-    font-size:17px;
+
+/*Renamed the rest of the stack divs to stack3 and added some padding (Adolfo)*/ 
+.stack3 {
+    padding: 20px;      
+}
+
+/*Adjusting alignment and positioning of listed items (Adolfo)*/
+li {
+    text-align: left;
+    padding-bottom: 10px;
 }
 
 .trending-posts {
@@ -360,9 +394,157 @@ input[type="file"] {
 }
 
 .modal-content1 {
-  background-color: #d1b3ff;
-  margin: 5% auto 15% auto;
-  border: 1px solid #888;
-  width: 35%;
-  color: white;
+    background-color: #d1b3ff;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 35%;
+    color: white;
+}
+
+
+body {
+    background-color: pink;
+}
+
+.btc-container {
+    text-align: center;
+}
+
+.boardtitle-container {
+    width: 800px;
+    height: 650px;
+    font-family: 'Nova Square', cursive;
+    display: inline-block;
+    margin-top: 40px;
+    margin-left: 40px;
+    transition: all 0.3s ease 0s;
+    color: white;
+    background-color: #ff99cc;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 5px;
+    font-size: 10px;
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+}
+
+.boardtitle-container button {
+    margin-bottom: 40px; /* Adjust the margin to increase or decrease the spacing between buttons */
+    width: 100%; /* Set the button width to 100% */
+    background-color: pink; /* Set the button background color */
+    color: #b30047; /* Set the button text color */
+    border: none; /* Remove the button border */
+    padding: 20px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    font-family: 'Nova Square';
+    font-size: 20px;
+}
+
+.boardtitle-container button:hover {
+    color: white;
+    background-color: #b30047; /* Change background color on hover */
+}
+
+.boardtitle-container button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #ff99cc;
+    transition: all 0.3s ease-in-out;
+}
+.boardtitle-container button:hover:before {
+    width: 100%;
+}
+
+.board-title {
+    background-color: pink;
+    color: #00001a;
+    padding: 10px;
+    font-size: 32px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+
+
+
+
+.ta-container {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+}
+
+.text-area {
+    resize: none;
+    width: 75%;
+    height: 200px;
+}
+
+.add-post {
+    padding: 7px 25px;
+    background-color: #00001a;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: white;
+    transform: translate(400px, 0);
+}
+
+.blue-font {
+    color: #00001a !important;
+}
+
+/*Start of Guide Home Page CSS (Adolfo)*/
+
+.guide-header {
+    font-family: 'Nova Square', cursive;
+    text-align: center;
+    align-items: center;
+}
+
+.guide-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /*create three equal-width columns*/
+    grid-gap:20px; /*add a 10px gap between each grid item*/
+    padding: 20px;
+    margin-trim: block-end;
+}
+
+.guide-item {
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.guide-image {
+    display: flex;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cover {
+    width: 375px;
+    height: 375px;
+    object-fit: cover;
+}
+
+.text-container {
+    font-family: 'Nova Square', cursive;
+    padding-bottom: 2px;
+    padding-top: 3px;
 }
