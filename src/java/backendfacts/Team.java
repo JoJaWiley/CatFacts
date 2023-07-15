@@ -1,6 +1,9 @@
 package backendfacts;
 
 public class Team {
+    
+    private int teamID;
+    
     private String teamName;
 
     private int userID;
@@ -27,6 +30,14 @@ public class Team {
 
         this.slots = slots;
 
+    }
+    
+    public int getTeamID() {
+        return teamID;
+    }
+
+    public void setTeamID(int teamID) {
+        this.teamID = teamID;
     }
 
 
