@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+
+/*Start of the navigation bar*/ 
+li, .navlink {
+    font-family: 'Nova Square', cursive;
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: none;
+}
+ 
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: #b30047;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+ 
+.logo {
+    cursor: pointer;
+}
+ 
+.nav__links {
+    list-style: none;
+}
+ 
+.nav__links li {
+ 
+    display: inline-block;
+    padding: 0px 35px;
+}
+ 
+.nav__links li .navlink {
+    transition: all 0.3s ease 0s;
+    color: white;
+ 
+}
+ 
+.nav__links li .navlink:hover {
+    color: #ff0066;
+}
+ 
+.navlink {
+    padding: 7px 25px;
+    background-color: #00001a;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+/*This is the start of the rest of the homepage grid (Adolfo)*/
+
+.rest {
+    background-color: #d1b3ff;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 10px;
+  grid-gap:10px;
+} /*Added grid-gap to give grid items some breathing room (Adolfo)*/
+
+
+.grid-item {
+  color: #00001a;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  padding-bottom: 40px;
+  border: 1px solid #ccc;
+  justify-content: center;
+  align-content: center;
+} /*Added justify and align content center to arrange everything in each grid box (Adolfo)*/
+
+.grid-item-header {
+  font-family: 'Nova Square', cursive;
+  font-size: 30px;
+}
+/*added some justify and align center(Adolfo)*/
+.stack {
+    display: block;
+    font-family: 'Nova Square', cursive;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    border: 1px solid #ccc;
+    
+}
+/*Added home-gamepic div wrapper for the image to set constraints(Adolfo)*/
+.home-gamepic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 5px 15px rgba(0, 0, 0, 0.1);
+    height: 350px;
+    width: 600px;
+    overflow: hidden;
+    
+}
+/*This is the image being adjusted so it's uniform inside the div wrapper (Adolfo)*/
+.home-cover {
+    float: left;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+/*added some padding-bottom to space out content and header(Adolfo)*/
+.first-time {
+  font-family: 'Nova Square', cursive;
+  font-size: 30px;
+  text-decoration: underline;
+  color: #00001a;
+  padding-bottom: 20px;
+}
+/*added some margin adjusts so the header and box container align better with the random game box (Adolfo)*/
+.stack2{
+    margin-top: 25px;
+}
+
+.stack2-item {
+    padding:5px 75px;
+    color:#00001a;
+    font-family:'Nova Square', cursive;
+}
+/*Added box shadow and testing a different bg color (Adolfo)*/
+.stack2-container {
+    align-content: center;
+    justify-content: center;
+    background-color: #b3bbff;
+    display:flex;
+    flex-direction:column;
+    padding-top: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.stack2-writing {
+    padding-top:0;
+    font-family:'Nova Square',cursive;
+    color:#00001a;
+    font-size:17px;
+}
+/*Renamed the rest of the stack divs to stack3 and added some padding (Adolfo)*/ 
+.stack3 {
+    padding: 20px;      
+}
+
+/*Adjusting alignment and positioning of listed items (Adolfo)*/
+li {
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+.event {
+    list-style:none;
+}
+
+.top-games {
+    list-style:none;
+}
+
+.top-teams {
+    list-style:none;
+}
+
+.trending-posts {
+    font-family:'Nova Square',cursive;
+    font-size:17px;
+}
+
+/*Start of the Login/Sign-Up modal styles (Adolfo)*/
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+  background-color: #00001a;
+  color: white;
+}
+
+.button-container div {
+  margin-left: 10px;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  background-color:#00001a;
+  color: white;
+}
+
+/* Set a style for home page buttons */
+#loginButton, #signUpButton {
+  background-color: #b30047;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Nova Square', cursive;
+}
+
+/* Set style for form buttons */
+#loginSubmitButton, #signUpSubmitButton {
+  background-color: #b30047;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-family: 'Nova Square', cursive;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #b30047;
+}
+
+.container {
+  padding: 16px;
+  background-color: black;
+  font-family: 'Nova Square', cursive;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: auto; /* enable a scroll if necessary */
+  background-color: #d1b3ff; /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;  
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: black;
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+  width: 35%;
+  color: white;
+  
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+.logged-in-status {
+    font-family: 'Nova Square', cursive;
+    color: white;
+    padding-right: 50px;
+}
+
+/*Start of Guide Home Page CSS (Adolfo)*/
+
+.guide-header {
+    font-family: 'Nova Square', cursive;
+    text-align: center;
+    align-items: center;
+}
+
+.guide-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /*create three equal-width columns*/
+    grid-gap:20px; /*add a 10px gap between each grid item*/
+    padding: 20px;
+    margin-trim: block-end;
+}
+
+.guide-item {
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.guide-image {
+    display: flex;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cover {
+    width: 375px;
+    height: 375px;
+    object-fit: cover;
+}
+
+.text-container {
+    font-family: 'Nova Square', cursive;
+    padding-bottom: 2px;
+    padding-top: 3px;
+}
+
+
