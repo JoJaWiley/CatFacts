@@ -162,15 +162,10 @@
             <%
                 } //end inner if
             } else {
-        %>
-        <table>
-            <tr>
-                <th>Topic</th>
-                <th>Created By</th>
-                <th># of Messages</th>
-                <th>Date of Last Post</th>
-            </tr>
-            <%
+
+            String tableHead = "<table width=100% cellpadding=3 cellspacing=1 border=1 class='text-stuff'><tr><th>Topic</th><th>Created By</th><th># of Messages</th><th>Date of Last Post</th></tr>";
+            
+            out.print(tableHead);
                 for (backendfacts.Thread thread : threads) {
                     topic = thread.getTitle();
                     int thID = thread.getThreadID();
@@ -183,10 +178,8 @@
             String table = "<tr><td><a href='" + link + "'>" + topic + "</a></td><td>" + author + "</td><td>" + numPosts + "</td><td>" + postDate + "</td></tr>";
             
             out.print(table);
-            %>
-        </table>
-        <%
                 } //end for loop
+            out.print("</table>");
                 if (!Objects.isNull(myuser))
                 {
         %>
