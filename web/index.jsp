@@ -94,29 +94,44 @@
     }
   }
 </script>
-    
-         
-         
-         
-         
-         
-         
+
      <!--navbar header-->
     <header>
  
         <nav>
                 <img class="logo" src="catfactslogo.png" alt="logo">
             <ul class="nav__links">
-                <li id="button"><a class="navlink" href="#">Boards</a></li>
-                <li id="button"><a class="navlink" href="#">Games Database</a></li>
-                <li id="button"><a class="navlink" href="#">News</a></li>
-                <li id="button"><a class="navlink" href="#">Teams</a></li>
-                <li id="button"><a class="navlink" href="Guides.jsp">Guides</a></li>
-                <li id="button"><a class="navlink" href="#">Search</a></li>
+                <li id="button"><a class="navlink" href="boards.jsp">Boards</a></li>
+                <li id="button"><a class="navlink" href="games.jsp">Games Database</a></li>
+                <li id="button"><a class="navlink" href="teams.jsp">Teams</a></li>
+                <li id="button"><a class="navlink" href="guidehome.jsp">Guides</a></li>
             </ul>
         </nav>
  
     </header>
+     
+     <form id="redirectForm" action="#">
+         <input type="text" id="redirectInput" placeholder="Enter your search query">
+     </form>
+
+     <script>
+         document.getElementById("redirectForm").addEventListener("submit", function(event) {
+             event.preventDefault(); // Prevent form submission
+             var input = document.getElementById("redirectInput").value.toLowerCase(); // Convert input to lowercase
+        
+             if (input.includes("guides")) {
+                 window.location.href = "Guides.jsp"; // Redirect to Guides.jsp
+             } else if (input.includes("teams")) {
+                 window.location.href = "Teams.jsp"; // Redirect to Teams.jsp
+             } else if (input.includes("boards")) {
+                 window.location.href = "Boards.jsp"; // Redirect to Boards.jsp
+             } else if (input.includes("game")) {
+                 window.location.href = "games.jsp"; // Redirect to games.jsp
+             } else {
+                 // Handle other cases or show an error message
+             }
+         });
+     </script>
     <%
     GameDAO gd = new GameDAO();
     Game game = gd.getRandomGame();
