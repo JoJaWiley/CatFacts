@@ -165,9 +165,15 @@
         UserDAO ud = new UserDAO();
         PostDAO pd = new PostDAO();
         ThreadDAO td = new ThreadDAO();
+        ThreadCategoryDAO tcd = new ThreadCategoryDAO();
         ProfileDAO prod = new ProfileDAO();        
         
         backendfacts.Thread thread = td.getThread(threadID);
+        int threadCatID = thread.getCategoryID();
+        
+        ThreadCategory tcat = tcd.getThreadCat(threadCatID);
+        String catName = tcat.getTitle();
+        
         ArrayList<Post> posts = pd.getAllPostsByThread(threadID);
         
         String title = thread.getTitle();
@@ -175,7 +181,7 @@
         String content;
         java.sql.Date created;
         %>
-        <h1 class="text-stuff blue-font text-align-center">Thread: <%=title%><h1>
+        <h1 class="text-stuff blue-font text-align-center">Thread: <%=title%> in Board: <a href="sboard.jsp?threadCatID=<%=threadCatID%>"><%=catName%></a><h1>
         <%
         int userID;
         for (Post post : posts)

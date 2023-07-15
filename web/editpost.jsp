@@ -112,10 +112,13 @@
     }
   }
 </script>
-        <h1>Edit your post in <%=title%></h1>
-        <form method="post" action="AddEditServlet?postID=<%=postID%>">
-            <textarea name="editText" rows="8" cols="40" wrap="virtual"><%=content%></textarea>
-            <p><input type="submit" name="submit" value="Add Post"></p>
-        </form>
+        <div class="ta-container">
+            <h1>Edit your post in <%=title%></h1>
+            <form method="post" action="AddEditServlet?postID=<%=postID%>">
+                <textarea class="text-area" name="editText" rows="8" cols="40" wrap="virtual"><%=content%></textarea>
+                <p class="text-stuff"><input class="add-post" type="submit" name="submit" value="Add Post"></p>
+                <p class="text-stuff"><input class="add-post" type="button" value="Cancel" onclick="history.back()"/></p>
+            </form>
+        </div>
     </body>
 </html>

@@ -155,6 +155,7 @@
                 <label for="postText" class="text-stuff blue-font">Post</label><br>
                 <textarea class="text-area" name="postText" rows="8" cols="40" wrap="virtual"></textarea>
                 <p class="text-stuff blue-font"><input class="add-post" type="submit" name="submit" value="Add Post"></p>
+                <p class="text-stuff"><input class="add-post" type="button" value="Cancel" onclick="history.back()"/></p>
             </form>
         </div>
     </body>
