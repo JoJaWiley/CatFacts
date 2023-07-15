@@ -120,11 +120,11 @@
              var input = document.getElementById("redirectInput").value.toLowerCase(); // Convert input to lowercase
         
              if (input.includes("guides")) {
-                 window.location.href = "Guides.jsp"; // Redirect to Guides.jsp
+                 window.location.href = "guidehome.jsp"; // Redirect to Guides.jsp
              } else if (input.includes("teams")) {
-                 window.location.href = "Teams.jsp"; // Redirect to Teams.jsp
+                 window.location.href = "teams.jsp"; // Redirect to Teams.jsp
              } else if (input.includes("boards")) {
-                 window.location.href = "Boards.jsp"; // Redirect to Boards.jsp
+                 window.location.href = "boards.jsp"; // Redirect to Boards.jsp
              } else if (input.includes("game")) {
                  window.location.href = "games.jsp"; // Redirect to games.jsp
              } else {
@@ -136,56 +136,62 @@
     GameDAO gd = new GameDAO();
     Game game = gd.getRandomGame();
     %>
-    <!-- Establish the elements of the home page-->
+     <!--Start of components that establishes the elements of the home page-->
     <div class="rest">
+
         <div class="grid-container">
             <div class="grid-item">
-                <div class="stack center-pic">
-                        <div class="card">
-                        <h2 class="grid-item-header"><%out.println(game.getTitle());%></h2>
-                        <img class="new-game" src="game_images/<%=game.getGameID()%>.jpg" width="400" alt="new game">
-                    </div>
+                <div class="stack">
+                    <h2 class="grid-item-header"><%out.println(game.getTitle());%></h2>
+                </div>
+                <div class="home-gamepic">
+                    <img class="home-cover" src="game_images/<%=game.getGameID()%>.jpg"  alt="new game">
                 </div>
             </div>
+
             <div class="grid-item">
                 <div class="stack2">
-                        <a class="first-time" href="#">First Time Here</a>
-                        <div class="stack2-container">
-                            <a class ="stack2-item" href="#">CatFacts Q & A</a>
-                            <p class="stack2-writing">Ask or answer about the game you play</p>
-                            <a class="stack2-item" href="#">Message Boards</a> 
-                            <p class="stack2-writing">A board for every game, interest, and community</p>
-                            <a class="stack2-item" href="#">Game Database</a>
-                            <p class="stack2-writing">Browse our database</p>
-                        </div>
-                </div>
+                    <h2 class="first-time">First Time Here</h2>
+                    </div>
+                    <div class="stack2-container">
+                        <a class ="stack2-item" href="#">CatFacts Q & A</a>
+                        <p class="stack2-writing">Ask or answer about the game you play</p>
+                        <a class="stack2-item" href="boards.jsp">Message Boards</a> 
+                        <p class="stack2-writing">A board for every game, interest, and community</p>
+                        <a class="stack2-item" href="gamedbhome.jsp">Game Database</a>
+                        <p class="stack2-writing">Browse our database</p>
+                    </div>
+
             </div>
+
             <div class="grid-item">
-                <div class="stack">
-                    <h2 class="grid-item-header">Events</h2>
-                    <ul class="event text-align-left">
-                        <li>The Crimson Eclipse</li>
-                        <li>Raiders of the Lost Relic</li>
-                        <li>Battle for Eternia: The Realm Divide</li>
-                        <li>The Forgotten Prophecy</li>
-                        <li>The Great Tournament of Legends</li>
+                <div class="stack3">
+                    <h2 class="grid-item-header">Gaming Events</h2>
+                    <ul class="event">
+                        <li><a href="https://www.comic-con.org/cci">San Diego Comic Con - July 20-23</a></li>
+                        <li><a href="https://b2b.gamescom.global/gamescom/the-gamescom/">Gamescom - August 23-27</a></li>
+                        <li><a href="https://www.nintendo.com/nintendo-live/">Nintendo Live - September 1-4</a></li>
+                        <li><a href="https://west.paxsite.com/">PAX West - September 1-4<</a></li>
+                        <li><a href="https://events.nikkeibp.co.jp/tgs/2023/en/exhibitor/">Tokyo Game Show - September 21-24</a></li>
                     </ul>
                 </div>
             </div>
+
             <div class="grid-item">
-                <div class="stack">
+                <div class="stack3">
                     <h2 class="grid-item-header">Top Games</h2>
-                    <ul class="top-games text-align-left">
-                        <li>The Legend of Zelda: Breath of the Wild</li>
-                        <li>Red Dead Redemption 2</li>
-                        <li>Fortnite</li>
-                        <li>Minecraft</li>
-                        <li>The Witcher 3: Wild Hunt</li>
+                    <ul class="top-games">
+                        <li><a href="5.jsp">The Legend of Zelda: Breath of the Wild</a></li>
+                        <li><a href="19.jsp">Red Dead Redemption 2</a></li>
+                        <li><a href="4.jsp">Bloodborne</a></li>
+                        <li><a href="13.jsp">Minecraft</li>
+                        <li><a href="20.jsp">The Witcher 3: Wild Hunt</a></li>
                     </ul>
                 </div>                       
             </div>
+
             <div class="grid-item">
-                <div class="stack">
+                <div class="stack3">
                     <h2 class="grid-item-header">Trending Posts</h2>
                     <p class="trending-posts">  Dive into our immersive gameplay experience,<br>
                         where your choices matter and your actions shape the world around you.<br>
@@ -195,19 +201,19 @@
                     </p>
                 </div> 
                 </div>
+
             <div class="grid-item">
-                <div class="stack">
+                <div class="stack3">
                     <h2 class="grid-item-header">Top Teams</h2>
                     <ul class="top-teams">
-                        <li>Blizzard Entertainment</li>
-                        <li>Rockstar Games</li>
-                        <li>Valve Corporation</li>
-                        <li>Nintendo</li>
-                        <li>Epic Games</li>
+                        <li><a href="#">TEAM 1</a></li>
+                        <li><a href="#">TEAM 2</a></li>
+                        <li><a href="#">TEAM 3</a></li>
+                        <li><a href="#">TEAM 4</a></li>
+                        <li><a href="#">TEAM 5</a></li>
                     </ul>
                  </div>
+            </div>
         </div>
-    </div>
- 
+
 </body>
-</html>
