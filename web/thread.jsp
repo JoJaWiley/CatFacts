@@ -204,14 +204,22 @@
             <tbody>
                 <tr>
                     <td width="35%" valign="top"><a href="profile.jsp?userID=<%=userID%>"><%=author%><br><img class="profile-pic" src="uploadFiles/<%=profile.getUserID()%>.jpg"  width="100"/></a><br><p class="small-text"><%=created%></p></td>
-                    <td class="post" width="65%" valign="top"><%=content%><br><br>
+                    <td class="post" width="65%" valign="top">
+                        <div class="post">
+                            <div class="post-text">
+                                <%=content%><br><br>
+                            </div>
     <%  if (!Objects.isNull(myuser))
         {
             if (userID == myuser.getUserID())
             {
     %>
-    <a href="editpost.jsp?postID=<%=post.getPostID()%>">Edit</a><br>
-    <a href="deletepost.jsp?postID=<%=post.getPostID()%>">Delete</a>
+                                <div class="edit-container">
+                                    <a class="edit-post text-stuff text-align-center" href="editpost.jsp?postID=<%=post.getPostID()%>">Edit</a>
+                                    <br>
+                                    <a class="edit-post text-stuff text-align-center" href="deletepost.jsp?postID=<%=post.getPostID()%>">Delete</a>
+                                </div>
+                        </div>
     <%
             } //end inner if
         } //end outer if
