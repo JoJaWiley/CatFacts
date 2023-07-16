@@ -2,6 +2,8 @@ package backendfacts;
 
 import java.sql.*;
 import java.util.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class ThreadDAO {
     
@@ -35,6 +37,25 @@ public class ThreadDAO {
         }
         
     return null;
+    }
+    
+    public int getMaxThreadID() throws ClassNotFoundException {
+        Connection connection = ConnectionFactory.getConnection();
+        try {
+            Statement stmt = connection.createStatement();
+            ResultSet rs = stmt.executeQuery("SELECT MAX(threadID) FROM thread;");
+            
+            //If found, pull the record into a thread object.
+            if(rs.next())
+            {
+                return rs.getInt(1);
+            }
+        //if not, print stack trace and return null.
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+        }
+        
+    return 0;
     }
     
     public ArrayList<Thread> getAllThreads() throws ClassNotFoundException {
@@ -123,8 +144,8 @@ public class ThreadDAO {
             //prepare and execute statement to insert thread record with attributes matching those of given thread object
             PreparedStatement ps = connection.prepareStatement("INSERT INTO thread VALUES (NULL, ?, ?, ?)");
             ps.setInt(1, thread.getCategoryID());
-            ps.setDate(2, (java.sql.Date)thread.getCreated());
-            ps.setString(3, thread.getTitle());
+            ps.setString(2, thread.getTitle());
+            ps.setDate(3, (java.sql.Date)thread.getCreated());
             int i = ps.executeUpdate();
 
           if(i == 1) {
@@ -178,4 +199,26 @@ public class ThreadDAO {
 
     return false;
 }
+    public static void main(String[] args) {
+        try {
+            java.sql.Date date = new java.sql.Date(Calendar.getInstance().getTimeInMillis());
+            
+            ThreadDAO td = new ThreadDAO();
+            backendfacts.Thread thread = new backendfacts.Thread();
+            
+            thread.setCategoryID(1);
+            thread.setCreated(date);
+            thread.setTitle("Spider-Man");
+            
+            td.insertThread(thread);
+            System.out.println(td.insertThread(thread));
+            
+            int threadID = td.getMaxThreadID();
+            
+            System.out.println(threadID);
+            
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(ThreadDAO.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
 }

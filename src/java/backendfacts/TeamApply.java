@@ -46,7 +46,7 @@ public class TeamApply extends HttpServlet {
             teamUser.setTeamID(teamID);
             teamUser.setUserID(myUserID);
             
-            if (openSlots > 0)
+            if (openSlots > 0 && !teamMembers.contains(teamUser))
                 tud.insertTeamUser(teamUser);
             
             response.sendRedirect("teams.jsp");
