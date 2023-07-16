@@ -8,15 +8,7 @@
       padding: 0;
     }
     
-    .category-container {
-        display: flex;
-        flex-wrap: wrap;
-        font-family: 'Nova Square', cursive;
-        color: #ff99ff;
-        padding-top: 0px;
-    }
-    
-    .category-container a:hover,
+    .guide-item a:hover,
     .question-container button:hover {
         color: #333333; /* Change to the desired dark shade color */
         transform: scale(1.1);
@@ -43,6 +35,12 @@
     .question-container button:hover {
         background-color: #ff6699;
     }
+    
+    .question-container {
+        align-content: center;
+        justify-content: center;
+        position: absolute;
+    }
 
     /*.logo {
         width: 150px;
@@ -51,54 +49,25 @@
         cursor: pointer;
     }                    uncomment when you have a logo*/
     
-    .game-container {
-        flex: 1;
-        margin-left: 20px;
+    .guide-modal {
+        display: none;
+        align-content: center;
+        justify-content: center;
+        z-index: 1;
+        width: 80%;
+        height: 80%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.4);
     }
-   
-   /* Add the following CSS for fancy pink border */
-   body::before,
-   body::after {
-      content: "";
-      position: fixed;
-      top: 0;
-      bottom: 0;
-      width: 40px;
-      background-color: #b30047;
-      z-index: -1;
-   }
-   
-   body::before {
-      left: 0;
-   }
-   
-   body::after {
-      right: 0;
-   }
-   /* End of fancy pink border styling */
-   
- .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 1500px;
-    height: 1000px;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.4);
-}
 
-.modal-content {
-    background-color: #fefefe;
-    margin: 10% auto;
-    padding: 40px;
+.guide-modal-content {
+    background-color: #d1b3ff;
+    margin:0;
+    padding: 0px;
     border: 1px solid #888;
-    width: 90%;
-    max-width: 1000px;
-    height: 90%;
-    max-height: 800px;
-    position: relative;
+    width: 80%;
+    height: 80%;
+    
 }
 
 .close {
@@ -124,6 +93,37 @@ pre {
     line-height: 1.5;
 }
    
+.guidepage-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr); /*create three equal-width columns*/
+    grid-gap:20px; /*add a 10px gap between each grid item*/
+    padding: 20px;
+    margin-trim: block-end;
+}
+.guidepage-col {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.game-details {
+  text-align: center;
+}
+.guidepage-item {
+  margin-top: 20px;
+  text-align: center;
+  font-family: 'Nova Square', cursive;
+  color: #ff99ff;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.guide-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
    </style>
 
     <meta charset="UTF-8">
@@ -271,43 +271,59 @@ pre {
     
     %>
     
-    <div class="category-container">
-        
-<div class="game-container">
-    
-    <h4 style="padding-left: 50px; padding-top:10px; "><u>Game Details</u></h4>
-    <h4 style="padding-left: 50px;"><%out.println(game.getGenre());%></h4>
-    <h4 style="padding-left: 50px;">Platform: PS4, PS5</h4>
-    <h4 style="padding-left: 50px;">Studio: <%out.println(game.getStudio());%></h4>
-    <h4 style="padding-left: 50px">Release:<%out.println(game.getDate());%></h4>
-            
+    <div class="guide-wrapper">    
+        <div class="guidepage-container">
+
+            <div class="guidepage-col">
+
+                <div class="guidepage-item">
+                    <h4><u>Game Details</u></h4>
+                    <h4><%out.println(game.getGenre());%></h4>
+                    <h4>Platform: PS4, PS5</h4>
+                    <h4>Studio: <%out.println(game.getStudio());%></h4>
+                    <h4>Release: <%out.println(game.getDate());%></h4>
+                </div>
+
+                <div class="guidepage-item">
+                    <h1><u>-FAQ-</u></h1>
+                    <a class="textdoc" href="#" onclick="openModal('guides/thelastofus2_faqs.txt')"><%out.println(game.getTitle());%> FAQS</a>
+                </div>
+
+            </div>
+
+            <div class="guidepage-col">
+
+                <div id="guide-modal" class="guide-modal">
+                    <div class="guide-modal-content">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <pre id="guide-modal-text"></pre>
+
+                    </div>
+                </div>
+
 </div>
             
 <!--guide content-->
             
-<div class="guide-container">
-    
-    <div class="guide-item">
+<div class="guidepage-col">
+
+    <div class="guidepage-item">
     <h1><u>-Beginner's Guides-</u></h1>
     <a class="textdoc" href="#" onclick="openModal('guides/thelastofus2_basictips.txt')"><%out.println(game.getTitle());%> Basic Tips & Tricks</a>
     </div>
-    
-    <div class="guide-item">
+
+
+    <div class="guidepage-item">
     <h1><u>-Walkthrough Guides-</u></h1>
     <a class="textdoc" href="#" onclick="openModal('guides/thelastofus2_walkthrough.txt')"><%out.println(game.getTitle());%> Walkthrough</a>
     </div>
-    
-    <div class="guide-item">
+
+    <div class="guidepage-item">
     <h1><u>-Characters & Background Guides-</u></h1>
     <a class="textdoc" href="#" onclick="openModal('guides/thelastofus2_characters.txt')"><%out.println(game.getTitle());%> Characters</a>
     </div>
-    
-</div>
 
-<div id="modal" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <pre id="modal-text"></pre>
+</div>
     </div>
 </div>
 
@@ -316,8 +332,8 @@ function openModal(url) {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
-            document.getElementById('modal-text').textContent = this.responseText;
-            document.getElementById('modal').style.display = 'block';
+            document.getElementById('guide-modal-text').textContent = this.responseText;
+            document.getElementById('guide-modal').style.display = 'block';
         }
     };
     xhttp.open('GET', url, true);
@@ -325,62 +341,20 @@ function openModal(url) {
 }
 
 function closeModal() {
-    document.getElementById('modal-text').textContent = '';
-    document.getElementById('modal').style.display = 'none';
+    document.getElementById('guide-modal-text').textContent = '';
+    document.getElementById('guide-modal').style.display = 'none';
 }
 
 window.onclick = function(event) {
-    var modal = document.getElementById('modal');
+    var modal = document.getElementById('guide-modal');
     if (event.target == modal) {
         closeModal();
     }
 };
 
 </script>
-                     
-            
 
-<div class="faq-container">
-    <h1>FAQ</h1>
-    
-<ul class="faq-items">
-    <li>
-    Q: What is "The Last of Us Part II"?
-    A: "The Last of Us Part II" is a highly acclaimed action-adventure game developed by Naughty Dog and published by Sony Interactive Entertainment. It is a sequel to the original "The Last of Us" game, continuing the post-apocalyptic story set in a world ravaged by a fungal infection.
-    </li>
-    <li>
-    Q: What is the gameplay like in "The Last of Us Part II"?
-    A: "The Last of Us Part II" combines elements of stealth, exploration, and intense combat. Players control Ellie, the main protagonist, as she navigates hostile environments, solves puzzles, and engages in both stealth and action-packed combat encounters with infected creatures and human enemies.
-    </li>
-    <li>
-    Q: Do I need to play the first game before playing "The Last of Us Part II"?
-    A: It is highly recommended to play the first game, "The Last of Us," as it sets the foundation for the story and characters in the sequel. Playing the first game will enhance your understanding and emotional connection to the events in "The Last of Us Part II."
-    </li>
-    <li>
-    Q: What is the story about in "The Last of Us Part II"?
-    A: "The Last of Us Part II" continues the story of Ellie, who sets out on a quest for revenge in a deeply divided post-apocalyptic world. The narrative explores themes of loss, morality, and the consequences of one's actions.
-    </li>
-    <li>
-    Q: Are there different difficulty options in the game?
-    A: Yes, "The Last of Us Part II" offers multiple difficulty options, allowing players to choose their preferred level of challenge. The options include Easy, Normal, Hard, and the challenging Survivor and Grounded modes.
-    </li>
-    <li>
-    Q: Are there multiplayer modes in "The Last of Us Part II"?
-    A: No, "The Last of Us Part II" does not feature a traditional multiplayer mode. However, it offers an engaging single-player campaign with a robust story and immersive gameplay.
-    </li>
-    <li>
-    Q: How long is the gameplay experience in "The Last of Us Part II"?
-    A: The length of the game can vary depending on the player's playstyle and exploration. On average, it takes around 25-30 hours to complete the main story. However, engaging in side activities and searching for collectibles can extend the playtime.
-    </li>
-    <li>
-    Q: Is "The Last of Us Part II" suitable for all ages?
-    A: No, "The Last of Us Part II" is rated M for Mature by the Entertainment Software Rating Board (ESRB) due to intense violence, strong language, and mature themes. It is recommended for players aged 17 and above.
-    </li>
-</ul>
-    
 </div>
 
-        </div>
-    </div>
 </body>
 </html>
