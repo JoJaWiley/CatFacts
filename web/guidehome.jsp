@@ -14,12 +14,24 @@
 <body>
     
     <%  User myuser = (User)request.getSession().getAttribute("myuser");
+        request.getSession().setAttribute("myuser", myuser);
         String loggedIn;
+        String mylink;
 
         if (Objects.isNull(myuser))
             loggedIn = "You are not logged in.";
-        else 
-            loggedIn = "Welcome, " + myuser.getUserName() + "!";
+        else {
+            mylink = "profile.jsp?userID=" + myuser.getUserID();
+            loggedIn = "Welcome, <a href='" + mylink + "'>" + myuser.getUserName() + ".</a> Not you? <a href='LogoutServlet'>Sign out.</a>";
+            ProfileDAO pd = new ProfileDAO();
+            Profile myprofile = pd.getProfileByUserID(myuser.getUserID());
+            if (Objects.isNull(myprofile)) {
+                pd.insertProfile(myuser);
+                myprofile = pd.getProfileByUserID(myuser.getUserID());
+            }
+            request.getSession().setAttribute("myprofile", myprofile);
+        }
+            
     %>
     
     <!--Login and signup button and their modal forms-->
@@ -88,20 +100,41 @@
     <header>
  
         <nav>
-                <img class="logo" src="catfactslogo" href="index.jsp" alt="logo">
+                <a href="index.jsp"><img class="logo" src="catfactslogo.png" alt="logo"></a>
             <ul class="nav__links">
-                <li id="button"><a class="navlink" href="#">Boards</a></li>
-                <li id="button"><a class="navlink" href="#">Games Database</a></li>
-                <li id="button"><a class="navlink" href="#">News</a></li>
-                <li id="button"><a class="navlink" href="#">Teams</a></li>
-                <li id="button"><a class="navlink" href="guidehome.jsp">Guides</a></li>
-                <li id="button"><a class="navlink" href="#">Search</a>
-                    
-                </li>
+                <li class="button"><a class="navlink" href="boards.jsp">Boards</a></li>
+                <li class="button"><a class="navlink" href="games.jsp">Games Database</a></li>
+                <li class="button"><a class="navlink" href="teams.jsp">Teams</a></li>
+                <li class="button"><a class="navlink" href="guidehome.jsp">Guides</a></li>
             </ul>
         </nav>
  
     </header>
+     
+          
+
+     <script>
+         document.getElementById("redirectForm").addEventListener("submit", function(event) {
+             event.preventDefault(); // Prevent form submission
+             var input = document.getElementById("redirectInput").value.toLowerCase(); // Convert input to lowercase
+        
+             if (input.includes("guides")) {
+                 window.location.href = "guidehome.jsp"; // Redirect to Guides.jsp
+             } else if (input.includes("teams")) {
+                 window.location.href = "teams.jsp"; // Redirect to Teams.jsp
+             } else if (input.includes("boards")) {
+                 window.location.href = "boards.jsp"; // Redirect to Boards.jsp
+             } else if (input.includes("game")) {
+                 window.location.href = "games.jsp"; // Redirect to games.jsp
+             } else {
+                 // Handle other cases or show an error message
+             }
+         });
+     </script>
+     
+     <form id="redirectForm" action="#">
+         <input type="text" id="redirectInput" placeholder="Enter your search query">
+     </form>
      
          <h1 class="guide-header">Guides and Walkthroughs</h1>
          
