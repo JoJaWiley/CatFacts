@@ -17,7 +17,7 @@ public class GuideCategoryDAO {
     }
     
     //query for the guide matching a given guideID. 
-    public GuideCategory getGuideCategoryID(int guideCategoryID) {
+    public GuideCategory getGuideCategoryID(int guideCategoryID) throws ClassNotFoundException {
     Connection connection = ConnectionFactory.getConnection();
         try {
             Statement stmt = connection.createStatement();
@@ -36,7 +36,7 @@ public class GuideCategoryDAO {
     return null;
     }
     
-    public ArrayList<GuideCategory> getAllGuideCats() {
+    public ArrayList<GuideCategory> getAllGuideCats() throws ClassNotFoundException {
     Connection connection = ConnectionFactory.getConnection();
         try {
             //query guide table for all records
