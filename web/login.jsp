@@ -19,11 +19,12 @@
             
             if (Objects.isNull(user)) {
                 out.println("invalid login");
-                response.sendRedirect("index.html");
+                response.sendRedirect("index.jsp");
             } else {
             
             request.getSession().setAttribute("myuser", user);
-            response.sendRedirect("index.jsp");
+            String referer = request.getHeader("Referer");
+            response.sendRedirect(referer);
             }
             
         %>

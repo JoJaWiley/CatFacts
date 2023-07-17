@@ -22,13 +22,16 @@
             UserDAO ud = new UserDAO();
             ud.insertUser(user);
             
+            user = ud.getUserByUsernameAndPassword(username, password);
+            
             request.getSession().setAttribute("myuser", user);
             
             if (Objects.isNull(user)) {
                 out.println("invalid login");
                 response.sendRedirect("index.jsp");
             } else {
-            response.sendRedirect("index.jsp");
+            String referer = request.getHeader("Referer");
+            response.sendRedirect(referer);
             }
             
             
