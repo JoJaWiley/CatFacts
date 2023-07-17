@@ -18,7 +18,8 @@
         ProfileDAO pd = new ProfileDAO();
         pd.updateProfile(myprofile);
         request.getSession().setAttribute("myprofile", myprofile);
-            response.sendRedirect("profile.jsp");
+        String referer = request.getHeader("Referer");
+        response.sendRedirect(referer);
         %>
     </body>
 </html>
