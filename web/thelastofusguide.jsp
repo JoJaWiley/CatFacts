@@ -112,12 +112,12 @@
     }
   }
 </script>
-
+  
      <!--navbar header-->
     <header>
  
         <nav>
-            <a href="index.jsp"><img class="logo" src="catfactslogo.png" alt="logo"></a>
+                <a href="index.jsp"><img class="logo" src="catfactslogo.png" alt="logo"></a>
             <ul class="nav__links">
                 <li class="button"><a class="navlink" href="boards.jsp">Boards</a></li>
                 <li class="button"><a class="navlink" href="games.jsp">Games Database</a></li>
@@ -128,8 +128,10 @@
  
     </header>
      
-          
-
+     <form id="redirectForm" action="#">
+         <input type="text" id="redirectInput" placeholder="Enter your search query">
+     </form>
+     
      <script>
          document.getElementById("redirectForm").addEventListener("submit", function(event) {
              event.preventDefault(); // Prevent form submission
@@ -148,14 +150,6 @@
              }
          });
      </script>
-     
-     <form id="redirectForm" action="#">
-         <input type="text" id="redirectInput" placeholder="Enter your search query">
-     </form>
-   
-    <div class="question-container">
-        <button type="button">Ask a question</button>
-    </div>
     
     <%
         

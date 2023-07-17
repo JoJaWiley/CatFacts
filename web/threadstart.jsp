@@ -48,22 +48,31 @@
         </style>
     </head>
     <body>
-    <%  User myuser = (User)request.getSession().getAttribute("myuser");
+    <%  //get the potentially logged in user's user object from session attribute stored at login/signup
+        User myuser = (User)request.getSession().getAttribute("myuser");
+        //set it in session again just to be sure?
         request.getSession().setAttribute("myuser", myuser);
+        //a string to display logged in status with links to profile and signout
         String loggedIn;
+        //link to user's profile
         String mylink;
 
+        //if the user is not logged in, say so
         if (Objects.isNull(myuser))
             loggedIn = "You are not logged in.";
+        //otherwise, the user is logged in. Say so, with links to profile and signout
         else {
             mylink = "profile.jsp?userID=" + myuser.getUserID();
             loggedIn = "Welcome, <a href='" + mylink + "'>" + myuser.getUserName() + ".</a> Not you? <a href='LogoutServlet'>Sign out.</a>";
+            //get the user's profile to ensure it exists
             ProfileDAO pd = new ProfileDAO();
             Profile myprofile = pd.getProfileByUserID(myuser.getUserID());
+            //create a profile for the user if one isn't already created
             if (Objects.isNull(myprofile)) {
                 pd.insertProfile(myuser);
                 myprofile = pd.getProfileByUserID(myuser.getUserID());
             }
+            //set the profile as a session attribute
             request.getSession().setAttribute("myprofile", myprofile);
         }
             
@@ -148,8 +157,10 @@
  
     </header>
      
-          
-
+     <form id="redirectForm" action="#">
+         <input type="text" id="redirectInput" placeholder="Enter your search query">
+     </form>
+     
      <script>
          document.getElementById("redirectForm").addEventListener("submit", function(event) {
              event.preventDefault(); // Prevent form submission
@@ -168,9 +179,7 @@
              }
          });
      </script>
-     <form id="redirectForm" action="#">
-         <input type="text" id="redirectInput" placeholder="Enter your search query">
-     </form>
+     
         <div class="ta-container">
             <h5 class="text-stuff blue-font">Post your thread in <%=title%></h5>
             <form method="post" action="AddThreadStartServlet?threadCatID=<%=threadCatID%>">

@@ -48,22 +48,31 @@ table tr:hover {
     </head>
     
     <body class="text-stuff blue-font">
-    <%  User myuser = (User)request.getSession().getAttribute("myuser");
+    <%  //get the potentially logged in user's user object from session attribute stored at login/signup
+        User myuser = (User)request.getSession().getAttribute("myuser");
+        //set it in session again just to be sure?
         request.getSession().setAttribute("myuser", myuser);
+        //a string to display logged in status with links to profile and signout
         String loggedIn;
+        //link to user's profile
         String mylink;
 
+        //if the user is not logged in, say so
         if (Objects.isNull(myuser))
             loggedIn = "You are not logged in.";
+        //otherwise, the user is logged in. Say so, with links to profile and signout
         else {
             mylink = "profile.jsp?userID=" + myuser.getUserID();
             loggedIn = "Welcome, <a href='" + mylink + "'>" + myuser.getUserName() + ".</a> Not you? <a href='LogoutServlet'>Sign out.</a>";
-            ProfileDAO prod = new ProfileDAO();
-            Profile myprofile = prod.getProfileByUserID(myuser.getUserID());
+            //get the user's profile to ensure it exists
+            ProfileDAO pd = new ProfileDAO();
+            Profile myprofile = pd.getProfileByUserID(myuser.getUserID());
+            //create a profile for the user if one isn't already created
             if (Objects.isNull(myprofile)) {
-                prod.insertProfile(myuser);
-                myprofile = prod.getProfileByUserID(myuser.getUserID());
+                pd.insertProfile(myuser);
+                myprofile = pd.getProfileByUserID(myuser.getUserID());
             }
+            //set the profile as a session attribute
             request.getSession().setAttribute("myprofile", myprofile);
         }
             
@@ -132,24 +141,26 @@ table tr:hover {
     }
   }
 </script>
-
+  
      <!--navbar header-->
     <header>
-
-    <nav>
-        <a href="index.jsp"><img class="logo" src="catfactslogo.png" alt="logo"></a>
-        <ul class="nav__links">
-            <li class="button"><a class="navlink" href="boards.jsp">Boards</a></li>
-            <li class="button"><a class="navlink" href="games.jsp">Games Database</a></li>
-            <li class="button"><a class="navlink" href="teams.jsp">Teams</a></li>
-            <li class="button"><a class="navlink" href="guidehome.jsp">Guides</a></li>
-        </ul>
-    </nav>
-
-</header>
+ 
+        <nav>
+                <a href="index.jsp"><img class="logo" src="catfactslogo.png" alt="logo"></a>
+            <ul class="nav__links">
+                <li class="button"><a class="navlink" href="boards.jsp">Boards</a></li>
+                <li class="button"><a class="navlink" href="games.jsp">Games Database</a></li>
+                <li class="button"><a class="navlink" href="teams.jsp">Teams</a></li>
+                <li class="button"><a class="navlink" href="guidehome.jsp">Guides</a></li>
+            </ul>
+        </nav>
+ 
+    </header>
      
-          
-
+     <form id="redirectForm" action="#">
+         <input type="text" id="redirectInput" placeholder="Enter your search query">
+     </form>
+     
      <script>
          document.getElementById("redirectForm").addEventListener("submit", function(event) {
              event.preventDefault(); // Prevent form submission
@@ -168,10 +179,6 @@ table tr:hover {
              }
          });
      </script>
-     
-     <form id="redirectForm" action="#">
-         <input type="text" id="redirectInput" placeholder="Enter your search query">
-     </form>
         
      <h1><center>Explanation about teams</center></h1>
         <%
