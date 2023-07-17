@@ -119,6 +119,8 @@
  
     </header>
      
+     <div class="rest">
+     
      <form id="redirectForm" action="#">
          <input type="text" id="redirectInput" placeholder="Enter your search query">
      </form>
@@ -141,12 +143,18 @@
              }
          });
      </script>
-        
-        <div class="rest">
+     
+     <% 
+            GameDAO gd = new GameDAO();
+            int gameID = Integer.parseInt(request.getParameter("gameID"));
+            Game game = gd.getGame(gameID);
             
-            <form id="redirectForm" action="#">
-                <input type="text" id="redirectInput" placeholder="Enter your search query">
-            </form>
+            VideosDAO vd = new VideosDAO();
+            int videoID=1;
+            Videos video = vd.getVideo(gameID);
+            %>
+        
+        
             
         <div class="grid-container">
             <div class="grid-item">
