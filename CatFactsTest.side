@@ -1,0 +1,979 @@
+{
+  "id": "896e6e54-b83f-455e-a614-2247e7847aa0",
+  "version": "2.0",
+  "name": "CatFactsTest",
+  "url": "http://localhost:8181/CatFacts/index.jsp",
+  "tests": [{
+    "id": "11833cde-cb84-408e-948f-0486a584e1e2",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "3ad7155c-1b60-4ee9-9307-c2ef3b4dcccf",
+    "name": "MichaelScott",
+    "commands": [{
+      "id": "e33198a9-7bb3-4172-ac5f-77ac02cd9380",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8181/CatFacts/index.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0f237116-6083-41bf-934f-ebe1bc2fbcf8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b91d41f3-9ca1-4627-834d-87033912c749",
+      "comment": "",
+      "command": "click",
+      "target": "id=signUpButton",
+      "targets": [
+        ["id=signUpButton", "id"],
+        ["css=#signUpButton", "css:finder"],
+        ["xpath=//button[@id='signUpButton']", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Sign Up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "672937ee-4e5a-4fa9-a80a-b1a972e906e4",
+      "comment": "",
+      "command": "click",
+      "target": "name=createUsername",
+      "targets": [
+        ["name=createUsername", "name"],
+        ["css=#signUpForm input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='createUsername']", "xpath:attributes"],
+        ["xpath=//div[@id='signUpForm']/form/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "264a3319-2fc3-4930-b309-2c0b3e6c48a5",
+      "comment": "",
+      "command": "type",
+      "target": "name=createUsername",
+      "targets": [
+        ["name=createUsername", "name"],
+        ["css=#signUpForm input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='createUsername']", "xpath:attributes"],
+        ["xpath=//div[@id='signUpForm']/form/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/form/div/input", "xpath:position"]
+      ],
+      "value": "MichaelScott"
+    }, {
+      "id": "581a7a82-7270-4b58-8909-772fb856f096",
+      "comment": "",
+      "command": "click",
+      "target": "name=createEmail",
+      "targets": [
+        ["name=createEmail", "name"],
+        ["css=#signUpForm input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='createEmail']", "xpath:attributes"],
+        ["xpath=//div[@id='signUpForm']/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/form/div/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5074ea25-0a51-4ec6-90cc-65af27dcb26f",
+      "comment": "",
+      "command": "type",
+      "target": "name=createEmail",
+      "targets": [
+        ["name=createEmail", "name"],
+        ["css=#signUpForm input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='createEmail']", "xpath:attributes"],
+        ["xpath=//div[@id='signUpForm']/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/form/div/input[2]", "xpath:position"]
+      ],
+      "value": "twss@gmail.com"
+    }, {
+      "id": "b7c17894-30e3-4215-b9b3-db5548bdaaed",
+      "comment": "",
+      "command": "click",
+      "target": "name=createPassword",
+      "targets": [
+        ["name=createPassword", "name"],
+        ["css=input:nth-child(6)", "css:finder"],
+        ["xpath=//input[@name='createPassword']", "xpath:attributes"],
+        ["xpath=//div[@id='signUpForm']/form/div/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "385f226e-c43d-4f31-83b7-3f0abdad3831",
+      "comment": "",
+      "command": "type",
+      "target": "name=createPassword",
+      "targets": [
+        ["name=createPassword", "name"],
+        ["css=input:nth-child(6)", "css:finder"],
+        ["xpath=//input[@name='createPassword']", "xpath:attributes"],
+        ["xpath=//div[@id='signUpForm']/form/div/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "1234abcD"
+    }, {
+      "id": "9f5e1d85-9b06-4ad3-9332-7234280d815c",
+      "comment": "",
+      "command": "click",
+      "target": "id=signupSubmitButton",
+      "targets": [
+        ["id=signupSubmitButton", "id"],
+        ["css=#signupSubmitButton", "css:finder"],
+        ["xpath=//button[@id='signupSubmitButton']", "xpath:attributes"],
+        ["xpath=//div[@id='signUpForm']/form/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/form/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d76df41-1bc4-4f56-969b-183baf2e0fe2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Boards",
+      "targets": [
+        ["linkText=Boards", "linkText"],
+        ["css=.button:nth-child(1) > .navlink", "css:finder"],
+        ["xpath=//a[contains(text(),'Boards')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'boards.jsp')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Boards')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "085c1e88-d8a5-4467-b879-e20527fd121a",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(2) > button",
+      "targets": [
+        ["css=a:nth-child(2) > button", "css:finder"],
+        ["xpath=//a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Game Boards')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba74cfc7-363f-45fb-af90-af7af9af3498",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Start a new thread",
+      "targets": [
+        ["linkText=Start a new thread", "linkText"],
+        ["css=.add-post", "css:finder"],
+        ["xpath=//a[contains(text(),'Start a new thread')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'threadstart.jsp?threadCatID=1')]", "xpath:href"],
+        ["xpath=//body/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Start a new thread')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a06fd74-8258-44b1-8e67-92bbf7b186d2",
+      "comment": "",
+      "command": "click",
+      "target": "id=threadTitle",
+      "targets": [
+        ["id=threadTitle", "id"],
+        ["name=threadTitle", "name"],
+        ["css=#threadTitle", "css:finder"],
+        ["xpath=//input[@id='threadTitle']", "xpath:attributes"],
+        ["xpath=//div[2]/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b15cc9bb-a046-42a8-ac0b-9af43c474bf6",
+      "comment": "",
+      "command": "type",
+      "target": "id=threadTitle",
+      "targets": [
+        ["id=threadTitle", "id"],
+        ["name=threadTitle", "name"],
+        ["css=#threadTitle", "css:finder"],
+        ["xpath=//input[@id='threadTitle']", "xpath:attributes"],
+        ["xpath=//div[2]/form/input", "xpath:position"]
+      ],
+      "value": "Master of the Triforce - That's What She Said"
+    }, {
+      "id": "8e6f03d3-2420-4d29-b0e1-37588c32a813",
+      "comment": "",
+      "command": "click",
+      "target": "id=postText",
+      "targets": [
+        ["id=postText", "id"],
+        ["name=postText", "name"],
+        ["css=#postText", "css:finder"],
+        ["xpath=//textarea[@id='postText']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "05b75cbf-de39-40be-aacc-74b35a537cda",
+      "comment": "",
+      "command": "click",
+      "target": "id=postText",
+      "targets": [
+        ["id=postText", "id"],
+        ["name=postText", "name"],
+        ["css=#postText", "css:finder"],
+        ["xpath=//textarea[@id='postText']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "225b80c4-937b-4367-a7a3-6974b857d267",
+      "comment": "",
+      "command": "type",
+      "target": "id=postText",
+      "targets": [
+        ["id=postText", "id"],
+        ["name=postText", "name"],
+        ["css=#postText", "css:finder"],
+        ["xpath=//textarea[@id='postText']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Hey, Zelda fans! Michael Scott here, your favorite Dungeon Master. So, I've been playing this game called The Legend of Zelda, and I must say, it's amazing! The whole concept of exploring dungeons, battling monsters, and saving princesses really gets my adrenaline pumping.\\n\\nBut here's the question: Who else thinks the Triforce is like the ultimate Dundie Award? Three pieces that symbolize wisdom, courage, and power – talk about office politics! Share your thoughts, and let's discuss this incredible game."
+    }, {
+      "id": "f6a89144-ce9c-4d95-907a-6b4608c66487",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.blue-font > .add-post", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e92cc0d0-45af-4e9e-9a2e-b561396f3788",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Master of the Triforce - That's What She Said",
+      "targets": [
+        ["linkText=Master of the Triforce - That's What She Said", "linkText"],
+        ["css=td > a", "css:finder"],
+        ["xpath=//a[contains(@href, 'thread.jsp?threadID=1')]", "xpath:href"],
+        ["xpath=//td/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6231250-4dc7-49dc-b225-0b830808be6a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign out.",
+      "targets": [
+        ["linkText=Sign out.", "linkText"],
+        ["css=a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign out.')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'LogoutServlet')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign out.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "2cbc1d3b-8bf8-4c15-a452-b4dbe17db405",
+    "name": "DwightSchrute",
+    "commands": [{
+      "id": "38000da0-20bb-43b8-bf86-461dfe53d4fb",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8181/CatFacts/index.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3b557306-925f-469e-9f35-2ca7c64dd35d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cb5088aa-993d-404c-9e85-afd15bfc9ece",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Guides",
+      "targets": [
+        ["linkText=Guides", "linkText"],
+        ["css=.button:nth-child(4) > .navlink", "css:finder"],
+        ["xpath=//a[contains(text(),'Guides')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'guidehome.jsp')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Guides')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a71cfbae-618d-4d4f-91ab-09dc66f45c92",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Boards",
+      "targets": [
+        ["linkText=Boards", "linkText"],
+        ["css=.button:nth-child(1) > .navlink", "css:finder"],
+        ["xpath=//a[contains(text(),'Boards')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'boards.jsp')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Boards')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "540985ac-f334-4abe-9975-c48705a2667b",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(2) > button",
+      "targets": [
+        ["css=a:nth-child(2) > button", "css:finder"],
+        ["xpath=//a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Game Boards')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c487393e-23fe-41b6-bb13-850b99a53c12",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Master of the Triforce - That's What She Said",
+      "targets": [
+        ["linkText=Master of the Triforce - That's What She Said", "linkText"],
+        ["css=td > a", "css:finder"],
+        ["xpath=//a[contains(@href, 'thread.jsp?threadID=1')]", "xpath:href"],
+        ["xpath=//td/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "39ab8fd8-5cbe-48ca-ad78-3870a1f88c78",
+      "comment": "",
+      "command": "click",
+      "target": "id=signUpButton",
+      "targets": [
+        ["id=signUpButton", "id"],
+        ["css=#signUpButton", "css:finder"],
+        ["xpath=//button[@id='signUpButton']", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Sign Up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a3b572d9-3300-4117-a72c-ee251fc94f25",
+      "comment": "",
+      "command": "click",
+      "target": "css=#signUpForm input:nth-child(2)",
+      "targets": [
+        ["css=#signUpForm input:nth-child(2)", "css:finder"],
+        ["xpath=(//input[@name='username'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='signUpForm']/form/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7011571-cee2-40b5-9bd6-346c2322b1a9",
+      "comment": "",
+      "command": "type",
+      "target": "css=#signUpForm input:nth-child(2)",
+      "targets": [
+        ["css=#signUpForm input:nth-child(2)", "css:finder"],
+        ["xpath=(//input[@name='username'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='signUpForm']/form/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/form/div/input", "xpath:position"]
+      ],
+      "value": "Dwight"
+    }, {
+      "id": "d02d8e00-bd2b-459c-b7a2-ada8ab6a8a23",
+      "comment": "",
+      "command": "click",
+      "target": "css=#signUpForm .cancelbtn",
+      "targets": [
+        ["css=#signUpForm .cancelbtn", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='signUpForm']/form/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/form/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d02863cf-e14b-47f0-9c38-ee08cb117313",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Boards",
+      "targets": [
+        ["linkText=Boards", "linkText"],
+        ["css=.button:nth-child(1) > .navlink", "css:finder"],
+        ["xpath=//a[contains(text(),'Boards')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'boards.jsp')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Boards')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "10ee15ca-035e-4d15-b9da-7012b32a8073",
+      "comment": "",
+      "command": "click",
+      "target": "id=signUpButton",
+      "targets": [
+        ["id=signUpButton", "id"],
+        ["css=#signUpButton", "css:finder"],
+        ["xpath=//button[@id='signUpButton']", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Sign Up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "67b39245-aa53-4be3-9c99-088686511388",
+      "comment": "",
+      "command": "click",
+      "target": "name=createUsername",
+      "targets": [
+        ["name=createUsername", "name"],
+        ["css=#signUpForm input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='createUsername']", "xpath:attributes"],
+        ["xpath=//div[@id='signUpForm']/form/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1167e876-5ad0-4206-80ed-65ea45602995",
+      "comment": "",
+      "command": "click",
+      "target": "name=createUsername",
+      "targets": [
+        ["name=createUsername", "name"],
+        ["css=#signUpForm input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='createUsername']", "xpath:attributes"],
+        ["xpath=//div[@id='signUpForm']/form/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e8825de-8d06-4972-804d-36b2ae6b1e89",
+      "comment": "",
+      "command": "click",
+      "target": "id=signUpForm",
+      "targets": [
+        ["id=signUpForm", "id"],
+        ["css=#signUpForm", "css:finder"],
+        ["xpath=//div[@id='signUpForm']", "xpath:attributes"],
+        ["xpath=//div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "889addb2-d589-4616-b116-5901d90c5836",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Games Database",
+      "targets": [
+        ["linkText=Games Database", "linkText"],
+        ["css=.button:nth-child(2) > .navlink", "css:finder"],
+        ["xpath=//a[contains(text(),'Games Database')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'games.jsp')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Games Database')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "96a07df0-5176-41cc-9225-86b95d8f38cc",
+      "comment": "",
+      "command": "click",
+      "target": "id=signUpButton",
+      "targets": [
+        ["id=signUpButton", "id"],
+        ["css=#signUpButton", "css:finder"],
+        ["xpath=//button[@id='signUpButton']", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Sign Up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "254b169d-b43a-4d96-a78c-1946d5df8f1e",
+      "comment": "",
+      "command": "click",
+      "target": "name=createUsername",
+      "targets": [
+        ["name=createUsername", "name"],
+        ["css=#signUpForm input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='createUsername']", "xpath:attributes"],
+        ["xpath=//div[@id='signUpForm']/form/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3191335-808d-4a76-8c9e-1b101b71defe",
+      "comment": "",
+      "command": "type",
+      "target": "name=createUsername",
+      "targets": [
+        ["name=createUsername", "name"],
+        ["css=#signUpForm input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='createUsername']", "xpath:attributes"],
+        ["xpath=//div[@id='signUpForm']/form/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/form/div/input", "xpath:position"]
+      ],
+      "value": "DwightSchrute"
+    }, {
+      "id": "493f566c-264d-4c5a-a3bd-7974b9180884",
+      "comment": "",
+      "command": "click",
+      "target": "name=createEmail",
+      "targets": [
+        ["name=createEmail", "name"],
+        ["css=#signUpForm input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='createEmail']", "xpath:attributes"],
+        ["xpath=//div[@id='signUpForm']/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/form/div/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "32c1082c-9f29-4fa2-9538-5db68a187a36",
+      "comment": "",
+      "command": "click",
+      "target": "name=createEmail",
+      "targets": [
+        ["name=createEmail", "name"],
+        ["css=#signUpForm input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='createEmail']", "xpath:attributes"],
+        ["xpath=//div[@id='signUpForm']/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/form/div/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ebe2726f-7cb6-4304-9558-dae053901dda",
+      "comment": "",
+      "command": "type",
+      "target": "name=createEmail",
+      "targets": [
+        ["name=createEmail", "name"],
+        ["css=#signUpForm input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='createEmail']", "xpath:attributes"],
+        ["xpath=//div[@id='signUpForm']/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/form/div/input[2]", "xpath:position"]
+      ],
+      "value": "bearsbeetsbattlestargalactica@gmail.com"
+    }, {
+      "id": "7ac3b052-db1b-4142-afd8-546d4c6c53b1",
+      "comment": "",
+      "command": "type",
+      "target": "name=createPassword",
+      "targets": [
+        ["name=createPassword", "name"],
+        ["css=input:nth-child(6)", "css:finder"],
+        ["xpath=//input[@name='createPassword']", "xpath:attributes"],
+        ["xpath=//div[@id='signUpForm']/form/div/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "1234abcD"
+    }, {
+      "id": "943af449-020a-4a19-8036-bb2c33c808e0",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=createPassword",
+      "targets": [
+        ["name=createPassword", "name"],
+        ["css=input:nth-child(6)", "css:finder"],
+        ["xpath=//input[@name='createPassword']", "xpath:attributes"],
+        ["xpath=//div[@id='signUpForm']/form/div/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "2a9f9b54-c254-4e47-a3e9-50ca876e621d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Boards",
+      "targets": [
+        ["linkText=Boards", "linkText"],
+        ["css=.button:nth-child(1) > .navlink", "css:finder"],
+        ["xpath=//a[contains(text(),'Boards')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'boards.jsp')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Boards')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9586984e-b2e3-497e-8394-2eb0752f6432",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(2) > button",
+      "targets": [
+        ["css=a:nth-child(2) > button", "css:finder"],
+        ["xpath=//a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Game Boards')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "04e66dea-aec4-4453-8070-e1532b93e07f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Master of the Triforce - That's What She Said",
+      "targets": [
+        ["linkText=Master of the Triforce - That's What She Said", "linkText"],
+        ["css=td > a", "css:finder"],
+        ["xpath=//a[contains(@href, 'thread.jsp?threadID=1')]", "xpath:href"],
+        ["xpath=//td/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "be36a261-c84f-4b52-94e1-a41b07298e42",
+      "comment": "",
+      "command": "click",
+      "target": "name=postText",
+      "targets": [
+        ["name=postText", "name"],
+        ["css=.text-area", "css:finder"],
+        ["xpath=//textarea[@name='postText']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "83c9b582-0479-4177-8bc5-203d63ac84a8",
+      "comment": "",
+      "command": "type",
+      "target": "name=postText",
+      "targets": [
+        ["name=postText", "name"],
+        ["css=.text-area", "css:finder"],
+        ["xpath=//textarea[@name='postText']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Greetings, fellow gamers and mere mortals. Dwight Schrute, Assistant to the Regional Manager, here to enlighten you on the undeniable parallels between The Legend of Zelda and the Schrute family's heritage.\\n\\nIn my analysis, Link embodies the epitome of a perfect Assistant Regional Manager. His resourcefulness, problem-solving skills, and unwavering determination are qualities every true hero possesses. If anyone would like a tutorial on Hylian swordsmanship or discussing the significance of Epona, I am your guide. Together, we shall conquer Hyrule!"
+    }, {
+      "id": "e2bf32a9-2b72-4f8b-a7e4-65e41cbce562",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.add-post", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0d3b5fd-8793-4008-b28e-2f8d451721db",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign out.",
+      "targets": [
+        ["linkText=Sign out.", "linkText"],
+        ["css=a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign out.')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'LogoutServlet')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign out.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "859d783e-e25e-4fbd-b306-85de2e5b98d5",
+    "name": "JimHalpert",
+    "commands": [{
+      "id": "c8ca1b24-ca33-4725-9373-05c17f31cbd9",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8181/CatFacts/index.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ca6080e1-768c-4f1d-90bf-a80119915142",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ff4a3ace-34dd-4370-81d4-342a49717f5c",
+      "comment": "",
+      "command": "click",
+      "target": "id=signUpButton",
+      "targets": [
+        ["id=signUpButton", "id"],
+        ["css=#signUpButton", "css:finder"],
+        ["xpath=//button[@id='signUpButton']", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Sign Up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "67c5132a-986a-406b-8154-07252eb0e449",
+      "comment": "",
+      "command": "click",
+      "target": "name=createUsername",
+      "targets": [
+        ["name=createUsername", "name"],
+        ["css=#signUpForm input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='createUsername']", "xpath:attributes"],
+        ["xpath=//div[@id='signUpForm']/form/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2920c6cd-2b66-4bb7-9b4e-97830a852b91",
+      "comment": "",
+      "command": "type",
+      "target": "name=createUsername",
+      "targets": [
+        ["name=createUsername", "name"],
+        ["css=#signUpForm input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='createUsername']", "xpath:attributes"],
+        ["xpath=//div[@id='signUpForm']/form/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/form/div/input", "xpath:position"]
+      ],
+      "value": "JimHalpert"
+    }, {
+      "id": "0326b8f1-8046-4159-ad7b-a9a72d149381",
+      "comment": "",
+      "command": "click",
+      "target": "name=createEmail",
+      "targets": [
+        ["name=createEmail", "name"],
+        ["css=#signUpForm input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='createEmail']", "xpath:attributes"],
+        ["xpath=//div[@id='signUpForm']/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/form/div/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ec41d57-870d-41a7-817d-01a256bfdf3b",
+      "comment": "",
+      "command": "type",
+      "target": "name=createEmail",
+      "targets": [
+        ["name=createEmail", "name"],
+        ["css=#signUpForm input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='createEmail']", "xpath:attributes"],
+        ["xpath=//div[@id='signUpForm']/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/form/div/input[2]", "xpath:position"]
+      ],
+      "value": "dundermiff@gmail.com"
+    }, {
+      "id": "342e0e8f-e4b3-4f71-a01a-7ddd1a5d9ae3",
+      "comment": "",
+      "command": "click",
+      "target": "name=createPassword",
+      "targets": [
+        ["name=createPassword", "name"],
+        ["css=input:nth-child(6)", "css:finder"],
+        ["xpath=//input[@name='createPassword']", "xpath:attributes"],
+        ["xpath=//div[@id='signUpForm']/form/div/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e512dd1-f145-4596-bcd0-aa4b9d99504e",
+      "comment": "",
+      "command": "type",
+      "target": "name=createPassword",
+      "targets": [
+        ["name=createPassword", "name"],
+        ["css=input:nth-child(6)", "css:finder"],
+        ["xpath=//input[@name='createPassword']", "xpath:attributes"],
+        ["xpath=//div[@id='signUpForm']/form/div/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "1234abcD"
+    }, {
+      "id": "c1a6e629-35ef-4348-9331-c1884415387e",
+      "comment": "",
+      "command": "click",
+      "target": "id=signupSubmitButton",
+      "targets": [
+        ["id=signupSubmitButton", "id"],
+        ["css=#signupSubmitButton", "css:finder"],
+        ["xpath=//button[@id='signupSubmitButton']", "xpath:attributes"],
+        ["xpath=//div[@id='signUpForm']/form/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/form/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b57d0a0-bdd9-4162-9713-1706ba44b6aa",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=JimHalpert.",
+      "targets": [
+        ["linkText=JimHalpert.", "linkText"],
+        ["css=.logged-in-status > a:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'JimHalpert.')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'profile.jsp?userID=8')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'JimHalpert.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e455a24c-4ae5-4a39-b05e-87eb6e7864f1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.custom-file-upload",
+      "targets": [
+        ["css=.custom-file-upload", "css:finder"],
+        ["xpath=//form/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "09c91cb5-a3ed-451e-b0e3-a71ddde9e36e",
+      "comment": "",
+      "command": "type",
+      "target": "id=file-upload",
+      "targets": [
+        ["id=file-upload", "id"],
+        ["name=photo", "name"],
+        ["css=#file-upload", "css:finder"],
+        ["xpath=//input[@id='file-upload']", "xpath:attributes"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": "C:\\fakepath\\jhalpert.jpg"
+    }, {
+      "id": "391cd847-cf46-4241-84d4-8e691e306c6e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Boards",
+      "targets": [
+        ["linkText=Boards", "linkText"],
+        ["css=.button:nth-child(1) > .navlink", "css:finder"],
+        ["xpath=//a[contains(text(),'Boards')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'boards.jsp')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Boards')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a3317ced-3f6e-4fbe-9512-3268d587e7ae",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(2) > button",
+      "targets": [
+        ["css=a:nth-child(2) > button", "css:finder"],
+        ["xpath=//a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Game Boards')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1baa3b28-52c9-4ba5-bc64-27ee96f707c8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Master of the Triforce - That's What She Said",
+      "targets": [
+        ["linkText=Master of the Triforce - That's What She Said", "linkText"],
+        ["css=td > a", "css:finder"],
+        ["xpath=//a[contains(@href, 'thread.jsp?threadID=1')]", "xpath:href"],
+        ["xpath=//td/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6350fbe-c2fb-46bf-b946-414a5730a51a",
+      "comment": "",
+      "command": "click",
+      "target": "name=postText",
+      "targets": [
+        ["name=postText", "name"],
+        ["css=.text-area", "css:finder"],
+        ["xpath=//textarea[@name='postText']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "029fbbec-ac9d-4799-bd94-ea9fd0296cac",
+      "comment": "",
+      "command": "type",
+      "target": "name=postText",
+      "targets": [
+        ["name=postText", "name"],
+        ["css=.text-area", "css:finder"],
+        ["xpath=//textarea[@name='postText']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Hey, everyone! Jim Halpert, your resident prankster from Dunder Mifflin Scranton, reporting in. So, I've been thinking... wouldn't it be hilarious if Link pulled off some classic pranks on Ganon? Picture it: replacing his weapons with rubber chickens, replacing his potions with Slurpee cups, or maybe even swapping his villainous laugh with a high-pitched giggle.\\n\\nWhat other creative pranks could we see Link play on Ganon? Let your imagination run wild! And remember, the hero always gets the last laugh!\\n\\nFeel free to reply to any of the posts or start your own discussions related to The Legend of Zelda. Let the adventure begin!"
+    }, {
+      "id": "29d9e868-3820-4755-980c-b254d3564d83",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.add-post", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a099c0c-bb16-48fa-ab58-e150099f9bd5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Edit",
+      "targets": [
+        ["linkText=Edit", "linkText"],
+        ["css=.edit-post:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Edit')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'editpost.jsp?postID=3')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Edit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "00f0b839-d630-4bbe-b25f-8a959799d15d",
+      "comment": "",
+      "command": "click",
+      "target": "name=editText",
+      "targets": [
+        ["name=editText", "name"],
+        ["css=.text-area", "css:finder"],
+        ["xpath=//textarea[@name='editText']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d03e597-7372-4fd6-a1a9-88921bd0ed5d",
+      "comment": "",
+      "command": "type",
+      "target": "name=editText",
+      "targets": [
+        ["name=editText", "name"],
+        ["css=.text-area", "css:finder"],
+        ["xpath=//textarea[@name='editText']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Hey, everyone! Jim Halpert, your resident prankster from Dunder Mifflin Scranton, reporting in. So, I've been thinking... wouldn't it be hilarious if Link pulled off some classic pranks on Ganon? Picture it: replacing his weapons with rubber chickens, replacing his potions with Slurpee cups, or maybe even swapping his villainous laugh with a high-pitched giggle.\\n\\nWhat other creative pranks could we see Link play on Ganon? Let your imagination run wild! And remember, the hero always gets the last laugh!\\n\\nFeel free to reply to any of the posts or start your own discussions related to The Legend of Zelda. Let the adventure begin!!"
+    }, {
+      "id": "28696aed-187c-4531-8240-bb5688129663",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.text-stuff:nth-child(2) > .add-post", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bbbbc162-91e4-46b0-8db0-665ff043639a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign out.",
+      "targets": [
+        ["linkText=Sign out.", "linkText"],
+        ["css=a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign out.')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'LogoutServlet')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign out.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a39ccee4-cafa-46b4-9c8b-ff8f916a1ef4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-stuff:nth-child(3) .post-text",
+      "targets": [
+        ["css=.text-stuff:nth-child(3) .post-text", "css:finder"],
+        ["xpath=//table[3]/tbody/tr/td[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "a990dad8-5ad2-4899-9778-8fd229550bcb",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["11833cde-cb84-408e-948f-0486a584e1e2"]
+  }],
+  "urls": ["http://localhost:8181/"],
+  "plugins": []
+}
