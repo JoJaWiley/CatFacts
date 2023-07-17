@@ -14,7 +14,7 @@ CREATE TABLE Games (
 DROP TABLE IF EXISTS User;
 CREATE TABLE User (
     UserID INT PRIMARY KEY auto_increment,
-    UserName VARCHAR(50),
+    UserName VARCHAR(50) UNIQUE,
     Email VARCHAR(100),
     Password VARCHAR(100)
 );
@@ -176,70 +176,24 @@ VALUES
 ("Technical Boards"),
 ("Other");
   
-  DROP TABLE IF EXISTS friends;
-  CREATE TABLE friends (
-  
-  FriendsID INT PRIMARY kEY AUTO_INCREMENT,
-  UserID1 INT,
-  UserID2 INT
-);
+DROP TABLE IF EXISTS friend;
 
 DROP TABLE IF EXISTS Question;
-CREATE TABLE Question (
-  questionID INT PRIMARY KEY AUTO_INCREMENT,
-  title VARCHAR(255),
-  userID INT,
-  content TEXT,
-  questionCatID INT
-);
+
 
 DROP TABLE IF EXISTS answers;
-CREATE TABLE answers (
-  answerID INT PRIMARY KEY AUTO_INCREMENT,
-  content TEXT,
-  userID INT,
-  questionID INT
-);
+
 
 DROP TABLE IF EXISTS questioncat;
-CREATE TABLE questionCat (
-  questionCatID INT PRIMARY KEY AUTO_INCREMENT,
-  title VARCHAR(255)
-);
 
 DROP TABLE IF EXISTS newscats;
-CREATE TABLE newscats (
-  newscatID INT PRIMARY KEY AUTO_INCREMENT,
-  title VARCHAR(255),
-  content TEXT
-);
 
-DROP TABLE IF EXISTS guidecategories;
-CREATE TABLE guidecategories (
-  guideCategoryID INT PRIMARY KEY AUTO_INCREMENT,
-  title VARCHAR(255)
-);
 
 DROP TABLE IF EXISTS strategies;
-CREATE TABLE strategies (
-  StratID INT PRIMARY KEY AUTO_INCREMENT,
-  StratContent TEXT
-);
 
 DROP TABLE IF EXISTS info;
-CREATE TABLE info (
-  InfoID INT PRIMARY KEY AUTO_INCREMENT,
-  InfoContent TEXT
-);
 
 DROP TABLE IF EXISTS favgames;
-CREATE TABLE favGames (
-  FavGamesID INT PRIMARY KEY AUTO_INCREMENT,
-  UserID INT,
-  GameID INT,
-  FOREIGN KEY (UserID) REFERENCES User(UserID),
-  FOREIGN KEY (GameID) REFERENCES Games(GameID)
-);
 
 INSERT INTO User (UserID, UserName, Email, Password)
 VALUES (1, 'JohnDoe', 'johndoe@example.com', 'mypassword');
