@@ -20,36 +20,42 @@
 </head>
 <body>
     
-    <%  User myuser = (User)request.getSession().getAttribute("myuser");
+    <%  //get the potentially logged in user's user object from session attribute stored at login/signup
+        User myuser = (User)request.getSession().getAttribute("myuser");
+        //set it in session again just to be sure?
         request.getSession().setAttribute("myuser", myuser);
+        //a string to display logged in status with links to profile and signout
         String loggedIn;
+        //link to user's profile
         String mylink;
 
+        //if the user is not logged in, say so
         if (Objects.isNull(myuser))
             loggedIn = "You are not logged in.";
+        //otherwise, the user is logged in. Say so, with links to profile and signout
         else {
             mylink = "profile.jsp?userID=" + myuser.getUserID();
             loggedIn = "Welcome, <a href='" + mylink + "'>" + myuser.getUserName() + ".</a> Not you? <a href='LogoutServlet'>Sign out.</a>";
+            //get the user's profile to ensure it exists
             ProfileDAO pd = new ProfileDAO();
             Profile myprofile = pd.getProfileByUserID(myuser.getUserID());
+            //create a profile for the user if one isn't already created
             if (Objects.isNull(myprofile)) {
                 pd.insertProfile(myuser);
                 myprofile = pd.getProfileByUserID(myuser.getUserID());
             }
+            //set the profile as a session attribute
             request.getSession().setAttribute("myprofile", myprofile);
         }
             
         
     %>
-    
-    
     <!--Login and signup button and their modal forms-->
     <div class="button-container">
         <div class="logged-in-status">
             <%out.println(loggedIn);%>
         </div>
-        
-    <button id="loginButton" onclick="document.getElementById('loginForm').style.display='block'" style="width:auto;">Login</button>
+        <button id="loginButton" onclick="document.getElementById('loginForm').style.display='block'" style="width:auto;">Login</button>
         <div id="loginForm" class="modal">
             <form class="modal-content animate" action="login.jsp" method="post">
                 <div class="container">
@@ -90,7 +96,8 @@
             </form>
         </div>
     </div>
-        
+
+<!--javascript to open login and signup form in a separate window-->            
 <script>
   // Get the modal elements
   var loginModal = document.getElementById('loginForm');
@@ -106,23 +113,27 @@
     }
   }
 </script>
-
+  
+     <!--navbar header-->
     <header>
+ 
         <nav>
-            <a href="index.html">
-                <img class="logo" src="catfactslogo.png" alt="logo">
-            </a>
+                <a href="index.jsp"><img class="logo" src="catfactslogo.png" alt="logo"></a>
             <ul class="nav__links">
-                <li id="button"><a class="navlink" href="boards.jsp">Boards</a></li>
-                <li id="button"><a class="navlink" href="games.jsp">Games Database</a></li>
-                <li id="button"><a class="navlink" href="teams.jsp">Teams</a></li>
-                <li id="button"><a class="navlink" href="guidehome.jsp">Guides</a></li>
+                <li class="button"><a class="navlink" href="boards.jsp">Boards</a></li>
+                <li class="button"><a class="navlink" href="games.jsp">Games Database</a></li>
+                <li class="button"><a class="navlink" href="teams.jsp">Teams</a></li>
+                <li class="button"><a class="navlink" href="guidehome.jsp">Guides</a></li>
             </ul>
         </nav>
+ 
     </header>
-
-    <!--search bar functionality-->
-    <script>
+     
+     <form id="redirectForm" action="#">
+         <input type="text" id="redirectInput" placeholder="Enter your search query">
+     </form>
+     
+     <script>
          document.getElementById("redirectForm").addEventListener("submit", function(event) {
              event.preventDefault(); // Prevent form submission
              var input = document.getElementById("redirectInput").value.toLowerCase(); // Convert input to lowercase
@@ -140,12 +151,6 @@
              }
          });
      </script>
-     
-     <form id="redirectForm" action="#">
-         <input type="text" id="redirectInput" placeholder="Enter your search query">
-     </form>
-   
-     
      
     <!-- question button -->
     <div class="question-container">
