@@ -41,7 +41,8 @@ public class LogoutServlet extends HttpServlet {
         HttpSession session=request.getSession(false);
         
         session.invalidate();
-        response.sendRedirect(request.getContextPath() + "/index.jsp");
+        String referer = request.getHeader("Referer");
+        response.sendRedirect(referer);
     }
 
     /**
