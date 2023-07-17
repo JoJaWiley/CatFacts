@@ -1,23 +1,17 @@
-<%-- 
-    Document   : games
-    Created on : Jul 6, 2023, 10:23:22 AM
-    Author     : ftoyi
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="java.sql.*, backendfacts.*, java.util.*"%>
-
-        
-        
-                
+     
 <!DOCTYPE html>
 <html>
     <head>
+        
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Games Database Page</title>
         <link rel="stylesheet" href="StyleSheet.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!--Add this script link for score color change functionality-->
 
     </head>
+    
     <%  User myuser = (User)request.getSession().getAttribute("myuser");
         request.getSession().setAttribute("myuser", myuser);
         String loggedIn;
@@ -103,7 +97,7 @@
   }
 </script>
 
-     <!--navbar header-->
+     <!--navbar header and the its links-->
     <header>
  
         <nav>
@@ -118,8 +112,7 @@
  
     </header>
      
-          
-
+<!-- Search bar functionality -->
      <script>
          document.getElementById("redirectForm").addEventListener("submit", function(event) {
              event.preventDefault(); // Prevent form submission
@@ -140,41 +133,96 @@
      </script>
      <form id="redirectForm" action="#">
          <input type="text" id="redirectInput" placeholder="Enter your search query">
-     </form>     
-        <%
-GameDAO gd = new GameDAO();
-ArrayList<Game> games = gd.getAllGames();
-for (Game game : games)
-    {
-        %>
-        <a href ="specificgp.jsp?gameID=<%=game.getGameID()%>"><div class="grid-container">
-            <div class="grid-item">
-                <div class="grid-container">
-                <div class="grid-image">
-	<img class="game-cover" src="game_images/<%=game.getGameID()%>.jpg" width="200">
-                </div>
-                <div class="grid-item">
-                <p><%out.println(game.getTitle());%></p>
-                </div>
-            </div>
-            </div>
+     </form> 
+     
+<!-- Start of game database content utilizing the GameDAO and for loop --> 
+    <%
+        GameDAO gd = new GameDAO();
+        ArrayList<Game> games = gd.getAllGames();
+        for (Game game : games)
+            {
+    %>
+
+    <div class="game-container">     
             
-            <div class="grid-item">
-                <div class="grid-container">
-                    <div class="grid-item">
-                Release Date<br>
-                <%out.println(game.getDate());%> 
-                    </div>
-                    <div class="grid-item">
-                        Score<br>
-                        <%out.println(game.getScore());%>  
-                    </div>
+        <div class="game-item">
+            <a class="game-link" href ="specificgp.jsp?gameID=<%=game.getGameID()%>">
+                <div class="game-image">
+                    <img class="game-cover" src="game_images/<%=game.getGameID()%>.jpg" width="200">
                 </div>
-            </div>
-            </div></a>
-               <%
-                   }
-               %>
+            </a>
+        </div>
+                
+        <div class="game-item">
+            <a class="game-link" href ="specificgp.jsp?gameID=<%=game.getGameID()%>">
+                <div class="game-item-text">
+                    <h1><%out.println(game.getTitle());%></h1>
+                </div>
+            </a>
+        </div>       
+               
+        <div class="game-item">
+            <div class="game-item-text2">
+            <h3>Release Date:</h3>
+            <h2 class="game-date"><%out.println(game.getDate());%></h2>
+                </div>
+        </div>       
+                   
+        <div class="game-item">
+            <div class="game-item-text2">
+            <h3>Score:</h3>
+            <h1 data-score-text="<%out.println(game.getScore());%>" class="score-text"><%out.println(game.getScore());%></h1>
+                </div>
+        </div>
+                
+<!--Added a JS/JQuery function that sets parameters for color changes-->                
+<script>
+$(document).ready(function(){
+  
+  var mc = {
+    '0-59' : 'red',
+    '60-74':'orange',
+    '75-84': 'blue',
+    '85-100': 'green'
+  };
+  
+function between(x, min, max) {
+  return x >= min && x <= max;
+}
+
+  var dc;
+  var first; 
+  var second;
+  var th;
+  
+  $('h1').each(function(index){
+    
+    th = $(this);
+    
+    dc = parseInt($(this).attr('data-score-text'),10);
+    
+    
+      $.each(mc, function(name, value){
+        
+        
+        first = parseInt(name.split('-')[0],10);
+        second = parseInt(name.split('-')[1],10);
+        
+        console.log(between(dc, first, second));
+        
+        if( between(dc, first, second) ){
+          th.addClass(value);
+        }    
+      });    
+  });
+});
+</script>
+        
+    </div>
+                
+        <%
+            } //end loop
+        %>
             
             
     </body>
