@@ -58,6 +58,10 @@
             .post-text {
                 font-size:15px;
             }
+            
+            .edit-post {
+                height: 15px;
+            }
         </style>
 
         <title>Thread</title>
