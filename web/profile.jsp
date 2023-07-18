@@ -121,6 +121,8 @@
  
     </header>
      
+    <div class="rest">
+     
      <form id="redirectForm" action="#">
          <input type="text" id="redirectInput" placeholder="Enter your search query">
      </form>
@@ -144,12 +146,6 @@
          });
      </script>
 
-    <div class="rest">
-        
-        <form id="redirectForm" action="#">
-            <input type="text" id="redirectInput" placeholder="Enter your search query">
-        </form>
-        
         <div class="grid-container">
             <div class="grid-item stack center-pic">
                 
