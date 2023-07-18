@@ -150,6 +150,10 @@
              }
          });
      </script>
+     
+     <div class="question-container">
+         <button type="button">Ask a question</button>
+     </div>
     
     <%
         

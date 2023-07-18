@@ -1,4 +1,18 @@
+<%@page import="java.sql.*, backendfacts.*, java.util.Objects"%>
+
 <html>
+    <head>
+        <title>Customer Service Page</title>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="StyleSheet.css">
+            
+            <style>
+
+  </style>
+    </head>
+    
     <body>
         <%  //get the potentially logged in user's user object from session attribute stored at login/signup
         User myuser = (User)request.getSession().getAttribute("myuser");
@@ -131,11 +145,13 @@
              }
          });
      </script>
-<h1>Help Ticket</h1>
-<form action="/submission.jsp">
+<div class="submit-container">
+    <h1>Help Ticket</h1>
+        <form action="/submission.jsp">
   <p><label for="contactus"></label></p>
-  <textarea id="Request Ticket" name="security" rows="0" cols="0"> I will like to report a glitch error and have a drop-dowm option for more gif profile pics to change.</textarea>
-  <input type="submit" value="Submit">
+        <textarea id="Request Ticket" name="security" placeholder="Add your report here" rows="0" cols="0"></textarea>
+        <input type="submit" value="Submit">
 </form>
+</div>
 </body>
 </html>
