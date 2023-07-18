@@ -154,8 +154,9 @@
             <div class="grid-item stack center-pic">
                 
                 <%
-                ProfileDAO pd = new ProfileDAO();
-                Profile profile = pd.getProfileByUserID(profileID);
+                    
+                int userID = Integer.parseInt(request.getParameter("userID"));
+                
                 int myUserID;
                 if (!Objects.isNull(myuser))
                 {
@@ -165,14 +166,19 @@
                 myUserID = 0;
                 }
                 UserDAO ud = new UserDAO();
-                User thisUser = ud.getUser(profileID);
+                
+                
+                User thisUser = ud.getUser(userID);
+                
+                ProfileDAO pd = new ProfileDAO();
+                Profile profile = pd.getProfileByUserID(userID);
                 
                 %>
                 
                     <h1 class="grid-item-header"><%out.println(thisUser.getUserName() + "'s");%> Profile</h1>
                     <img class="profile-pic" src="uploadFiles/<%=profile.getUserID()%>.jpg"  width="200"/>
                     <% 
-                if (myUserID == profileID)
+                if (myUserID == userID)
                 {
                 %>
                     <div>
@@ -194,7 +200,7 @@
                 <p><%out.println(profile.getBio());%></p>
                 
                 <% 
-                if (myUserID == profileID)
+                if (myUserID == userID)
                 {
                 %>
                 <button id="bioButton" class="bio-btn text-stuff" onclick="document.getElementById('bioForm').style.display='block'">Edit Bio</button>
