@@ -57,7 +57,8 @@ public class UploadServlet extends HttpServlet {
             fileName = new File(fileName).getName();
             part.write(savePath + File.separator + fileName);
         }
-        response.sendRedirect("profile.jsp");
+        String referer = request.getHeader("Referer");
+        response.sendRedirect(referer);
         
         try {
             updateProfilePic(myuser);
