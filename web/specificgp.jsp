@@ -6,7 +6,17 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Specific Game Page</title>
            <link rel="stylesheet" href="StyleSheet.css">
-           
+           <style>
+    .stack video {
+        border-style:outset;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .stack2-container gamepage {
+
+    }
+           </style>
     </head>
     <body>
         
@@ -158,39 +168,27 @@
             
         <div class="grid-container">
             <div class="grid-item">
-                <div class="stack">
-                    
+                <div class="stack video">
                     <%out.println(video.getVideoLink());%>
                 </div>
             </div>
+                
             <div class="grid-item">
                 <div class="stack2">
                     
-                    <div class="stack2-container">
+                    <div class="stack2-container gamepage">
                         
-                        <a class="title" href="#"><%=game.getTitle()%></a>
-                        <a class ="stack2-item">Release Date: <%out.println(game.getDate());%></a>
-                        <a class="stack2-item"> Studio:<%out.println(game.getStudio());%></a>
-                        <a class="stack2-item">Genre: <%out.println(game.getGenre());%></a> 
-                        <a class="stack2-item">Price: $<%out.println(game.getPrice());%></a>
-                        <a class="stack2-item">Score: <%out.println(game.getScore());%> </a>
+                        <a class="stack2-item title" href="#"><%=game.getTitle()%></a>
+                        <a class ="stack2-item gamepage">Release Date: <%out.println(game.getDate());%></a>
+                        <a class="stack2-item gamepage"> Studio:<%out.println(game.getStudio());%></a>
+                        <a class="stack2-item gamepage">Genre: <%out.println(game.getGenre());%></a> 
+                        <a class="stack2-item gamepage">Price: $<%out.println(game.getPrice());%></a>
+                        <a class="stack2-item gamepage">Score: <%out.println(game.getScore());%> </a>
                     </div>
                 </div>
             </div>
             
-            <div class="grid-item">
-                <div class="stack">
-                    <h2 class="grid-item-header-center">Description</h2>
-                    <p class="trending-posts">  In "Shadow of the Tomb Raider," join the fearless Lara Croft on her most thrilling and perilous 
-                        adventure yet. As she races against time to save the world from an impending apocalypse,
-                        Lara must navigate treacherous environments, solve intricate puzzles, and face deadly
-                        enemies in her quest for redemption.
-                        "Shadow of the Tomb Raider" promises a captivating blend of intense action, breathtaking
-                        visuals, and a compelling storyline that will keep players on the edge of their seats. Prepare
-                        to uncover the darkness within and become the legendary Tomb Raider. The fate of humanity rests in your hands.
-                    </p>
-                </div> 
-                </div>
+        </div>
 
         
         

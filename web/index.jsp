@@ -229,6 +229,19 @@
                  </div>
             </div>
         </div>
+                        
+                    <!-- 7/17/23
+         Here's the footer links for Contact Us and Submission pages
+         -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-links">
+                    <a href="contactus.jsp">Contact Us</a>
+                    <a href="submission.jsp">Submit a Ticket</a>
+                </div>
+            </div>                       
+        </footer>             
+                        
     </div>
 </body>
 </html>
