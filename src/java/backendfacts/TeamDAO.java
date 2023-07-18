@@ -35,6 +35,24 @@ public class TeamDAO {
         }
         return null; 
     }
+    
+    public Team getTeamByTeamName(String teamName) throws ClassNotFoundException {
+        Connection connection = ConnectionFactory.getConnection();
+        try {
+            Statement stmt = connection.createStatement();
+            ResultSet rs = stmt.executeQuery("SELECT * from team where teamname=" + teamName);
+            
+            if(rs.next() )            
+            {
+             return extractTeamFromResultset(rs);
+            } 
+            
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+    
     public ArrayList<Team> getAllTeam() throws ClassNotFoundException{
 Connection connection = ConnectionFactory.getConnection();
 try {
@@ -66,7 +84,7 @@ return null;
     Connection connection = ConnectionFactory.getConnection();
         try {
             //prepare and execute statement to insert user record with attributes matching those of given user object
-            PreparedStatement ps = connection.prepareStatement("INSERT INTO team VALUES (NULL, ?, ?, ?)");
+            PreparedStatement ps = connection.prepareStatement("INSERT INTO team VALUES (NULL, ?, ?, ?, ?)");
             ps.setString(1, team.getTeamName());
             ps.setInt(2, team.getUserID());
             ps.setString(3, team.getRequirements());
