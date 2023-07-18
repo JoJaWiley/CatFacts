@@ -60,36 +60,10 @@ public class AddEditServlet extends HttpServlet {
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
+    
+    //using post method here, getting info from a form
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        try {
-            java.sql.Date date = new Date(Calendar.getInstance().getTimeInMillis());
-            //get post ID from url query and postText from form
-            int postID = Integer.parseInt(request.getParameter("postID"));
-            String content = request.getParameter("editText");
-            
-            
-            //construct postdao
-            PostDAO pd = new PostDAO();
-            
-            //construct a post object with the altered content
-            Post post = pd.getPost(postID);
-            post.setContent(content + " <br><br>[Edited: " + date + "]");
-            pd.updatePost(post);
-            
-            //get the thread ID and redirect to that thread page
-            int threadID = post.getThreadID();
-            String string = "thread.jsp" + "?threadID=" + threadID;
-            
-            response.sendRedirect(string);
-        } catch (ClassNotFoundException ex) {
-            Logger.getLogger(AddEditServlet.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }
-    
-    @Override
-    protected void doPut(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         processRequest(request, response);
         try {
@@ -115,6 +89,14 @@ public class AddEditServlet extends HttpServlet {
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(AddEditServlet.class.getName()).log(Level.SEVERE, null, ex);
         }
+    }
+    
+    
+    @Override
+    protected void doPut(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        processRequest(request, response);
+        
     }
 
     /**

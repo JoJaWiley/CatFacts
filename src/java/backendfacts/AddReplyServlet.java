@@ -52,20 +52,32 @@ public class AddReplyServlet extends HttpServlet {
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
+    
+    //using post to get info from a form and put it into database
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        processRequest(request, response);
         try {
+            
+            //get the current date in sql format
             java.sql.Date date = new Date(Calendar.getInstance().getTimeInMillis());
             
+            //get the post content from the reply form
             String content = request.getParameter("postText");
             
+            //get the user object from the session attributes
             User myuser = (User)request.getSession().getAttribute("myuser");
+            //get the threadID from the URL query on the way here
             int threadID = Integer.parseInt(request.getParameter("threadID"));
+            
+            //Netbeans was giving me errors when I tried redirecting to this link, so I did this
             String string = "thread.jsp" + "?threadID=" + threadID;
             
+            //we're gonna access post in the database
             PostDAO pd = new PostDAO();
             
+            //create a new post object, and fill it with info from session attributes, URL query, current date, and form parameter
             Post post = new Post();
             post.setThreadID(threadID);
             post.setUserID(myuser.getUserID());
@@ -73,8 +85,9 @@ public class AddReplyServlet extends HttpServlet {
             post.setCreated(date);
             post.setContent(content);
             
+            //insert the newly created post object
             pd.insertPost(post);
-            
+            //see string comment above
             response.sendRedirect(string);
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(AddReplyServlet.class.getName()).log(Level.SEVERE, null, ex);

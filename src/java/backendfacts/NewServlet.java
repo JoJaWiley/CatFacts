@@ -1,16 +1,23 @@
-
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Servlet.java to edit this template
+ */
 package backendfacts;
 
 import java.io.IOException;
-import java.util.Calendar;
+import java.io.PrintWriter;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(name = "AddThreadStartServlet", urlPatterns = {"/AddThreadStartServlet"})
-public class AddThreadStartServlet extends HttpServlet {
+/**
+ *
+ * @author jojaw
+ */
+@WebServlet(name = "NewServlet", urlPatterns = {"/NewServlet"})
+public class NewServlet extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -23,6 +30,19 @@ public class AddThreadStartServlet extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        response.setContentType("text/html;charset=UTF-8");
+        try ( PrintWriter out = response.getWriter()) {
+            /* TODO output your page here. You may use following sample code. */
+            out.println("<!DOCTYPE html>");
+            out.println("<html>");
+            out.println("<head>");
+            out.println("<title>Servlet NewServlet</title>");            
+            out.println("</head>");
+            out.println("<body>");
+            out.println("<h1>Servlet NewServlet at " + request.getContextPath() + "</h1>");
+            out.println("</body>");
+            out.println("</html>");
+        }
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
@@ -52,46 +72,6 @@ public class AddThreadStartServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         processRequest(request, response);
-        try {
-            java.sql.Date date = new java.sql.Date(Calendar.getInstance().getTimeInMillis());
-            
-            int threadCatID = Integer.parseInt(request.getParameter("threadCatID"));
-            String title = request.getParameter("threadTitle");
-            String content = request.getParameter("postText");
-            
-            User myuser = (User)request.getSession().getAttribute("myuser");
-            
-            String string = "sboard.jsp" + "?threadCatID=" + threadCatID;
-            
-            ThreadDAO td = new ThreadDAO();
-            backendfacts.Thread thread = new backendfacts.Thread();
-            
-            thread.setCategoryID(threadCatID);
-            thread.setCreated(date);
-            thread.setTitle(title);
-            
-            Boolean result = td.insertThread(thread);
-            
-            if (result == true) {
-
-                int threadID = td.getMaxThreadID();
-
-                PostDAO pd = new PostDAO();
-
-                Post post = new Post();
-                post.setThreadID(threadID);
-                post.setUserID(myuser.getUserID());
-                post.setTitle("blah");
-                post.setCreated(date);
-                post.setContent(content);
-
-                pd.insertPost(post);
-            }
-            
-            response.sendRedirect(string);
-        } catch (ClassNotFoundException ex) {
-            ex.printStackTrace();
-        }
     }
 
     /**

@@ -49,8 +49,9 @@ public class TeamApply extends HttpServlet {
             if (openSlots > 0 && !teamMembers.contains(teamUser))
                 tud.insertTeamUser(teamUser);
             
-            response.sendRedirect("teams.jsp");
-            
+            String referer = request.getHeader("Referer");
+            response.sendRedirect(referer);
+
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(TeamApply.class.getName()).log(Level.SEVERE, null, ex);
         }
