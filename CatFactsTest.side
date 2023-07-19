@@ -3415,13 +3415,6 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "d2850e01-6049-4aaa-8e3b-7f76fb7cbd05",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1382x744",
-      "targets": [],
-      "value": ""
-    }, {
       "id": "90fe4138-d508-403b-99eb-b01e0250edb0",
       "comment": "",
       "command": "click",
@@ -3633,13 +3626,6 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "a4c369da-1176-4904-9cf3-eea9974f9b7f",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1382x744",
-      "targets": [],
-      "value": ""
-    }, {
       "id": "465f3d4c-1244-49ea-b118-a912d8989100",
       "comment": "",
       "command": "click",
@@ -3833,13 +3819,6 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "86fe11da-df31-418d-b06c-397818160e57",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1382x744",
-      "targets": [],
-      "value": ""
-    }, {
       "id": "374def72-e7bf-4489-bbf2-2a86327802ab",
       "comment": "",
       "command": "click",
@@ -4019,13 +3998,6 @@
       "comment": "",
       "command": "open",
       "target": "http://localhost:8181/CatFacts/index.jsp",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "d3708cba-62f9-474f-996b-ee52f0d805f6",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1382x744",
       "targets": [],
       "value": ""
     }, {
@@ -4232,13 +4204,6 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "d88ab3c7-dc12-490b-b130-42bcdf4ac7f7",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1382x744",
-      "targets": [],
-      "value": ""
-    }, {
       "id": "2847327d-5c41-43b9-ab3a-b51c8f6eab6d",
       "comment": "",
       "command": "click",
@@ -4419,13 +4384,6 @@
       "comment": "",
       "command": "open",
       "target": "http://localhost:8181/CatFacts/index.jsp",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "550d9f9d-3b93-4739-a3f8-be33ae846e5b",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1382x744",
       "targets": [],
       "value": ""
     }, {
@@ -4612,13 +4570,6 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "a96567ab-54c4-4d90-a6c2-7ab0ffa98a51",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1382x744",
-      "targets": [],
-      "value": ""
-    }, {
       "id": "78fc1a0a-bd47-49ae-8a1e-6b4140172f0e",
       "comment": "",
       "command": "click",
@@ -4802,13 +4753,6 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "842835d0-ed1e-421a-bafc-1e312bc8f803",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1382x744",
-      "targets": [],
-      "value": ""
-    }, {
       "id": "79cf0769-342b-4b0b-9f03-c0663ae6b3a4",
       "comment": "",
       "command": "click",
@@ -4989,13 +4933,6 @@
       "comment": "",
       "command": "open",
       "target": "http://localhost:8181/CatFacts/index.jsp",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "eb438697-9d9b-4968-9051-7486a46e55de",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1382x744",
       "targets": [],
       "value": ""
     }, {
