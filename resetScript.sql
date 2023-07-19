@@ -14,6 +14,7 @@ CREATE TABLE User (
     Password VARCHAR(100)
 );
 
+DROP TABLE IF EXISTS post;
 CREATE TABLE Post (
     PostID INT PRIMARY KEY AUTO_INCREMENT,
     ThreadID INT,
@@ -30,4 +31,20 @@ ThreadID INT PRIMARY KEY AUTO_INCREMENT,
 CategoryID INT,
 Title varchar(255),
 Created datetime
+);
+
+DROP TABLE IF EXISTS team;
+CREATE TABLE team (
+  teamID INT PRIMARY KEY AUTO_INCREMENT,
+  TeamName VARCHAR(255) UNIQUE,
+  UserID INT,
+  requirements TEXT,
+  slots INT
+);
+
+DROP TABLE IF EXISTS teamuser;
+CREATE TABLE teamuser (
+teamuserID INT PRIMARY KEY AUTO_INCREMENT,
+teamID INT UNIQUE,
+UserID INT UNIQUE 
 );
