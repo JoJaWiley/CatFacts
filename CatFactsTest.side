@@ -9,19 +9,12 @@
     "commands": []
   }, {
     "id": "3ad7155c-1b60-4ee9-9307-c2ef3b4dcccf",
-    "name": "MichaelScott",
+    "name": "1MichaelScott",
     "commands": [{
       "id": "e33198a9-7bb3-4172-ac5f-77ac02cd9380",
       "comment": "",
       "command": "open",
       "target": "http://localhost:8181/CatFacts/index.jsp",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "0f237116-6083-41bf-934f-ebe1bc2fbcf8",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1382x744",
       "targets": [],
       "value": ""
     }, {
@@ -273,19 +266,12 @@
     }]
   }, {
     "id": "2cbc1d3b-8bf8-4c15-a452-b4dbe17db405",
-    "name": "DwightSchrute",
+    "name": "2DwightSchrute",
     "commands": [{
       "id": "38000da0-20bb-43b8-bf86-461dfe53d4fb",
       "comment": "",
       "command": "open",
       "target": "http://localhost:8181/CatFacts/index.jsp",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "3b557306-925f-469e-9f35-2ca7c64dd35d",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1382x744",
       "targets": [],
       "value": ""
     }, {
@@ -660,24 +646,17 @@
       "value": ""
     }]
   }, {
-    "id": "859d783e-e25e-4fbd-b306-85de2e5b98d5",
-    "name": "JimHalpert",
+    "id": "b813f6b1-dcbc-42ff-a4ea-eb0ae278b882",
+    "name": "3JimHalpert",
     "commands": [{
-      "id": "c8ca1b24-ca33-4725-9373-05c17f31cbd9",
+      "id": "6cea3a21-e7cb-4ca6-be44-d460600cdffc",
       "comment": "",
       "command": "open",
       "target": "http://localhost:8181/CatFacts/index.jsp",
       "targets": [],
       "value": ""
     }, {
-      "id": "ca6080e1-768c-4f1d-90bf-a80119915142",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1382x744",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "ff4a3ace-34dd-4370-81d4-342a49717f5c",
+      "id": "64422c9b-57b5-41ee-8868-bc5b72621411",
       "comment": "",
       "command": "click",
       "target": "id=signUpButton",
@@ -690,7 +669,7 @@
       ],
       "value": ""
     }, {
-      "id": "67c5132a-986a-406b-8154-07252eb0e449",
+      "id": "c8477e01-3a9b-4bdd-92fd-4711ead473e8",
       "comment": "",
       "command": "click",
       "target": "name=createUsername",
@@ -703,7 +682,7 @@
       ],
       "value": ""
     }, {
-      "id": "2920c6cd-2b66-4bb7-9b4e-97830a852b91",
+      "id": "09374337-fb61-4117-93cf-67d0799c6add",
       "comment": "",
       "command": "type",
       "target": "name=createUsername",
@@ -716,7 +695,7 @@
       ],
       "value": "JimHalpert"
     }, {
-      "id": "0326b8f1-8046-4159-ad7b-a9a72d149381",
+      "id": "a3a09556-7b7a-4ad0-b600-caec9b1e0908",
       "comment": "",
       "command": "click",
       "target": "name=createEmail",
@@ -729,7 +708,7 @@
       ],
       "value": ""
     }, {
-      "id": "2ec41d57-870d-41a7-817d-01a256bfdf3b",
+      "id": "c60b31f8-6b68-43c4-b0ae-670124bed03d",
       "comment": "",
       "command": "type",
       "target": "name=createEmail",
@@ -742,7 +721,7 @@
       ],
       "value": "dundermiff@gmail.com"
     }, {
-      "id": "342e0e8f-e4b3-4f71-a01a-7ddd1a5d9ae3",
+      "id": "f6e40b9e-adde-43e3-b9ec-a114437d6476",
       "comment": "",
       "command": "click",
       "target": "name=createPassword",
@@ -755,7 +734,7 @@
       ],
       "value": ""
     }, {
-      "id": "4e512dd1-f145-4596-bcd0-aa4b9d99504e",
+      "id": "eab5d5c5-4262-477c-aaf5-945260d469c5",
       "comment": "",
       "command": "type",
       "target": "name=createPassword",
@@ -768,7 +747,7 @@
       ],
       "value": "1234abcD"
     }, {
-      "id": "c1a6e629-35ef-4348-9331-c1884415387e",
+      "id": "de9ba0a4-099e-438a-904a-fbdf02e71476",
       "comment": "",
       "command": "click",
       "target": "id=signupSubmitButton",
@@ -781,44 +760,7 @@
       ],
       "value": ""
     }, {
-      "id": "6b57d0a0-bdd9-4162-9713-1706ba44b6aa",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=JimHalpert.",
-      "targets": [
-        ["linkText=JimHalpert.", "linkText"],
-        ["css=.logged-in-status > a:nth-child(1)", "css:finder"],
-        ["xpath=//a[contains(text(),'JimHalpert.')]", "xpath:link"],
-        ["xpath=//a[contains(@href, 'profile.jsp?userID=8')]", "xpath:href"],
-        ["xpath=//a", "xpath:position"],
-        ["xpath=//a[contains(.,'JimHalpert.')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "e455a24c-4ae5-4a39-b05e-87eb6e7864f1",
-      "comment": "",
-      "command": "click",
-      "target": "css=.custom-file-upload",
-      "targets": [
-        ["css=.custom-file-upload", "css:finder"],
-        ["xpath=//form/label", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "09c91cb5-a3ed-451e-b0e3-a71ddde9e36e",
-      "comment": "",
-      "command": "type",
-      "target": "id=file-upload",
-      "targets": [
-        ["id=file-upload", "id"],
-        ["name=photo", "name"],
-        ["css=#file-upload", "css:finder"],
-        ["xpath=//input[@id='file-upload']", "xpath:attributes"],
-        ["xpath=//label/input", "xpath:position"]
-      ],
-      "value": "C:\\fakepath\\jhalpert.jpg"
-    }, {
-      "id": "391cd847-cf46-4241-84d4-8e691e306c6e",
+      "id": "440663f3-260a-4ae2-b4b8-536191d3f63e",
       "comment": "",
       "command": "click",
       "target": "linkText=Boards",
@@ -832,7 +774,7 @@
       ],
       "value": ""
     }, {
-      "id": "a3317ced-3f6e-4fbe-9512-3268d587e7ae",
+      "id": "304a3e32-6433-4983-8609-ebdf8c4ca20f",
       "comment": "",
       "command": "click",
       "target": "css=a:nth-child(2) > button",
@@ -843,7 +785,7 @@
       ],
       "value": ""
     }, {
-      "id": "1baa3b28-52c9-4ba5-bc64-27ee96f707c8",
+      "id": "089676a0-1298-4015-b63e-40ee65cc207b",
       "comment": "",
       "command": "click",
       "target": "linkText=Master of the Triforce - That's What She Said",
@@ -855,7 +797,7 @@
       ],
       "value": ""
     }, {
-      "id": "c6350fbe-c2fb-46bf-b946-414a5730a51a",
+      "id": "009978ff-a1c0-49da-b504-f32aa757698b",
       "comment": "",
       "command": "click",
       "target": "name=postText",
@@ -867,7 +809,7 @@
       ],
       "value": ""
     }, {
-      "id": "029fbbec-ac9d-4799-bd94-ea9fd0296cac",
+      "id": "2a50540f-1feb-467d-a8b2-11baa8490c30",
       "comment": "",
       "command": "type",
       "target": "name=postText",
@@ -877,9 +819,9 @@
         ["xpath=//textarea[@name='postText']", "xpath:attributes"],
         ["xpath=//textarea", "xpath:position"]
       ],
-      "value": "Hey, everyone! Jim Halpert, your resident prankster from Dunder Mifflin Scranton, reporting in. So, I've been thinking... wouldn't it be hilarious if Link pulled off some classic pranks on Ganon? Picture it: replacing his weapons with rubber chickens, replacing his potions with Slurpee cups, or maybe even swapping his villainous laugh with a high-pitched giggle.\\n\\nWhat other creative pranks could we see Link play on Ganon? Let your imagination run wild! And remember, the hero always gets the last laugh!\\n\\nFeel free to reply to any of the posts or start your own discussions related to The Legend of Zelda. Let the adventure begin!"
+      "value": "Hey, everyone! Jim Halpert, your resident prankster from Dunder Mifflin Scranton, reporting in. So, I've been thinking... wouldn't it be hilarious if Link pulled off some classic pranks on Ganon? Picture it: replacing his weapons with rubber chickens, replacing his potions with Slurpee cups, or maybe even swapping his villainous laugh with a high-pitched giggle.\\n\\nWhat other creative pranks could we see Link play on Ganon? Let your imagination run wild! And remember, the hero always gets the last laugh!\\n\\nFeel free to reply to any of the posts or start your own discussions related to The Legend of Zelda. Let the adventure begin!\\n\\n\\n\\n\\n"
     }, {
-      "id": "29d9e868-3820-4755-980c-b254d3564d83",
+      "id": "7711d268-790d-40e3-893e-b90a68d3dbd4",
       "comment": "",
       "command": "click",
       "target": "name=submit",
@@ -891,57 +833,424 @@
       ],
       "value": ""
     }, {
-      "id": "8a099c0c-bb16-48fa-ab58-e150099f9bd5",
+      "id": "9ec1a148-949c-404f-9322-0ad85475f091",
       "comment": "",
       "command": "click",
-      "target": "linkText=Edit",
+      "target": "linkText=Sign out.",
       "targets": [
-        ["linkText=Edit", "linkText"],
-        ["css=.edit-post:nth-child(1)", "css:finder"],
-        ["xpath=//a[contains(text(),'Edit')]", "xpath:link"],
-        ["xpath=//a[contains(@href, 'editpost.jsp?postID=3')]", "xpath:href"],
-        ["xpath=//div[2]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Edit')]", "xpath:innerText"]
+        ["linkText=Sign out.", "linkText"],
+        ["css=a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign out.')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'LogoutServlet')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign out.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "4aeda3a0-dab7-4022-a58a-4c133b5a8a3d",
+    "name": "4JimHalpert2",
+    "commands": [{
+      "id": "21754006-87e8-47ad-ae9f-3224d56e8fee",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8181/CatFacts/index.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4c485732-0ee6-450b-baaa-15b3be93f8ac",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginButton",
+      "targets": [
+        ["id=loginButton", "id"],
+        ["css=#loginButton", "css:finder"],
+        ["xpath=//button[@id='loginButton']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
-      "id": "00f0b839-d630-4bbe-b25f-8a959799d15d",
+      "id": "82172391-5460-4955-aec3-45f28d05c5cb",
       "comment": "",
       "command": "click",
-      "target": "name=editText",
+      "target": "id=username",
       "targets": [
-        ["name=editText", "name"],
-        ["css=.text-area", "css:finder"],
-        ["xpath=//textarea[@name='editText']", "xpath:attributes"],
-        ["xpath=//textarea", "xpath:position"]
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "2d03e597-7372-4fd6-a1a9-88921bd0ed5d",
+      "id": "f0709f68-99d4-41e6-ace7-597fe09a73ab",
       "comment": "",
       "command": "type",
-      "target": "name=editText",
+      "target": "id=username",
       "targets": [
-        ["name=editText", "name"],
-        ["css=.text-area", "css:finder"],
-        ["xpath=//textarea[@name='editText']", "xpath:attributes"],
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "JimHalpert"
+    }, {
+      "id": "8d99077a-1e9f-411c-a1de-d209c1d09809",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf6effe7-883c-440d-8504-08bbb04ed4ad",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "1234abcD"
+    }, {
+      "id": "e10ad14a-17ac-4f50-96bd-c62b955ed02d",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginSubmitButton",
+      "targets": [
+        ["id=loginSubmitButton", "id"],
+        ["css=#loginSubmitButton", "css:finder"],
+        ["xpath=//button[@id='loginSubmitButton']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/button", "xpath:idRelative"],
+        ["xpath=//form/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cdf07580-c116-4c47-ae14-01fe62e84fd5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Boards",
+      "targets": [
+        ["linkText=Boards", "linkText"],
+        ["css=.button:nth-child(1) > .navlink", "css:finder"],
+        ["xpath=//a[contains(text(),'Boards')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'boards.jsp')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Boards')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8199adcf-af01-45e2-a968-af7f05ab9183",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(8) > button",
+      "targets": [
+        ["css=a:nth-child(8) > button", "css:finder"],
+        ["xpath=//a[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Social Boards')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c1c11c2-ee17-4d1d-bf34-531904a07cc4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Start a new thread",
+      "targets": [
+        ["linkText=Start a new thread", "linkText"],
+        ["css=.add-post", "css:finder"],
+        ["xpath=//a[contains(text(),'Start a new thread')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'threadstart.jsp?threadCatID=4')]", "xpath:href"],
+        ["xpath=//body/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Start a new thread')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "35b2819e-59f5-4463-976e-3caf9ecedc7d",
+      "comment": "",
+      "command": "click",
+      "target": "id=threadTitle",
+      "targets": [
+        ["id=threadTitle", "id"],
+        ["name=threadTitle", "name"],
+        ["css=#threadTitle", "css:finder"],
+        ["xpath=//input[@id='threadTitle']", "xpath:attributes"],
+        ["xpath=//div[2]/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "52fe869d-56bb-4b17-a098-3ca6175376a9",
+      "comment": "",
+      "command": "type",
+      "target": "id=threadTitle",
+      "targets": [
+        ["id=threadTitle", "id"],
+        ["name=threadTitle", "name"],
+        ["css=#threadTitle", "css:finder"],
+        ["xpath=//input[@id='threadTitle']", "xpath:attributes"],
+        ["xpath=//div[2]/form/input", "xpath:position"]
+      ],
+      "value": "Battle of Wits: Outsmarting the Boss and the Beet Farmer!"
+    }, {
+      "id": "84bd0114-553f-41d6-b0d1-c695f03fe7ad",
+      "comment": "",
+      "command": "click",
+      "target": "id=postText",
+      "targets": [
+        ["id=postText", "id"],
+        ["name=postText", "name"],
+        ["css=#postText", "css:finder"],
+        ["xpath=//textarea[@id='postText']", "xpath:attributes"],
         ["xpath=//textarea", "xpath:position"]
       ],
-      "value": "Hey, everyone! Jim Halpert, your resident prankster from Dunder Mifflin Scranton, reporting in. So, I've been thinking... wouldn't it be hilarious if Link pulled off some classic pranks on Ganon? Picture it: replacing his weapons with rubber chickens, replacing his potions with Slurpee cups, or maybe even swapping his villainous laugh with a high-pitched giggle.\\n\\nWhat other creative pranks could we see Link play on Ganon? Let your imagination run wild! And remember, the hero always gets the last laugh!\\n\\nFeel free to reply to any of the posts or start your own discussions related to The Legend of Zelda. Let the adventure begin!!"
+      "value": ""
     }, {
-      "id": "28696aed-187c-4531-8240-bb5688129663",
+      "id": "6f945881-7a52-4c7c-a639-a8da6ca874e3",
+      "comment": "",
+      "command": "type",
+      "target": "id=postText",
+      "targets": [
+        ["id=postText", "id"],
+        ["name=postText", "name"],
+        ["css=#postText", "css:finder"],
+        ["xpath=//textarea[@id='postText']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Hey Dunder Mifflin gang! I couldn't resist starting this thread after witnessing another epic battle of wits between Michael and Dwight. Who else is up for some good old-fashioned office shenanigans? Let the games begin! 😉"
+    }, {
+      "id": "36c38970-ac8e-498a-b0b2-581ae37a541a",
       "comment": "",
       "command": "click",
       "target": "name=submit",
       "targets": [
         ["name=submit", "name"],
-        ["css=.text-stuff:nth-child(2) > .add-post", "css:finder"],
+        ["css=.blue-font > .add-post", "css:finder"],
         ["xpath=//input[@name='submit']", "xpath:attributes"],
         ["xpath=//p/input", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "bbbbc162-91e4-46b0-8db0-665ff043639a",
+      "id": "c671ed37-9395-4577-9f22-071513a9c3c8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign out.",
+      "targets": [
+        ["linkText=Sign out.", "linkText"],
+        ["css=a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign out.')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'LogoutServlet')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign out.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "a46ebf5d-52b9-4055-bbc1-35c97f6649fb",
+    "name": "5MichaelScott2",
+    "commands": [{
+      "id": "c9863528-2009-41ee-9169-a671fd5a4cb8",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8181/CatFacts/index.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "77a20e2e-674b-4d52-aac8-53e6d01006fe",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginButton",
+      "targets": [
+        ["id=loginButton", "id"],
+        ["css=#loginButton", "css:finder"],
+        ["xpath=//button[@id='loginButton']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6e25bc3-535c-45dc-84c3-a9b34c3a2f78",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e5594fd7-13f2-4d57-9df5-6312fc243a62",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f44e4ad-3ae3-439b-bbb5-c387df3a0134",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "MichaelScott"
+    }, {
+      "id": "23dfbea9-66bb-471c-a822-793cc6c32a12",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "1234abcD"
+    }, {
+      "id": "3a04589b-1e14-4c8f-9282-08a3a79c2415",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginSubmitButton",
+      "targets": [
+        ["id=loginSubmitButton", "id"],
+        ["css=#loginSubmitButton", "css:finder"],
+        ["xpath=//button[@id='loginSubmitButton']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/button", "xpath:idRelative"],
+        ["xpath=//form/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f94e12f7-747e-49c8-897e-5d65a5162ad0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Boards",
+      "targets": [
+        ["linkText=Boards", "linkText"],
+        ["css=.button:nth-child(1) > .navlink", "css:finder"],
+        ["xpath=//a[contains(text(),'Boards')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'boards.jsp')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Boards')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d63d022c-c37c-4985-b138-bc13ccb18933",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(8) > button",
+      "targets": [
+        ["css=a:nth-child(8) > button", "css:finder"],
+        ["xpath=//a[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Social Boards')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0dce430-6d51-41c7-adbb-43328b61b366",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Battle of Wits: Outsmarting the Boss and the Beet Farmer!",
+      "targets": [
+        ["linkText=Battle of Wits: Outsmarting the Boss and the Beet Farmer!", "linkText"],
+        ["css=td > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Battle of Wits: Outsmarting the Boss and the Beet Farmer!')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'thread.jsp?threadID=2')]", "xpath:href"],
+        ["xpath=//td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Battle of Wits: Outsmarting the Boss and the Beet Farmer!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1225673-ebc2-46e5-b077-49c6ef09151f",
+      "comment": "",
+      "command": "click",
+      "target": "name=postText",
+      "targets": [
+        ["name=postText", "name"],
+        ["css=.text-area", "css:finder"],
+        ["xpath=//textarea[@name='postText']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "45a18827-b5e7-4bde-a22e-580d7fe815f4",
+      "comment": "",
+      "command": "type",
+      "target": "name=postText",
+      "targets": [
+        ["name=postText", "name"],
+        ["css=.text-area", "css:finder"],
+        ["xpath=//textarea[@name='postText']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Oh, Jimbo, you're so predictable! But I appreciate your enthusiasm. The mastermind is here, ready to outsmart everyone. Prepare to be amazed!"
+    }, {
+      "id": "2129e5d9-c244-40fd-9772-81fd519effd3",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.add-post", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "beea1589-068e-4e5c-8c76-57ee18832520",
+      "comment": "",
+      "command": "click",
+      "target": "id=signUpButton",
+      "targets": [
+        ["id=signUpButton", "id"],
+        ["css=#signUpButton", "css:finder"],
+        ["xpath=//button[@id='signUpButton']", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Sign Up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd55d84f-39d8-4678-8fdd-9601935f4f74",
+      "comment": "",
+      "command": "click",
+      "target": "css=#signUpForm .cancelbtn",
+      "targets": [
+        ["css=#signUpForm .cancelbtn", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='signUpForm']/form/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/form/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c336d97a-9669-4b6b-9fea-98cf57a377ee",
       "comment": "",
       "command": "click",
       "target": "linkText=Sign out.",
@@ -955,13 +1264,3909 @@
       ],
       "value": ""
     }, {
-      "id": "a39ccee4-cafa-46b4-9c8b-ff8f916a1ef4",
+      "id": "45809d52-f723-4888-869d-bf816541900b",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "5c3cc23f-6aa1-49d0-b896-a729efb1af29",
+    "name": "6DwightSchrute2",
+    "commands": [{
+      "id": "63db4963-29a3-4a12-933f-c8b5acb6fa96",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8181/CatFacts/index.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e3c2da19-210a-44d5-ac18-13df96b4a089",
       "comment": "",
       "command": "click",
-      "target": "css=.text-stuff:nth-child(3) .post-text",
+      "target": "linkText=Teams",
       "targets": [
-        ["css=.text-stuff:nth-child(3) .post-text", "css:finder"],
-        ["xpath=//table[3]/tbody/tr/td[2]/div/div", "xpath:position"]
+        ["linkText=Teams", "linkText"],
+        ["css=.button:nth-child(3) > .navlink", "css:finder"],
+        ["xpath=//a[contains(text(),'Teams')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'teams.jsp')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Teams')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5bdfe8b0-9594-4319-b886-c9c06202fe29",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginButton",
+      "targets": [
+        ["id=loginButton", "id"],
+        ["css=#loginButton", "css:finder"],
+        ["xpath=//button[@id='loginButton']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "380fbb86-5de4-4203-a3ba-ccee27cb459d",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a3213997-44a0-4a86-ac59-b96bcf00cb01",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "453edad3-a2a1-47d2-932a-c4a792ba51e2",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "DwightSchrute"
+    }, {
+      "id": "736c6714-8703-4557-97b3-9d94ff72b61b",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "1234abcD"
+    }, {
+      "id": "2af2f2a7-27a6-4343-a675-5e51b541f225",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "6b223bf5-220d-4ebc-bd9b-2cb0cd2183b8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Boards",
+      "targets": [
+        ["linkText=Boards", "linkText"],
+        ["css=.button:nth-child(1) > .navlink", "css:finder"],
+        ["xpath=//a[contains(text(),'Boards')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'boards.jsp')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Boards')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8504277f-9246-4574-882e-3e48d66629d2",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(8) > button",
+      "targets": [
+        ["css=a:nth-child(8) > button", "css:finder"],
+        ["xpath=//a[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Social Boards')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3b4364e6-f538-468c-a4fb-77169e2f56d5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Battle of Wits: Outsmarting the Boss and the Beet Farmer!",
+      "targets": [
+        ["linkText=Battle of Wits: Outsmarting the Boss and the Beet Farmer!", "linkText"],
+        ["css=td > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Battle of Wits: Outsmarting the Boss and the Beet Farmer!')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'thread.jsp?threadID=2')]", "xpath:href"],
+        ["xpath=//td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Battle of Wits: Outsmarting the Boss and the Beet Farmer!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "74ff113e-53e3-4473-9dac-927218c70d38",
+      "comment": "",
+      "command": "click",
+      "target": "name=postText",
+      "targets": [
+        ["name=postText", "name"],
+        ["css=.text-area", "css:finder"],
+        ["xpath=//textarea[@name='postText']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b242b55c-0c01-4b80-adcd-78486a3fa91c",
+      "comment": "",
+      "command": "type",
+      "target": "name=postText",
+      "targets": [
+        ["name=postText", "name"],
+        ["css=.text-area", "css:finder"],
+        ["xpath=//textarea[@name='postText']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Jim, your attempt at initiating a mind-battle is feeble. But I accept your challenge. My superior intellect will prevail. Prepare to be crushed like a beet under my boot!"
+    }, {
+      "id": "02c4dc4c-1282-4976-b40f-cc6423396141",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.add-post", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f5c08ae0-c081-410d-9ef1-84aefee97c95",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign out.",
+      "targets": [
+        ["linkText=Sign out.", "linkText"],
+        ["css=a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign out.')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'LogoutServlet')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign out.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "ef04becd-c5f4-435b-836d-e8823933143c",
+    "name": "7JimHalpert3",
+    "commands": [{
+      "id": "d2bcedfe-9d21-415f-a889-15f62d4be51a",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8181/CatFacts/index.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bed21874-070e-490d-b1e3-4e00a3afb477",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Boards",
+      "targets": [
+        ["linkText=Boards", "linkText"],
+        ["css=.button:nth-child(1) > .navlink", "css:finder"],
+        ["xpath=//a[contains(text(),'Boards')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'boards.jsp')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Boards')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce4930b6-4243-44c8-91a7-f7dc9244acb1",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(8) > button",
+      "targets": [
+        ["css=a:nth-child(8) > button", "css:finder"],
+        ["xpath=//a[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Social Boards')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "39387e5e-cf54-43bb-95a3-706b5bcbdfe4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Battle of Wits: Outsmarting the Boss and the Beet Farmer!",
+      "targets": [
+        ["linkText=Battle of Wits: Outsmarting the Boss and the Beet Farmer!", "linkText"],
+        ["css=td > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Battle of Wits: Outsmarting the Boss and the Beet Farmer!')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'thread.jsp?threadID=2')]", "xpath:href"],
+        ["xpath=//td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Battle of Wits: Outsmarting the Boss and the Beet Farmer!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "473fb317-22c4-4b59-8fae-f7ff800e9a6e",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginButton",
+      "targets": [
+        ["id=loginButton", "id"],
+        ["css=#loginButton", "css:finder"],
+        ["xpath=//button[@id='loginButton']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a8afb465-12e5-4529-9da8-ba3d20253a7a",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd47147d-36ed-4a0c-84a8-98fa00ef824e",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "JimHalpert"
+    }, {
+      "id": "d62b79cd-d22b-4bfe-9b29-c29ebed8e632",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "1234abcD"
+    }, {
+      "id": "6fece85d-3194-449d-a81d-90c2d6153b7d",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginSubmitButton",
+      "targets": [
+        ["id=loginSubmitButton", "id"],
+        ["css=#loginSubmitButton", "css:finder"],
+        ["xpath=//button[@id='loginSubmitButton']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/button", "xpath:idRelative"],
+        ["xpath=//form/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d66980b3-8805-46c3-80ca-d228f9371837",
+      "comment": "",
+      "command": "click",
+      "target": "name=postText",
+      "targets": [
+        ["name=postText", "name"],
+        ["css=.text-area", "css:finder"],
+        ["xpath=//textarea[@name='postText']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f6b586d-4080-4ffa-9347-f9c6c86b401d",
+      "comment": "",
+      "command": "type",
+      "target": "name=postText",
+      "targets": [
+        ["name=postText", "name"],
+        ["css=.text-area", "css:finder"],
+        ["xpath=//textarea[@name='postText']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Well, well, well, the \"Beet Farmer\" himself graces us with his presence. Dwight, are you sure your intelligence can compete with Michael's... unique strategies?"
+    }, {
+      "id": "b0ab68fc-2c19-44bf-953e-c6fb4b9d1fc6",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.add-post", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6303a1fa-ef31-452f-8c45-fa78b645600b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign out.",
+      "targets": [
+        ["linkText=Sign out.", "linkText"],
+        ["css=a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign out.')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'LogoutServlet')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign out.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "8527e064-ba2a-4e5b-abe0-875c9e1940ed",
+    "name": "8DwightSchrute3",
+    "commands": [{
+      "id": "a23c42fd-a380-4d9a-9bdd-b74214356af4",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8181/CatFacts/index.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3e12ba1a-2dae-4274-bd56-30b8383219c9",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginButton",
+      "targets": [
+        ["id=loginButton", "id"],
+        ["css=#loginButton", "css:finder"],
+        ["xpath=//button[@id='loginButton']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1df1c6c-f75d-4a88-b9a8-008b9385ac81",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "91456bfa-34e5-4ec4-ba22-e30e876af299",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "DwightSchrute"
+    }, {
+      "id": "fbff5cb8-b348-48c7-8d34-a6b0967ae90f",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f2721bb-aae3-484c-ae01-0382d20ab940",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "1234abcD"
+    }, {
+      "id": "b2279bf8-f148-41f4-896b-d883e83b693f",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginSubmitButton",
+      "targets": [
+        ["id=loginSubmitButton", "id"],
+        ["css=#loginSubmitButton", "css:finder"],
+        ["xpath=//button[@id='loginSubmitButton']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/button", "xpath:idRelative"],
+        ["xpath=//form/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6e95bf3-9896-4c15-a7b1-26f098b51763",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Boards",
+      "targets": [
+        ["linkText=Boards", "linkText"],
+        ["css=.button:nth-child(1) > .navlink", "css:finder"],
+        ["xpath=//a[contains(text(),'Boards')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'boards.jsp')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Boards')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "43286c89-709c-451c-9236-419bf3650532",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(8) > button",
+      "targets": [
+        ["css=a:nth-child(8) > button", "css:finder"],
+        ["xpath=//a[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Social Boards')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb1e3ade-0047-4165-86ad-ba63f99c901d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Battle of Wits: Outsmarting the Boss and the Beet Farmer!",
+      "targets": [
+        ["linkText=Battle of Wits: Outsmarting the Boss and the Beet Farmer!", "linkText"],
+        ["css=td > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Battle of Wits: Outsmarting the Boss and the Beet Farmer!')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'thread.jsp?threadID=3')]", "xpath:href"],
+        ["xpath=//td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Battle of Wits: Outsmarting the Boss and the Beet Farmer!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8209b996-9bba-4d9c-ae9c-d63288c0cc01",
+      "comment": "",
+      "command": "click",
+      "target": "name=postText",
+      "targets": [
+        ["name=postText", "name"],
+        ["css=.text-area", "css:finder"],
+        ["xpath=//textarea[@name='postText']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "771f5656-a2f4-4297-9b89-7c2afe7b60e8",
+      "comment": "",
+      "command": "type",
+      "target": "name=postText",
+      "targets": [
+        ["name=postText", "name"],
+        ["css=.text-area", "css:finder"],
+        ["xpath=//textarea[@name='postText']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Jim, you underestimate the brilliance of the Schrute mind. Michael's eccentricity and my calculated genius will make a formidable alliance. You should be trembling in your Converse shoes!"
+    }, {
+      "id": "27988116-8c73-47a7-9bc5-013a47779282",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.add-post", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bb2e0187-5c9d-4743-aa84-00fc195de3a9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign out.",
+      "targets": [
+        ["linkText=Sign out.", "linkText"],
+        ["css=a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign out.')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'LogoutServlet')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign out.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "50689e1c-dc7b-41b4-a9d2-9b2407277b64",
+    "name": "9MichaelScott3",
+    "commands": [{
+      "id": "1b466a97-6b3f-4050-a9b3-c3e74240da57",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8181/CatFacts/index.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9be0bbe9-cd20-4cbd-b509-09bc355a1b6a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Teams",
+      "targets": [
+        ["linkText=Teams", "linkText"],
+        ["css=.button:nth-child(3) > .navlink", "css:finder"],
+        ["xpath=//a[contains(text(),'Teams')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'teams.jsp')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Teams')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c3ae8efa-6241-4c32-8a45-b0598c692499",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginButton",
+      "targets": [
+        ["id=loginButton", "id"],
+        ["css=#loginButton", "css:finder"],
+        ["xpath=//button[@id='loginButton']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c8e8bcaf-0663-4fc7-bfa3-f5f98041b8a6",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "116af04f-ae71-4b99-a28e-cdf2ea38b1ff",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b6f3ce75-3f60-4cbf-8396-b122a5b6eb2d",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "MichaelScott"
+    }, {
+      "id": "b99c304a-24e3-4a79-ba99-c1b158a9505d",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b009913-33ee-4031-9aa1-48dd1b03523a",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "1234abcD"
+    }, {
+      "id": "0349b9c1-2cee-4075-a2c8-14ced2472880",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginSubmitButton",
+      "targets": [
+        ["id=loginSubmitButton", "id"],
+        ["css=#loginSubmitButton", "css:finder"],
+        ["xpath=//button[@id='loginSubmitButton']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/button", "xpath:idRelative"],
+        ["xpath=//form/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aae49bd1-ad7b-4cd2-b336-d6cc1b47795e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Boards",
+      "targets": [
+        ["linkText=Boards", "linkText"],
+        ["css=.button:nth-child(1) > .navlink", "css:finder"],
+        ["xpath=//a[contains(text(),'Boards')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'boards.jsp')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Boards')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d701bd1b-30f2-47a7-ba21-0518ec186eec",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(8) > button",
+      "targets": [
+        ["css=a:nth-child(8) > button", "css:finder"],
+        ["xpath=//a[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Social Boards')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "27339869-d6ed-46ab-ab69-194e7b4fac58",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Battle of Wits: Outsmarting the Boss and the Beet Farmer!",
+      "targets": [
+        ["linkText=Battle of Wits: Outsmarting the Boss and the Beet Farmer!", "linkText"],
+        ["css=td > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Battle of Wits: Outsmarting the Boss and the Beet Farmer!')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'thread.jsp?threadID=3')]", "xpath:href"],
+        ["xpath=//td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Battle of Wits: Outsmarting the Boss and the Beet Farmer!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dca419b3-644f-4b2f-b5c4-d8e949591baa",
+      "comment": "",
+      "command": "click",
+      "target": "name=postText",
+      "targets": [
+        ["name=postText", "name"],
+        ["css=.text-area", "css:finder"],
+        ["xpath=//textarea[@name='postText']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6730894-0eec-43bf-ac49-fb5d32bbf654",
+      "comment": "",
+      "command": "type",
+      "target": "name=postText",
+      "targets": [
+        ["name=postText", "name"],
+        ["css=.text-area", "css:finder"],
+        ["xpath=//textarea[@name='postText']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "No need to fear, Jimbo. Dwight and I are an unstoppable force. We have the power of \"Schrute-nology\" and the \"Scott Strategy\" on our side. Resistance is futile!"
+    }, {
+      "id": "69478cf2-c6c1-4c19-b828-23eed3010934",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.add-post", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa22cb73-6f5d-4fa7-8f96-889540013556",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign out.",
+      "targets": [
+        ["linkText=Sign out.", "linkText"],
+        ["css=a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign out.')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'LogoutServlet')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign out.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "7b6cdf0d-2daf-4c51-8073-7b02b446b673",
+    "name": "10JimHalpert4",
+    "commands": [{
+      "id": "3d7243fe-d7c4-41ef-ab6c-467f5fe83959",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8181/CatFacts/index.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "59099f72-c39a-4f98-b28c-45969b3e9b11",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginButton",
+      "targets": [
+        ["id=loginButton", "id"],
+        ["css=#loginButton", "css:finder"],
+        ["xpath=//button[@id='loginButton']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "34532225-5c71-4495-be03-33ca98d52df0",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "26ad43cb-215f-4d86-bc4b-90f7aa4fa887",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "JimHalpert"
+    }, {
+      "id": "8961869d-af0a-4005-b403-1a691ec96e29",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "179bf0b9-4532-4dea-86f7-17b15be58ada",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "1234abcD"
+    }, {
+      "id": "7d344759-d6e0-45ec-9c6e-6269b1c2cb3f",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "917c7810-2bee-45da-9956-eeb0177323a9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Games Database",
+      "targets": [
+        ["linkText=Games Database", "linkText"],
+        ["css=.button:nth-child(2) > .navlink", "css:finder"],
+        ["xpath=//a[contains(text(),'Games Database')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'games.jsp')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Games Database')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b05e3edb-2b14-4937-9370-43070d6b6170",
+      "comment": "",
+      "command": "click",
+      "target": "css=.game-container:nth-child(7) .game-link h1",
+      "targets": [
+        ["css=.game-container:nth-child(7) .game-link h1", "css:finder"],
+        ["xpath=//div[3]/div[2]/a/div/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'God of War')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "82a89549-5993-4971-92c1-3546856562c7",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginButton",
+      "targets": [
+        ["id=loginButton", "id"],
+        ["css=#loginButton", "css:finder"],
+        ["xpath=//button[@id='loginButton']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "38f73538-d6d7-454e-96dc-4ab8e416eb5b",
+      "comment": "",
+      "command": "click",
+      "target": "css=#loginForm .cancelbtn",
+      "targets": [
+        ["css=#loginForm .cancelbtn", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cancel')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f68f1aa-cd51-4837-8a1b-9799c099c912",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Boards",
+      "targets": [
+        ["linkText=Boards", "linkText"],
+        ["css=.button:nth-child(1) > .navlink", "css:finder"],
+        ["xpath=//a[contains(text(),'Boards')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'boards.jsp')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Boards')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7c9a7a93-7c48-4aa0-9c11-9560269bbfa0",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(8) > button",
+      "targets": [
+        ["css=a:nth-child(8) > button", "css:finder"],
+        ["xpath=//a[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Social Boards')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2d0a878-7ece-4041-9a65-85f465db6558",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Battle of Wits: Outsmarting the Boss and the Beet Farmer!",
+      "targets": [
+        ["linkText=Battle of Wits: Outsmarting the Boss and the Beet Farmer!", "linkText"],
+        ["css=td > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Battle of Wits: Outsmarting the Boss and the Beet Farmer!')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'thread.jsp?threadID=3')]", "xpath:href"],
+        ["xpath=//td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Battle of Wits: Outsmarting the Boss and the Beet Farmer!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cc979a5a-6b92-429b-9e66-52360a6ac759",
+      "comment": "",
+      "command": "click",
+      "target": "name=postText",
+      "targets": [
+        ["name=postText", "name"],
+        ["css=.text-area", "css:finder"],
+        ["xpath=//textarea[@name='postText']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f71df0e3-7eaa-4e29-92a6-def89836699c",
+      "comment": "",
+      "command": "type",
+      "target": "name=postText",
+      "targets": [
+        ["name=postText", "name"],
+        ["css=.text-area", "css:finder"],
+        ["xpath=//textarea[@name='postText']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Well, gentlemen, I don't doubt your confidence, but I must remind you that my pranks have managed to outsmart both of you on numerous occasions. Remember the jello stapler incident, Michael?"
+    }, {
+      "id": "436c2afe-826a-43d9-8207-f758deb98d71",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.add-post", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "380cc7a1-84bd-430c-8362-c59f123d962e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign out.",
+      "targets": [
+        ["linkText=Sign out.", "linkText"],
+        ["css=a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign out.')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'LogoutServlet')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign out.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "59a73938-6e7c-46ab-bf56-e51ace23d13e",
+    "name": "11MichaelScott4",
+    "commands": [{
+      "id": "b714ec24-22a7-4bae-844c-33cd7789da63",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8181/CatFacts/index.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "09fb412f-a7b1-4471-8b11-07d18accf45d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Games Database",
+      "targets": [
+        ["linkText=Games Database", "linkText"],
+        ["css=.button:nth-child(2) > .navlink", "css:finder"],
+        ["xpath=//a[contains(text(),'Games Database')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'games.jsp')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Games Database')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "af2acd4d-482c-41d0-8f46-c20c97249c82",
+      "comment": "",
+      "command": "click",
+      "target": "css=.game-container:nth-child(8) .game-link h1",
+      "targets": [
+        ["css=.game-container:nth-child(8) .game-link h1", "css:finder"],
+        ["xpath=//div[4]/div[2]/a/div/h1", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f9c3ca5-cdf5-44d4-ba1d-129f5ccb08eb",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginButton",
+      "targets": [
+        ["id=loginButton", "id"],
+        ["css=#loginButton", "css:finder"],
+        ["xpath=//button[@id='loginButton']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b773ff19-b95e-49de-8920-7974892609cb",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c332ce18-bcd5-4a8f-adb2-8497c2e1c9da",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "MichaelScott"
+    }, {
+      "id": "016fb89b-44be-4625-9c1e-1abac4755cb9",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f3f8449-485b-4dbe-b2bd-4036e4f7dc73",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "1234abcD"
+    }, {
+      "id": "477181a8-df8e-42be-ac6a-bdb458d8ea98",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginSubmitButton",
+      "targets": [
+        ["id=loginSubmitButton", "id"],
+        ["css=#loginSubmitButton", "css:finder"],
+        ["xpath=//button[@id='loginSubmitButton']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/button", "xpath:idRelative"],
+        ["xpath=//form/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c8704583-08d6-466b-8ba8-ce791d154431",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Boards",
+      "targets": [
+        ["linkText=Boards", "linkText"],
+        ["css=.button:nth-child(1) > .navlink", "css:finder"],
+        ["xpath=//a[contains(text(),'Boards')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'boards.jsp')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Boards')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c42633a2-5725-49df-8afc-d3bc80857d25",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(8) > button",
+      "targets": [
+        ["css=a:nth-child(8) > button", "css:finder"],
+        ["xpath=//a[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Social Boards')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b4bc6b25-7c17-40f2-beee-2aef8058020d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Battle of Wits: Outsmarting the Boss and the Beet Farmer!",
+      "targets": [
+        ["linkText=Battle of Wits: Outsmarting the Boss and the Beet Farmer!", "linkText"],
+        ["css=td > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Battle of Wits: Outsmarting the Boss and the Beet Farmer!')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'thread.jsp?threadID=3')]", "xpath:href"],
+        ["xpath=//td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Battle of Wits: Outsmarting the Boss and the Beet Farmer!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "af992c40-92cc-49a4-a121-6af01d6cf780",
+      "comment": "",
+      "command": "click",
+      "target": "name=postText",
+      "targets": [
+        ["name=postText", "name"],
+        ["css=.text-area", "css:finder"],
+        ["xpath=//textarea[@name='postText']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f37030c7-0145-473c-932a-f79c4c49c53f",
+      "comment": "",
+      "command": "type",
+      "target": "name=postText",
+      "targets": [
+        ["name=postText", "name"],
+        ["css=.text-area", "css:finder"],
+        ["xpath=//textarea[@name='postText']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Ah, Jim, you got me there. But this time, I'll be prepared. My \"World's Best Boss\" mug won't be filled with defeat this time. Brace yourselves for the ultimate mind games!"
+    }, {
+      "id": "e24df7a0-a898-44e6-a76e-70be91cc3a4f",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.add-post", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c7977e0f-7dc4-42e0-9d3d-35f5d58f7275",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign out.",
+      "targets": [
+        ["linkText=Sign out.", "linkText"],
+        ["css=a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign out.')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'LogoutServlet')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign out.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "c92a8d36-2cd0-4367-99a6-26f8fcbdd9fe",
+    "name": "12DwightSchrute4",
+    "commands": [{
+      "id": "c4ae6f74-4bac-47e7-921a-366f47881e9c",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8181/CatFacts/index.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c0a51f3b-93d2-4603-8806-75288eef4ef3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Guides",
+      "targets": [
+        ["linkText=Guides", "linkText"],
+        ["css=.button:nth-child(4) > .navlink", "css:finder"],
+        ["xpath=//a[contains(text(),'Guides')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'guidehome.jsp')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Guides')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a93daf58-d531-4f59-8bf4-e6ce8ea67e72",
+      "comment": "",
+      "command": "click",
+      "target": "css=.guide-item:nth-child(3) .cover",
+      "targets": [
+        ["css=.guide-item:nth-child(3) .cover", "css:finder"],
+        ["xpath=(//img[@alt='Game Guide Cover'])[3]", "xpath:img"],
+        ["xpath=//div[3]/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2206f31e-4468-4bc7-9a4b-f58598275aae",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginButton",
+      "targets": [
+        ["id=loginButton", "id"],
+        ["css=#loginButton", "css:finder"],
+        ["xpath=//button[@id='loginButton']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b874442-4ff7-4e2a-823a-39cdf1616016",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6ac00ecf-3027-4ab8-b135-208a48408020",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "DwightSchrute"
+    }, {
+      "id": "0bfbc46f-6f58-4339-8bd7-4b2065519e9a",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "1234abcD"
+    }, {
+      "id": "6c71798e-c20a-488c-9d80-84190cd6f074",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginSubmitButton",
+      "targets": [
+        ["id=loginSubmitButton", "id"],
+        ["css=#loginSubmitButton", "css:finder"],
+        ["xpath=//button[@id='loginSubmitButton']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/button", "xpath:idRelative"],
+        ["xpath=//form/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf87ec5b-2e46-41e8-ad86-fafd8a7891b2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Boards",
+      "targets": [
+        ["linkText=Boards", "linkText"],
+        ["css=.button:nth-child(1) > .navlink", "css:finder"],
+        ["xpath=//a[contains(text(),'Boards')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'boards.jsp')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Boards')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "120952fe-c26b-4b51-8962-68882d1b82e3",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(8) > button",
+      "targets": [
+        ["css=a:nth-child(8) > button", "css:finder"],
+        ["xpath=//a[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Social Boards')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3b7c462-e241-4987-a395-841acd874872",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Battle of Wits: Outsmarting the Boss and the Beet Farmer!",
+      "targets": [
+        ["linkText=Battle of Wits: Outsmarting the Boss and the Beet Farmer!", "linkText"],
+        ["css=td > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Battle of Wits: Outsmarting the Boss and the Beet Farmer!')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'thread.jsp?threadID=3')]", "xpath:href"],
+        ["xpath=//td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Battle of Wits: Outsmarting the Boss and the Beet Farmer!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c706eed3-434b-4701-9fce-ec1b37199b9a",
+      "comment": "",
+      "command": "click",
+      "target": "name=postText",
+      "targets": [
+        ["name=postText", "name"],
+        ["css=.text-area", "css:finder"],
+        ["xpath=//textarea[@name='postText']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "30b52d7f-d4bb-4bb7-bb98-20863beb809c",
+      "comment": "",
+      "command": "type",
+      "target": "name=postText",
+      "targets": [
+        ["name=postText", "name"],
+        ["css=.text-area", "css:finder"],
+        ["xpath=//textarea[@name='postText']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Jim, your pranks have amused me in the past, but they won't stand a chance against my advanced beet-fueled brain. I'm ready to crush your hopes and dreams like a beet beneath a tractor!"
+    }, {
+      "id": "9752fb15-5c0b-4ae2-87ec-23d980aafc5c",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.add-post", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "280680bd-e9cd-47a0-8adc-0c297ea80bed",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign out.",
+      "targets": [
+        ["linkText=Sign out.", "linkText"],
+        ["css=a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign out.')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'LogoutServlet')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign out.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "5910a22e-9de0-4811-b90d-d7d63bd59101",
+    "name": "13JimHalpert5",
+    "commands": [{
+      "id": "193ac5c3-001c-400e-adee-7f8e28bdfa9d",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8181/CatFacts/index.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "95dbb525-451b-4f0c-be74-14d122120ba8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Teams",
+      "targets": [
+        ["linkText=Teams", "linkText"],
+        ["css=.button:nth-child(3) > .navlink", "css:finder"],
+        ["xpath=//a[contains(text(),'Teams')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'teams.jsp')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Teams')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb7ff603-e80f-43a2-9412-2674fde3ff8c",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginButton",
+      "targets": [
+        ["id=loginButton", "id"],
+        ["css=#loginButton", "css:finder"],
+        ["xpath=//button[@id='loginButton']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f84468a6-333c-460e-acaa-ba38e1ddfefa",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf8b86eb-5c04-43b6-9685-526b4b2384f3",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "JimHalpert"
+    }, {
+      "id": "f2669543-56a4-4be0-8f97-ed381d5766e9",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d8ee4f39-247d-4616-b7dd-2dd577d7873a",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "1234abcD"
+    }, {
+      "id": "e1a7fa13-8fda-4f81-816f-7d38feff61a3",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginSubmitButton",
+      "targets": [
+        ["id=loginSubmitButton", "id"],
+        ["css=#loginSubmitButton", "css:finder"],
+        ["xpath=//button[@id='loginSubmitButton']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/button", "xpath:idRelative"],
+        ["xpath=//form/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "78a4ced9-86c4-4eb5-bd59-cd0bceae9d5d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Boards",
+      "targets": [
+        ["linkText=Boards", "linkText"],
+        ["css=.button:nth-child(1) > .navlink", "css:finder"],
+        ["xpath=//a[contains(text(),'Boards')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'boards.jsp')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Boards')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "21ff5b4a-5fbd-484d-aa40-00dfe123eda2",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(8) > button",
+      "targets": [
+        ["css=a:nth-child(8) > button", "css:finder"],
+        ["xpath=//a[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Social Boards')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b4d7b2af-6e7b-4966-99df-cfafe693ccc0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Battle of Wits: Outsmarting the Boss and the Beet Farmer!",
+      "targets": [
+        ["linkText=Battle of Wits: Outsmarting the Boss and the Beet Farmer!", "linkText"],
+        ["css=td > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Battle of Wits: Outsmarting the Boss and the Beet Farmer!')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'thread.jsp?threadID=3')]", "xpath:href"],
+        ["xpath=//td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Battle of Wits: Outsmarting the Boss and the Beet Farmer!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2410fe4b-646d-4791-84c5-f042496148b1",
+      "comment": "",
+      "command": "click",
+      "target": "name=postText",
+      "targets": [
+        ["name=postText", "name"],
+        ["css=.text-area", "css:finder"],
+        ["xpath=//textarea[@name='postText']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eefa32a4-bdd9-40f5-ac76-278c7b33b8b1",
+      "comment": "",
+      "command": "type",
+      "target": "name=postText",
+      "targets": [
+        ["name=postText", "name"],
+        ["css=.text-area", "css:finder"],
+        ["xpath=//textarea[@name='postText']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Dwight, your confidence is truly something to behold. But remember, I have the power of Jim's Prankster Alliance (JPA) behind me. Together, we will give you a run for your money!"
+    }, {
+      "id": "a9b699a5-dc55-4737-ad3d-68172e5fa33e",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.add-post", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf0e7829-1e65-4962-99ab-90d4f23de35a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign out.",
+      "targets": [
+        ["linkText=Sign out.", "linkText"],
+        ["css=a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign out.')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'LogoutServlet')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign out.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "f62e2a69-e7fe-40a2-b2d6-9dd08f0d58ce",
+    "name": "14MichaelScott5",
+    "commands": [{
+      "id": "9416cdea-1312-41d2-a561-0f9686654785",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8181/CatFacts/index.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f58dc1dc-1beb-4600-b484-c237f9582a07",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginButton",
+      "targets": [
+        ["id=loginButton", "id"],
+        ["css=#loginButton", "css:finder"],
+        ["xpath=//button[@id='loginButton']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "53f03d5a-0291-40c3-90f0-a4857db85722",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ebab51a9-24cc-4d42-b7b5-1ec80c93e8e1",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "MichaelScott"
+    }, {
+      "id": "db9f37b8-d117-49a6-804c-8e32b5a55d97",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "1234abcD"
+    }, {
+      "id": "45791bd1-0242-4a75-bf02-28a703e211ce",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginSubmitButton",
+      "targets": [
+        ["id=loginSubmitButton", "id"],
+        ["css=#loginSubmitButton", "css:finder"],
+        ["xpath=//button[@id='loginSubmitButton']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/button", "xpath:idRelative"],
+        ["xpath=//form/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "70901dc1-465c-4b1f-bad2-d555a3ab4605",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Boards",
+      "targets": [
+        ["linkText=Boards", "linkText"],
+        ["css=.button:nth-child(1) > .navlink", "css:finder"],
+        ["xpath=//a[contains(text(),'Boards')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'boards.jsp')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Boards')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f3746e6-4b2b-491f-9f58-2341070b58d1",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(8) > button",
+      "targets": [
+        ["css=a:nth-child(8) > button", "css:finder"],
+        ["xpath=//a[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Social Boards')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3081b730-0512-435f-839e-a04194bcb94f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Battle of Wits: Outsmarting the Boss and the Beet Farmer!",
+      "targets": [
+        ["linkText=Battle of Wits: Outsmarting the Boss and the Beet Farmer!", "linkText"],
+        ["css=td > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Battle of Wits: Outsmarting the Boss and the Beet Farmer!')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'thread.jsp?threadID=3')]", "xpath:href"],
+        ["xpath=//td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Battle of Wits: Outsmarting the Boss and the Beet Farmer!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "54e5e196-6b40-43ab-91a5-4454ee1ecb10",
+      "comment": "",
+      "command": "click",
+      "target": "name=postText",
+      "targets": [
+        ["name=postText", "name"],
+        ["css=.text-area", "css:finder"],
+        ["xpath=//textarea[@name='postText']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a8993cad-088a-4a2b-bb64-bc41b7692825",
+      "comment": "",
+      "command": "type",
+      "target": "name=postText",
+      "targets": [
+        ["name=postText", "name"],
+        ["css=.text-area", "css:finder"],
+        ["xpath=//textarea[@name='postText']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Jim, Dwight, I appreciate your enthusiasm, but let's not forget that I am the boss here. I have an entire office at my disposal. You're both in for a treat. Be ready for the unexpected!"
+    }, {
+      "id": "c7eeff6f-ab8e-4e39-ac1c-0751a09b02ed",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.add-post", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f2ee42ff-2229-4f0f-9b30-f9520234d3a0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign out.",
+      "targets": [
+        ["linkText=Sign out.", "linkText"],
+        ["css=a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign out.')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'LogoutServlet')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign out.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "f4039d15-44b3-45d7-848d-afbf95a5523b",
+    "name": "15DwightSchrute5",
+    "commands": [{
+      "id": "08982dd2-550b-4bd9-a080-e18fad8f8eed",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8181/CatFacts/index.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fd01c04b-a5e7-4bf3-8d58-a41b536bf08f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Games Database",
+      "targets": [
+        ["linkText=Games Database", "linkText"],
+        ["css=.button:nth-child(2) > .navlink", "css:finder"],
+        ["xpath=//a[contains(text(),'Games Database')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'games.jsp')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Games Database')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d284472f-459e-4f9e-b05a-e4eef8cbcd7f",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginButton",
+      "targets": [
+        ["id=loginButton", "id"],
+        ["css=#loginButton", "css:finder"],
+        ["xpath=//button[@id='loginButton']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "875045e0-0188-4b60-a761-681c90e463f6",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "34023c73-c3d8-471a-8bee-2d65406a00e6",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "DwightSchrute"
+    }, {
+      "id": "8eac7015-c28c-44a6-bc9e-bb0dcad1316f",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2050c83f-7e0a-4298-94ce-3a68a8aef058",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "1234abcD"
+    }, {
+      "id": "dc09a0cc-c5aa-44a7-98e3-2cb6208e78ed",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "db96f482-ceea-4021-997c-39073ab6a08d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Boards",
+      "targets": [
+        ["linkText=Boards", "linkText"],
+        ["css=.button:nth-child(1) > .navlink", "css:finder"],
+        ["xpath=//a[contains(text(),'Boards')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'boards.jsp')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Boards')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e54e08b3-8bed-44d8-8ba2-32bd27868868",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(8) > button",
+      "targets": [
+        ["css=a:nth-child(8) > button", "css:finder"],
+        ["xpath=//a[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Social Boards')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "08d5c3fe-3253-41f4-9876-bc1bdbd28236",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Battle of Wits: Outsmarting the Boss and the Beet Farmer!",
+      "targets": [
+        ["linkText=Battle of Wits: Outsmarting the Boss and the Beet Farmer!", "linkText"],
+        ["css=td > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Battle of Wits: Outsmarting the Boss and the Beet Farmer!')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'thread.jsp?threadID=3')]", "xpath:href"],
+        ["xpath=//td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Battle of Wits: Outsmarting the Boss and the Beet Farmer!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a8dba31-d8cc-428c-841f-35c2111495d6",
+      "comment": "",
+      "command": "click",
+      "target": "name=postText",
+      "targets": [
+        ["name=postText", "name"],
+        ["css=.text-area", "css:finder"],
+        ["xpath=//textarea[@name='postText']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e79bd592-19fc-4db0-86d7-7126d5408963",
+      "comment": "",
+      "command": "type",
+      "target": "name=postText",
+      "targets": [
+        ["name=postText", "name"],
+        ["css=.text-area", "css:finder"],
+        ["xpath=//textarea[@name='postText']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Michael, your position as \"boss\" won't protect you from the wrath of a Schrute. Prepare for battle, as the beet harvest of victory is upon us!"
+    }, {
+      "id": "16c68bcb-054a-4d4a-8fb6-adb6c431acae",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.add-post", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd3f51a6-2c16-4f40-93b5-5016b86ce7c8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign out.",
+      "targets": [
+        ["linkText=Sign out.", "linkText"],
+        ["css=a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign out.')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'LogoutServlet')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign out.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "a587cdd5-e089-47d4-8fd1-1d19c50afb09",
+    "name": "16JimHalpert6",
+    "commands": [{
+      "id": "31fbb538-c427-4cbb-8ac6-507aed60feb0",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8181/CatFacts/index.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a529e3a5-5e77-48c2-af3e-951bc4bc4f9a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Boards",
+      "targets": [
+        ["linkText=Boards", "linkText"],
+        ["css=.button:nth-child(1) > .navlink", "css:finder"],
+        ["xpath=//a[contains(text(),'Boards')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'boards.jsp')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Boards')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4bd5e46-d175-43a7-9d37-cc6722a15ab9",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(8) > button",
+      "targets": [
+        ["css=a:nth-child(8) > button", "css:finder"],
+        ["xpath=//a[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Social Boards')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d51cce61-8aa3-4dcd-a596-c7ff4a4d6a00",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Battle of Wits: Outsmarting the Boss and the Beet Farmer!",
+      "targets": [
+        ["linkText=Battle of Wits: Outsmarting the Boss and the Beet Farmer!", "linkText"],
+        ["css=td > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Battle of Wits: Outsmarting the Boss and the Beet Farmer!')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'thread.jsp?threadID=3')]", "xpath:href"],
+        ["xpath=//td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Battle of Wits: Outsmarting the Boss and the Beet Farmer!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b73d9f36-46de-46bc-830c-2991c19b999b",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginButton",
+      "targets": [
+        ["id=loginButton", "id"],
+        ["css=#loginButton", "css:finder"],
+        ["xpath=//button[@id='loginButton']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ddfa35ab-27a6-4433-8030-8b6fb51bce0b",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7805e1df-7653-4f72-9a79-c2611bf43abb",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "JimHalpert"
+    }, {
+      "id": "d853ab0e-c664-4fca-8ab7-20745a94f596",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6504f2af-5453-4204-85a3-98b6fce6c213",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "1234abcD"
+    }, {
+      "id": "f7927553-02bd-459f-82a8-c65d257fe4c2",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginSubmitButton",
+      "targets": [
+        ["id=loginSubmitButton", "id"],
+        ["css=#loginSubmitButton", "css:finder"],
+        ["xpath=//button[@id='loginSubmitButton']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/button", "xpath:idRelative"],
+        ["xpath=//form/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b056cf09-9210-44e6-8ffd-3ef556b7095d",
+      "comment": "",
+      "command": "click",
+      "target": "name=postText",
+      "targets": [
+        ["name=postText", "name"],
+        ["css=.text-area", "css:finder"],
+        ["xpath=//textarea[@name='postText']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b722c91b-c19f-4509-95d7-d972e6c112fe",
+      "comment": "",
+      "command": "type",
+      "target": "name=postText",
+      "targets": [
+        ["name=postText", "name"],
+        ["css=.text-area", "css:finder"],
+        ["xpath=//textarea[@name='postText']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Alright, folks, the stage is set. Who's ready to witness the epic battle of wits unfold? Place your bets, share your ideas, and let the games begin! This will be one for the Dunder Mifflin history books!"
+    }, {
+      "id": "87b834ab-4761-459a-b100-2151b76bedfd",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.add-post", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "533f3054-45e9-47cc-8582-6532fe0c5860",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign out.",
+      "targets": [
+        ["linkText=Sign out.", "linkText"],
+        ["css=a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign out.')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'LogoutServlet')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign out.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "fa6ed246-738d-4663-8ca8-a845b076796a",
+    "name": "17JimHalpert7",
+    "commands": [{
+      "id": "1df46ad6-8e82-4f5d-9459-5baf656ea1c2",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8181/CatFacts/index.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d2850e01-6049-4aaa-8e3b-7f76fb7cbd05",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "90fe4138-d508-403b-99eb-b01e0250edb0",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginButton",
+      "targets": [
+        ["id=loginButton", "id"],
+        ["css=#loginButton", "css:finder"],
+        ["xpath=//button[@id='loginButton']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f6d8ede6-6fdf-413a-a9d8-53891009f26e",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b3c7be75-3082-43f4-8e14-9012b14c06aa",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "JimHalpert"
+    }, {
+      "id": "70eac2a4-1af1-4046-907b-36f3013c6b77",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f6a880e-983d-4336-a140-8c2dacd48cef",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "1234abcD"
+    }, {
+      "id": "d79f1c75-7cff-4889-a17d-d894923c51f4",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "6f291e3d-2d64-45b9-9ed5-54e37807c7d6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Boards",
+      "targets": [
+        ["linkText=Boards", "linkText"],
+        ["css=.button:nth-child(1) > .navlink", "css:finder"],
+        ["xpath=//a[contains(text(),'Boards')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'boards.jsp')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Boards')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2df9fa3a-53a2-443b-a678-4f0f4d9c398c",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(6) > button",
+      "targets": [
+        ["css=a:nth-child(6) > button", "css:finder"],
+        ["xpath=//a[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Team Boards')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dcffb87c-be37-4cf7-bf43-b385b48f0464",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Start a new thread",
+      "targets": [
+        ["linkText=Start a new thread", "linkText"],
+        ["css=.add-post", "css:finder"],
+        ["xpath=//a[contains(text(),'Start a new thread')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'threadstart.jsp?threadCatID=3')]", "xpath:href"],
+        ["xpath=//body/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Start a new thread')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9a84263-989b-4ac9-b220-b23e88a6a6c5",
+      "comment": "",
+      "command": "click",
+      "target": "id=threadTitle",
+      "targets": [
+        ["id=threadTitle", "id"],
+        ["name=threadTitle", "name"],
+        ["css=#threadTitle", "css:finder"],
+        ["xpath=//input[@id='threadTitle']", "xpath:attributes"],
+        ["xpath=//div[2]/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e5375d3-c88b-493d-ac63-604290e6d6f0",
+      "comment": "",
+      "command": "type",
+      "target": "id=threadTitle",
+      "targets": [
+        ["id=threadTitle", "id"],
+        ["name=threadTitle", "name"],
+        ["css=#threadTitle", "css:finder"],
+        ["xpath=//input[@id='threadTitle']", "xpath:attributes"],
+        ["xpath=//div[2]/form/input", "xpath:position"]
+      ],
+      "value": "The Office Warriors Unite: Conquering the Gaming World!"
+    }, {
+      "id": "5bc1b473-ef58-42e5-9da3-3d7181a34628",
+      "comment": "",
+      "command": "click",
+      "target": "id=postText",
+      "targets": [
+        ["id=postText", "id"],
+        ["name=postText", "name"],
+        ["css=#postText", "css:finder"],
+        ["xpath=//textarea[@id='postText']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "20de874d-1180-4511-b51a-73797f6c2d1a",
+      "comment": "",
+      "command": "type",
+      "target": "id=postText",
+      "targets": [
+        ["id=postText", "id"],
+        ["name=postText", "name"],
+        ["css=#postText", "css:finder"],
+        ["xpath=//textarea[@id='postText']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Attention, Dunder Mifflin gamers! I have an idea that might just blow your mind. How about we form a video gaming team right here in the office? Let the virtual battles begin!"
+    }, {
+      "id": "8e1118f6-7ab0-4716-a5be-538dfcd360a2",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.blue-font > .add-post", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "80271cd8-c2fd-435f-8166-55e4f9ceafb7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign out.",
+      "targets": [
+        ["linkText=Sign out.", "linkText"],
+        ["css=a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign out.')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'LogoutServlet')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign out.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "3046d17f-af83-4827-9019-2029d503adc2",
+    "name": "18MichaelScott",
+    "commands": [{
+      "id": "9430ed0a-3809-42b8-ad4a-2baad3f51fe9",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8181/CatFacts/index.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a4c369da-1176-4904-9cf3-eea9974f9b7f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "465f3d4c-1244-49ea-b118-a912d8989100",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginButton",
+      "targets": [
+        ["id=loginButton", "id"],
+        ["css=#loginButton", "css:finder"],
+        ["xpath=//button[@id='loginButton']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8fd07fe0-68e7-4ab7-bd74-87f5101b47c1",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1e910232-97b6-4c2f-ba01-4d6c52c55992",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "MichaelScott"
+    }, {
+      "id": "28539a8c-3679-4c0d-8b36-56f8e48c3127",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "36409c18-8f4c-4b1c-a192-7d3d5494a476",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "1234abcD"
+    }, {
+      "id": "20f64066-cbd1-4e7d-b692-e924f401dba2",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginSubmitButton",
+      "targets": [
+        ["id=loginSubmitButton", "id"],
+        ["css=#loginSubmitButton", "css:finder"],
+        ["xpath=//button[@id='loginSubmitButton']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/button", "xpath:idRelative"],
+        ["xpath=//form/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ea6ba2a0-aeb9-4fa3-9603-ec495eef78bd",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Boards",
+      "targets": [
+        ["linkText=Boards", "linkText"],
+        ["css=.button:nth-child(1) > .navlink", "css:finder"],
+        ["xpath=//a[contains(text(),'Boards')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'boards.jsp')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Boards')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "857bfb2d-b59d-4fae-8cf6-1c399124e9cd",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(6) > button",
+      "targets": [
+        ["css=a:nth-child(6) > button", "css:finder"],
+        ["xpath=//a[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Team Boards')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "99f022be-b608-4c3b-97ce-22a87a2808fa",
+      "comment": "",
+      "command": "click",
+      "target": "css=td:nth-child(1)",
+      "targets": [
+        ["css=td:nth-child(1)", "css:finder"],
+        ["xpath=//td", "xpath:position"],
+        ["xpath=//td[contains(.,'The Office Warriors Unite: Conquering the Gaming World!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8916b639-b5af-4a91-9b42-d65cb25179c2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=The Office Warriors Unite: Conquering the Gaming World!",
+      "targets": [
+        ["linkText=The Office Warriors Unite: Conquering the Gaming World!", "linkText"],
+        ["css=td > a", "css:finder"],
+        ["xpath=//a[contains(text(),'The Office Warriors Unite: Conquering the Gaming World!')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'thread.jsp?threadID=6')]", "xpath:href"],
+        ["xpath=//td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'The Office Warriors Unite: Conquering the Gaming World!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "68074be3-40a6-405f-970c-60f3e30a6157",
+      "comment": "",
+      "command": "click",
+      "target": "name=postText",
+      "targets": [
+        ["name=postText", "name"],
+        ["css=.text-area", "css:finder"],
+        ["xpath=//textarea[@name='postText']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b9afabca-531c-43aa-99bd-8faac41350b4",
+      "comment": "",
+      "command": "type",
+      "target": "name=postText",
+      "targets": [
+        ["name=postText", "name"],
+        ["css=.text-area", "css:finder"],
+        ["xpath=//textarea[@name='postText']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Jimbo, you never cease to amaze me with your innovative ideas. A gaming team? Count me in! I'll be the fearless leader, guiding us to victory in both the boardroom and the virtual world."
+    }, {
+      "id": "00ebb6d3-f933-4995-a9f5-bb929ec08bc1",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.add-post", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6dafce1-bb47-4fb0-8704-65c0c2857e62",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign out.",
+      "targets": [
+        ["linkText=Sign out.", "linkText"],
+        ["css=a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign out.')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'LogoutServlet')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign out.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "7355c2b2-df21-4e1f-a1d6-fe3e6fc48ed4",
+    "name": "19Dwight",
+    "commands": [{
+      "id": "b40d8b48-eefe-47f9-9ac9-7673478f1866",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8181/CatFacts/index.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "86fe11da-df31-418d-b06c-397818160e57",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "374def72-e7bf-4489-bbf2-2a86327802ab",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginButton",
+      "targets": [
+        ["id=loginButton", "id"],
+        ["css=#loginButton", "css:finder"],
+        ["xpath=//button[@id='loginButton']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "124ede63-35eb-42e2-957e-1907de6206de",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8410bcd7-103c-4ff5-9c8d-cc5e6313339f",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "DwightSchrute"
+    }, {
+      "id": "bb47f311-901b-4f2f-9b47-6761f2c49783",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8dac9fa1-ea0b-416b-9ca7-929903d3e6fe",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "1234abcD"
+    }, {
+      "id": "cb9e39f8-9d96-4118-9f7d-91362888ce3e",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginSubmitButton",
+      "targets": [
+        ["id=loginSubmitButton", "id"],
+        ["css=#loginSubmitButton", "css:finder"],
+        ["xpath=//button[@id='loginSubmitButton']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/button", "xpath:idRelative"],
+        ["xpath=//form/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a1cb2c56-2fac-4b46-b9f9-f55af85ef0c0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Boards",
+      "targets": [
+        ["linkText=Boards", "linkText"],
+        ["css=.button:nth-child(1) > .navlink", "css:finder"],
+        ["xpath=//a[contains(text(),'Boards')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'boards.jsp')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Boards')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aacf28eb-70cf-4836-9332-4093c4380019",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(6) > button",
+      "targets": [
+        ["css=a:nth-child(6) > button", "css:finder"],
+        ["xpath=//a[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Team Boards')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cda19ecb-6f6e-4866-9dfd-19a027c96e9d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=The Office Warriors Unite: Conquering the Gaming World!",
+      "targets": [
+        ["linkText=The Office Warriors Unite: Conquering the Gaming World!", "linkText"],
+        ["css=td > a", "css:finder"],
+        ["xpath=//a[contains(text(),'The Office Warriors Unite: Conquering the Gaming World!')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'thread.jsp?threadID=6')]", "xpath:href"],
+        ["xpath=//td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'The Office Warriors Unite: Conquering the Gaming World!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3abcf72d-56bf-4b20-a05b-874ddd17c36d",
+      "comment": "",
+      "command": "click",
+      "target": "name=postText",
+      "targets": [
+        ["name=postText", "name"],
+        ["css=.text-area", "css:finder"],
+        ["xpath=//textarea[@name='postText']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8605258b-da31-4593-9d72-c367989b64f5",
+      "comment": "",
+      "command": "type",
+      "target": "name=postText",
+      "targets": [
+        ["name=postText", "name"],
+        ["css=.text-area", "css:finder"],
+        ["xpath=//textarea[@name='postText']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Jim, I'll join your team on one condition – I get to choose the games. As the Assistant Regional Manager and expert gamer, my strategic mind will lead us to glorious triumphs!"
+    }, {
+      "id": "531d544a-ff99-4b8d-a6cf-c629805981d3",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.add-post", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a62be1ce-156b-40e4-8cb8-ba876b95641a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign out.",
+      "targets": [
+        ["linkText=Sign out.", "linkText"],
+        ["css=a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign out.')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'LogoutServlet')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign out.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "af95a65a-1b5c-46ea-a5f9-56eba477fd25",
+    "name": "20PamBeesly",
+    "commands": [{
+      "id": "632a61ca-e7ae-4e31-b88f-d328bd15be3a",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8181/CatFacts/index.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d3708cba-62f9-474f-996b-ee52f0d805f6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7ec6de50-f494-4f44-83d8-15d039333106",
+      "comment": "",
+      "command": "click",
+      "target": "id=signUpButton",
+      "targets": [
+        ["id=signUpButton", "id"],
+        ["css=#signUpButton", "css:finder"],
+        ["xpath=//button[@id='signUpButton']", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Sign Up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b11ec48f-2c21-41fa-8a7e-53c4c1957a3b",
+      "comment": "",
+      "command": "click",
+      "target": "css=#signUpForm .cancelbtn",
+      "targets": [
+        ["css=#signUpForm .cancelbtn", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='signUpForm']/form/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/form/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f3842e81-5657-44c2-b709-09b7b7e7f2c6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Teams",
+      "targets": [
+        ["linkText=Teams", "linkText"],
+        ["css=.button:nth-child(3) > .navlink", "css:finder"],
+        ["xpath=//a[contains(text(),'Teams')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'teams.jsp')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Teams')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ef1a364-28ac-42d4-945b-919cc4337637",
+      "comment": "",
+      "command": "click",
+      "target": "id=signUpButton",
+      "targets": [
+        ["id=signUpButton", "id"],
+        ["css=#signUpButton", "css:finder"],
+        ["xpath=//button[@id='signUpButton']", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Sign Up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e97b168b-a60c-4000-8dc0-4a27f12cd539",
+      "comment": "",
+      "command": "click",
+      "target": "name=createUsername",
+      "targets": [
+        ["name=createUsername", "name"],
+        ["css=#signUpForm input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='createUsername']", "xpath:attributes"],
+        ["xpath=//div[@id='signUpForm']/form/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd2c51bb-06bb-4398-811a-6a7362a4b7e6",
+      "comment": "",
+      "command": "type",
+      "target": "name=createUsername",
+      "targets": [
+        ["name=createUsername", "name"],
+        ["css=#signUpForm input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='createUsername']", "xpath:attributes"],
+        ["xpath=//div[@id='signUpForm']/form/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/form/div/input", "xpath:position"]
+      ],
+      "value": "PamBeesly"
+    }, {
+      "id": "22b988e8-df00-402c-99d0-f429dd0ff426",
+      "comment": "",
+      "command": "type",
+      "target": "name=createEmail",
+      "targets": [
+        ["name=createEmail", "name"],
+        ["css=#signUpForm input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='createEmail']", "xpath:attributes"],
+        ["xpath=//div[@id='signUpForm']/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/form/div/input[2]", "xpath:position"]
+      ],
+      "value": "pb@gmail.com"
+    }, {
+      "id": "96c6ea93-4db4-4679-8604-488f08752a57",
+      "comment": "",
+      "command": "type",
+      "target": "name=createPassword",
+      "targets": [
+        ["name=createPassword", "name"],
+        ["css=input:nth-child(6)", "css:finder"],
+        ["xpath=//input[@name='createPassword']", "xpath:attributes"],
+        ["xpath=//div[@id='signUpForm']/form/div/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "1234abcD"
+    }, {
+      "id": "9c11c86e-17e3-4c23-8e59-144e64ec468a",
+      "comment": "",
+      "command": "click",
+      "target": "id=signUpSubmitButton",
+      "targets": [
+        ["id=signUpSubmitButton", "id"],
+        ["css=#signUpSubmitButton", "css:finder"],
+        ["xpath=//button[@id='signUpSubmitButton']", "xpath:attributes"],
+        ["xpath=//div[@id='signUpForm']/form/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/form/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "abe03559-87df-411d-91f0-79f3ab2b4f65",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Boards",
+      "targets": [
+        ["linkText=Boards", "linkText"],
+        ["css=.button:nth-child(1) > .navlink", "css:finder"],
+        ["xpath=//a[contains(text(),'Boards')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'boards.jsp')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Boards')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4263d76-aad1-46c4-8909-4c5a36aa28c6",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(6) > button",
+      "targets": [
+        ["css=a:nth-child(6) > button", "css:finder"],
+        ["xpath=//a[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Team Boards')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "24c47595-ddaa-4624-ac7b-bd44add422b5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=The Office Warriors Unite: Conquering the Gaming World!",
+      "targets": [
+        ["linkText=The Office Warriors Unite: Conquering the Gaming World!", "linkText"],
+        ["css=td > a", "css:finder"],
+        ["xpath=//a[contains(text(),'The Office Warriors Unite: Conquering the Gaming World!')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'thread.jsp?threadID=6')]", "xpath:href"],
+        ["xpath=//td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'The Office Warriors Unite: Conquering the Gaming World!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2bb98b04-fbed-4ae5-8760-23f3f7d5a68f",
+      "comment": "",
+      "command": "click",
+      "target": "name=postText",
+      "targets": [
+        ["name=postText", "name"],
+        ["css=.text-area", "css:finder"],
+        ["xpath=//textarea[@name='postText']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e5232243-8b17-4ddf-a209-e383fc5baa61",
+      "comment": "",
+      "command": "type",
+      "target": "name=postText",
+      "targets": [
+        ["name=postText", "name"],
+        ["css=.text-area", "css:finder"],
+        ["xpath=//textarea[@name='postText']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Hi, everyone! As the new kid on the block, I'd love to join the gaming team and bond with my coworkers. Jim, Michael, Dwight, let's show the world what the Dunder Mifflin crew is made of!"
+    }, {
+      "id": "5a3e614f-4fe8-4fe8-ab3b-6e13164bcbe6",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.add-post", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "9f6719df-3220-4315-8ff5-92536990a9ea",
+    "name": "21Jim",
+    "commands": [{
+      "id": "b1fb8eb1-ee70-4567-8bdd-21e39656cbfb",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8181/CatFacts/index.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d88ab3c7-dc12-490b-b130-42bcdf4ac7f7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2847327d-5c41-43b9-ab3a-b51c8f6eab6d",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginButton",
+      "targets": [
+        ["id=loginButton", "id"],
+        ["css=#loginButton", "css:finder"],
+        ["xpath=//button[@id='loginButton']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a521db62-0c9e-44fe-8dd0-dc48c7fa1bfa",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "58561be3-683b-417d-a56b-8f50f7d64337",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "JimHalpert"
+    }, {
+      "id": "3e54c8c0-faba-4063-8c96-467ef01db9ab",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f71b1347-901e-4d88-8d35-f5309eba0f81",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "1234abcD"
+    }, {
+      "id": "6a001709-9f3e-4e3d-88df-6caa264f7f5d",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "b818957e-87bb-4342-9d54-68bb15927ade",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Boards",
+      "targets": [
+        ["linkText=Boards", "linkText"],
+        ["css=.button:nth-child(1) > .navlink", "css:finder"],
+        ["xpath=//a[contains(text(),'Boards')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'boards.jsp')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Boards')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac76b777-2fb1-4e92-992a-22d172fb34d3",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(6) > button",
+      "targets": [
+        ["css=a:nth-child(6) > button", "css:finder"],
+        ["xpath=//a[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Team Boards')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "43eae5fb-dc90-47e8-975a-3fa43778f0c2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=The Office Warriors Unite: Conquering the Gaming World!",
+      "targets": [
+        ["linkText=The Office Warriors Unite: Conquering the Gaming World!", "linkText"],
+        ["css=td > a", "css:finder"],
+        ["xpath=//a[contains(text(),'The Office Warriors Unite: Conquering the Gaming World!')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'thread.jsp?threadID=6')]", "xpath:href"],
+        ["xpath=//td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'The Office Warriors Unite: Conquering the Gaming World!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f35a8d40-aa65-4065-a3c2-f7576e2da580",
+      "comment": "",
+      "command": "click",
+      "target": "name=postText",
+      "targets": [
+        ["name=postText", "name"],
+        ["css=.text-area", "css:finder"],
+        ["xpath=//textarea[@name='postText']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "64dbf67d-f4cc-4e5b-97de-a1a123a50fdd",
+      "comment": "",
+      "command": "type",
+      "target": "name=postText",
+      "targets": [
+        ["name=postText", "name"],
+        ["css=.text-area", "css:finder"],
+        ["xpath=//textarea[@name='postText']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Welcome aboard, Pam! We're thrilled to have you join the team. Gaming is a great way to relax and bond, and who knows, we might even discover some hidden talents among us."
+    }, {
+      "id": "c149b816-dd6c-4602-acbb-7e07fae52886",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.add-post", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bd62188b-dfcd-4dc1-985e-f8ca3c7ddfc8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign out.",
+      "targets": [
+        ["linkText=Sign out.", "linkText"],
+        ["css=a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign out.')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'LogoutServlet')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign out.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "09b59d08-63e5-41f8-a227-b304d7e48b27",
+    "name": "22Michael",
+    "commands": [{
+      "id": "34779804-3447-42d3-b1d5-26d71fea73ea",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8181/CatFacts/index.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "550d9f9d-3b93-4739-a3f8-be33ae846e5b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "12e1d641-e7d0-45e8-ab76-7d509c394ba1",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginButton",
+      "targets": [
+        ["id=loginButton", "id"],
+        ["css=#loginButton", "css:finder"],
+        ["xpath=//button[@id='loginButton']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "20bf111e-92f0-4067-9feb-e8cd82b69f52",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "636a3d95-65dc-4aea-8d2f-7fe8cf9653e4",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "MichaelScott"
+    }, {
+      "id": "e6cd8c1b-7a04-486a-ab72-c32a83ac5ff4",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a55f6fea-23b6-4d11-86f9-902c047e8606",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "1234abcD"
+    }, {
+      "id": "21af3fdf-60dd-4b3d-9050-8a430ad51750",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "bd55689c-4e68-42db-88e8-49277be748b9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Boards",
+      "targets": [
+        ["linkText=Boards", "linkText"],
+        ["css=.button:nth-child(1) > .navlink", "css:finder"],
+        ["xpath=//a[contains(text(),'Boards')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'boards.jsp')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Boards')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8f475d78-7a32-42ab-b4c0-b9b71049c431",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(6) > button",
+      "targets": [
+        ["css=a:nth-child(6) > button", "css:finder"],
+        ["xpath=//a[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Team Boards')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3dc91dab-f85f-4bf0-9bd8-c57024437bf7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=The Office Warriors Unite: Conquering the Gaming World!",
+      "targets": [
+        ["linkText=The Office Warriors Unite: Conquering the Gaming World!", "linkText"],
+        ["css=td > a", "css:finder"],
+        ["xpath=//a[contains(text(),'The Office Warriors Unite: Conquering the Gaming World!')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'thread.jsp?threadID=6')]", "xpath:href"],
+        ["xpath=//td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'The Office Warriors Unite: Conquering the Gaming World!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a3246649-6d19-4d4d-911b-f11905cf855a",
+      "comment": "",
+      "command": "click",
+      "target": "name=postText",
+      "targets": [
+        ["name=postText", "name"],
+        ["css=.text-area", "css:finder"],
+        ["xpath=//textarea[@name='postText']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "78da53ce-b4d5-4c21-a012-64388d7f8e7a",
+      "comment": "",
+      "command": "type",
+      "target": "name=postText",
+      "targets": [
+        ["name=postText", "name"],
+        ["css=.text-area", "css:finder"],
+        ["xpath=//textarea[@name='postText']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Pam, consider yourself officially initiated into the Dunder Mifflin gaming elite. Together, we'll conquer virtual worlds and bring our unique office camaraderie into the gaming community."
+    }, {
+      "id": "44d6247e-db38-453f-a209-87d46b442da1",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.add-post", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bd9e9cd6-a6fb-4cfd-b988-ddbdf983592a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign out.",
+      "targets": [
+        ["linkText=Sign out.", "linkText"],
+        ["css=a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign out.')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'LogoutServlet')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign out.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "a93ffd87-8731-4658-a266-1c709a404913",
+    "name": "23Dwight",
+    "commands": [{
+      "id": "63248f04-b877-48b5-8d1d-771830f4a3f2",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8181/CatFacts/index.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a96567ab-54c4-4d90-a6c2-7ab0ffa98a51",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "78fc1a0a-bd47-49ae-8a1e-6b4140172f0e",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginButton",
+      "targets": [
+        ["id=loginButton", "id"],
+        ["css=#loginButton", "css:finder"],
+        ["xpath=//button[@id='loginButton']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a345635-0998-4625-ab86-b144e6c6241e",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "27e7b816-abe0-434e-8cc6-415d5f74b8e9",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "DwightSchrute"
+    }, {
+      "id": "9e063d60-fbd2-4b5f-9b6c-83dc2c72d409",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "496b26cc-8f61-49ef-844a-8b79a34771f7",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "1234abcD"
+    }, {
+      "id": "216f850d-091e-42f3-a28f-0f8dac1f39bd",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "6df55792-53f8-4f25-9a0d-ee4ee465e5f7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Boards",
+      "targets": [
+        ["linkText=Boards", "linkText"],
+        ["css=.button:nth-child(1) > .navlink", "css:finder"],
+        ["xpath=//a[contains(text(),'Boards')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'boards.jsp')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Boards')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8fe38222-7ee5-487b-a785-2bd367eeb9e5",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(6) > button",
+      "targets": [
+        ["css=a:nth-child(6) > button", "css:finder"],
+        ["xpath=//a[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Team Boards')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a5d09548-6ffe-403f-b614-98e1832a80c9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=The Office Warriors Unite: Conquering the Gaming World!",
+      "targets": [
+        ["linkText=The Office Warriors Unite: Conquering the Gaming World!", "linkText"],
+        ["css=td > a", "css:finder"],
+        ["xpath=//a[contains(text(),'The Office Warriors Unite: Conquering the Gaming World!')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'thread.jsp?threadID=6')]", "xpath:href"],
+        ["xpath=//td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'The Office Warriors Unite: Conquering the Gaming World!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a46298e-c7e8-414f-98c0-7d1fccae90f9",
+      "comment": "",
+      "command": "click",
+      "target": "name=postText",
+      "targets": [
+        ["name=postText", "name"],
+        ["css=.text-area", "css:finder"],
+        ["xpath=//textarea[@name='postText']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6aff9773-89ac-4802-950b-196fb7741209",
+      "comment": "",
+      "command": "type",
+      "target": "name=postText",
+      "targets": [
+        ["name=postText", "name"],
+        ["css=.text-area", "css:finder"],
+        ["xpath=//textarea[@name='postText']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Pam, you're lucky to have the privilege of joining my gaming team. I'll train you to be a gaming warrior, teaching you the ways of success. But remember, only the strongest survive in my ranks."
+    }, {
+      "id": "6ba5fdd4-ed6c-42c5-be17-8b20246c555f",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.add-post", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b6ed8734-03ec-4f4e-93df-5487b8ba57af",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign out.",
+      "targets": [
+        ["linkText=Sign out.", "linkText"],
+        ["css=a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign out.')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'LogoutServlet')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign out.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "1b8316b7-6c49-4a4b-bba5-670bf673c8d8",
+    "name": "24Pam",
+    "commands": [{
+      "id": "3255d519-1ca8-4ec6-8435-abb1a808f8fa",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8181/CatFacts/index.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "842835d0-ed1e-421a-bafc-1e312bc8f803",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "79cf0769-342b-4b0b-9f03-c0663ae6b3a4",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginButton",
+      "targets": [
+        ["id=loginButton", "id"],
+        ["css=#loginButton", "css:finder"],
+        ["xpath=//button[@id='loginButton']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e5f3d90-a657-4a95-be08-4f3f69c5e5a6",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c20cb332-4b83-44df-9c95-65f6c7da22bf",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "PamBeesly"
+    }, {
+      "id": "7e3d23d2-323c-450e-8dc3-4551a26e21ea",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "40e8a8fa-f01b-4206-8f22-b6c6ae220e8d",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "1234abcD"
+    }, {
+      "id": "9c4a9d1f-4e9a-4f0e-bb16-af22420b62be",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "000b9e65-a274-4bf7-b03b-3f3183ee29b0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Boards",
+      "targets": [
+        ["linkText=Boards", "linkText"],
+        ["css=.button:nth-child(1) > .navlink", "css:finder"],
+        ["xpath=//a[contains(text(),'Boards')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'boards.jsp')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Boards')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "89f84288-6e14-4f50-9169-7fd29a0ccbe9",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(6) > button",
+      "targets": [
+        ["css=a:nth-child(6) > button", "css:finder"],
+        ["xpath=//a[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Team Boards')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "69560ffc-9268-4dda-b7e2-0d5b62887b53",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=The Office Warriors Unite: Conquering the Gaming World!",
+      "targets": [
+        ["linkText=The Office Warriors Unite: Conquering the Gaming World!", "linkText"],
+        ["css=td > a", "css:finder"],
+        ["xpath=//a[contains(text(),'The Office Warriors Unite: Conquering the Gaming World!')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'thread.jsp?threadID=6')]", "xpath:href"],
+        ["xpath=//td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'The Office Warriors Unite: Conquering the Gaming World!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e28d7dd2-136e-4959-82f2-98b3c18ed607",
+      "comment": "",
+      "command": "click",
+      "target": "name=postText",
+      "targets": [
+        ["name=postText", "name"],
+        ["css=.text-area", "css:finder"],
+        ["xpath=//textarea[@name='postText']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "13c297e6-0397-4bd5-bbd2-3fcf6ad203cc",
+      "comment": "",
+      "command": "type",
+      "target": "name=postText",
+      "targets": [
+        ["name=postText", "name"],
+        ["css=.text-area", "css:finder"],
+        ["xpath=//textarea[@name='postText']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Thank you all for the warm welcome! I'm excited to learn from the best and unleash my gaming skills. Jim, Michael, Dwight, let's strategize and dominate the gaming world!"
+    }, {
+      "id": "0b6f452c-9d94-4e09-a5ab-87879cfc7f77",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.add-post", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa29d691-4e29-4e32-88f8-95a3d6f3f75e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign out.",
+      "targets": [
+        ["linkText=Sign out.", "linkText"],
+        ["css=a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign out.')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'LogoutServlet')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign out.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "4290aac5-85c1-4a13-9953-588c7ffc0fc1",
+    "name": "25Jim",
+    "commands": [{
+      "id": "1fc55545-c87f-404a-b40d-6cddadc0de0d",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8181/CatFacts/index.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eb438697-9d9b-4968-9051-7486a46e55de",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1fd5026e-b17c-449b-ac03-b4808e87c38c",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginButton",
+      "targets": [
+        ["id=loginButton", "id"],
+        ["css=#loginButton", "css:finder"],
+        ["xpath=//button[@id='loginButton']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6bb2dc7f-35c0-45ea-a4d3-e2844d45be73",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6e49a4a-d508-46af-b124-d663e3df2b47",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "JimHalpert"
+    }, {
+      "id": "198c53a5-51a3-4b82-9f4a-a5b762b4cc71",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "35861c90-3b88-49c8-b04e-2a72d237688d",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "1234abcD"
+    }, {
+      "id": "1eedbf78-dd09-4ebf-a303-55f092b128b1",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginSubmitButton",
+      "targets": [
+        ["id=loginSubmitButton", "id"],
+        ["css=#loginSubmitButton", "css:finder"],
+        ["xpath=//button[@id='loginSubmitButton']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/button", "xpath:idRelative"],
+        ["xpath=//form/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc29c365-dce2-4ce7-aa71-2013f6ba5637",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Boards",
+      "targets": [
+        ["linkText=Boards", "linkText"],
+        ["css=.button:nth-child(1) > .navlink", "css:finder"],
+        ["xpath=//a[contains(text(),'Boards')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'boards.jsp')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Boards')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b8a8db0-329b-4beb-84ac-0f0f1d531b94",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(6) > button",
+      "targets": [
+        ["css=a:nth-child(6) > button", "css:finder"],
+        ["xpath=//a[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Team Boards')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd095306-254c-4e1e-bd42-5dd9d3f84a7a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=The Office Warriors Unite: Conquering the Gaming World!",
+      "targets": [
+        ["linkText=The Office Warriors Unite: Conquering the Gaming World!", "linkText"],
+        ["css=td > a", "css:finder"],
+        ["xpath=//a[contains(text(),'The Office Warriors Unite: Conquering the Gaming World!')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'thread.jsp?threadID=6')]", "xpath:href"],
+        ["xpath=//td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'The Office Warriors Unite: Conquering the Gaming World!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d48cd24-9557-4649-8389-d3356281cd41",
+      "comment": "",
+      "command": "click",
+      "target": "name=postText",
+      "targets": [
+        ["name=postText", "name"],
+        ["css=.text-area", "css:finder"],
+        ["xpath=//textarea[@name='postText']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "64bf42dd-5132-4110-9d96-e619f5710dc4",
+      "comment": "",
+      "command": "type",
+      "target": "name=postText",
+      "targets": [
+        ["name=postText", "name"],
+        ["css=.text-area", "css:finder"],
+        ["xpath=//textarea[@name='postText']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Pam, we'll make sure you have a blast while gaming with us. From cooperative campaigns to intense multiplayer battles, we'll experience the full spectrum of gaming excitement together."
+    }, {
+      "id": "0027260f-dfec-436d-a106-c8c6cf48c6ff",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.add-post", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c57f7174-5feb-4328-bd45-0d0777ab1d6f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign out.",
+      "targets": [
+        ["linkText=Sign out.", "linkText"],
+        ["css=a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign out.')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'LogoutServlet')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign out.')]", "xpath:innerText"]
       ],
       "value": ""
     }]
@@ -974,6 +5179,6 @@
     "timeout": 300,
     "tests": ["11833cde-cb84-408e-948f-0486a584e1e2"]
   }],
-  "urls": ["http://localhost:8181/"],
+  "urls": ["http://localhost:8181/", "http://localhost:8181/CatFacts/index.jsp"],
   "plugins": []
 }
